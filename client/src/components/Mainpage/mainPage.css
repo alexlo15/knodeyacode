@@ -1,14 +1,44 @@
 
 body {
-    background-color: aqua;
+  color: white;
   }
   
   h1 {
-    color: black;
+    color: white;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0 3px 3px rgb(0, 0, 0), 0 3px 3px rgb(0, 0, 0);
     text-align: center;
   }
   
   p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+  }
+
+  body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 15% 0 15% 0;
+  }
+
+  .signIn{
+    background-color: #00000070;
+    text-align: center;
+    height: 500px;
   }
