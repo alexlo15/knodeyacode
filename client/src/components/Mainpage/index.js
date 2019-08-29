@@ -7,11 +7,11 @@ function Mainpage() {
             <div className="parallax">
                 <h1>Knode Your Code</h1>
                 <p>Please log in to play</p>
-            </div>
-            <div className="signIn">
                 <button type="button" className="btn btn-primary">Sign in</button>
             </div>
-            <div class="parallax"></div>
+            <div className="signIn">
+    
+            </div>
         </div>
     );
 }

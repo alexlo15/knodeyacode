@@ -5,8 +5,11 @@ body {
   
   h1 {
     color: white;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0 3px 3px rgb(0, 0, 0), 0 3px 3px rgb(0, 0, 0);
     text-align: center;
-    padding: 20% 0 20% 0;
   }
   
   p {
@@ -20,7 +23,7 @@ body {
   
   .parallax {
     /* The image used */
-    background-image: url('https://wallpapercave.com/wp/QDElLjA.jpg');
+    background-image: url('https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
   
     /* Full height */
     height: 100%; 
@@ -30,10 +33,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    padding: 15% 0 15% 0;
   }
 
   .signIn{
-    background-color: #93C2D5;
+    background-color: #00000070;
     text-align: center;
     height: 500px;
   }
