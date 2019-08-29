@@ -1,13 +1,17 @@
 import React from "react";
 import "./mainPage.css";
 
-function Mainpage(){
-    return(
+function Mainpage() {
+    return (
         <div>
-        <h1>Knode Your Code</h1>
-        <p>Please log in to play</p>
-
-        <button type="button" class="btn btn-primary">Sign in</button>
+            <div className="parallax">
+                <h1>Knode Your Code</h1>
+                <p>Please log in to play</p>
+            </div>
+            <div className="signIn">
+                <button type="button" className="btn btn-primary">Sign in</button>
+            </div>
+            <div class="parallax"></div>
         </div>
     );
 }
