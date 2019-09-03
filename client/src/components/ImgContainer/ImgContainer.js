@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import { Draggable, Droppable } from "react-drag-and-drop";
 import "./ImgContainer.css";
 import Img from "../Img/Img";
-// import imgList from "./imageList.json";
+import API from "../../utils/API";
 let topicSelected = [];
 
 class ImgContainer extends Component {
@@ -62,6 +62,12 @@ class ImgContainer extends Component {
 onClick = ()=>{
   // alert('click attached');
   console.log(topicSelected);
+  API.getQuestions()
+    .then(res =>{
+      console.log(res);
+    })
+    .catch(err => console.log(err));
+
 }
   render() {
     var images = {
