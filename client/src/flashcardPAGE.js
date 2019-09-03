@@ -11,8 +11,16 @@ class FlashPage extends React.Component {
     return (
       <div className="Flashpage">
         <NavBar />
-        <Sidebar />
-        <ImgContainer/>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+          <Sidebar />
+          </div>
+          <div className="col-12 col-sm-10">
+          <ImgContainer/>
+          </div>
+        </div>
+        
+        
       </div>
 
     );
