@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import NavBar from './components/NavBar';
-import Test from './components/test';
+import Sidebar from './components/Sidebar/sidebarIndex';
 
 
 class FlashPage extends React.Component {
@@ -10,7 +10,7 @@ class FlashPage extends React.Component {
     return (
       <div className="Flashpage">
         <NavBar />
-        <Test />
+        <Sidebar />
       </div>
 
     );

@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Test from "./components/test"
-
+import Sidebar from "./components/Sidebar/sidebarIndex";
 
 class DragDropPage extends React.Component {
 
@@ -9,7 +8,7 @@ class DragDropPage extends React.Component {
         return (
             <div className="DragDrop">
                 <NavBar />
-                <Test />
+                <Sidebar />
             </div>
         );
     }
