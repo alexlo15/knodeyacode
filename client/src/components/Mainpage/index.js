@@ -7,9 +7,9 @@ function Mainpage() {
       <div className="parallax">
         <h1>Knode Your Code</h1>
         <p>Please log in to play</p>
-        <button type="button" className="btn btn-primary" href="/profile">
+        <a className="btn btn-primary" href="/profile">
           Sign in
-        </button>
+        </a>
       </div>
 
       {/* This is where the body color is in the main page  */}
