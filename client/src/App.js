@@ -4,6 +4,7 @@ import Mainpage from './components/Mainpage';
 import DragDropPage from './dragDropPAGE';
 import FlashPage from './flashcardPAGE';
 import FlashCard from "./components/FlashCard";
+import Poop from "./components/Poop";
 
 class App extends React.Component {
 
@@ -14,6 +15,7 @@ class App extends React.Component {
           <div>
             {/* these routes tell what component(PAGE) to load on each path */}
             <Route exact path="/" component={Mainpage} />
+            <Route exact path="/profile" component={Poop} />
             <Route exact path="/flashcard" component={FlashPage} />
             <Route exact path="/flashCardSubmit" component={FlashCard} />
             <Route exact path="/dragdrop" component={DragDropPage} />
