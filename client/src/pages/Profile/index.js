@@ -3,8 +3,8 @@ import "./style.css";
 
 function Profile() {
   return (
-    <div>
-        <h3>This is the profile page</h3>
+    <div id="fatherdiv">
+        <h3 id="profileTitle">This is the profile page</h3>
     </div>
   );
 }
