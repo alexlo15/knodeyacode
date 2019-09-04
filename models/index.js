@@ -1,5 +1,5 @@
 module.exports = {
-  Question: require("./question"),
-  Topic: require("./topic"),
-  Score: require("./score")
+  Question: require("./Question"),
+  Topic: require("./Topic"),
+  Score: require("./Score")
 };

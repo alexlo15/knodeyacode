@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-// import { Draggable, Droppable } from "react-drag-and-drop";
+import { Link } from "react-router-dom";
+
 import "./ImgContainer.css";
 import Img from "../Img/Img";
+// import FlashCard from "../FlashCard"
 import API from "../../utils/API";
 let topicSelected = [];
 
@@ -62,9 +64,9 @@ class ImgContainer extends Component {
 onClick = ()=>{
   // alert('click attached');
   console.log(topicSelected);
-  API.getQuestions()
+  API.searchQuestions(topicSelected)
     .then(res =>{
-      console.log(res);
+      console.log(res.data);
     })
     .catch(err => console.log(err));
 
@@ -89,20 +91,14 @@ onClick = ()=>{
         </Img>
       );
     });
-    // const singleImg = imgList.map(item => (
-    //   <Img
-    //     key={item.id}
-    //     item={item}
-    //     onDragStart={e => this.onDragStart(e, item.name)}
-    //   />
-    // ));
+    
 
     return (
       
       <main>
         <div>
           <h2>ImgContainer component</h2>
-          {/* {singleImg} */}
+          
           <div
             id="dragComponentsDiv"
             onDrop={e => this.onDrop(e, "notDragged")}
@@ -120,8 +116,12 @@ onClick = ()=>{
           {images.dragged}
         </div>
         <div id="btnDiv">
+        <Link to={`/flashCardSubmit`}>
           <button className="btn btn-primary btnSubmit" onClick={this.onClick}>Submit</button>
+          </Link>
         </div>
+
+        
       </main>
     );
   }
