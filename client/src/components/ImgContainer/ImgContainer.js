@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./ImgContainer.css";
 import Img from "../Img/Img";
-import FlashCard from "../FlashCard"
+// import FlashCard from "../FlashCard"
 import API from "../../utils/API";
 let topicSelected = [];
 
