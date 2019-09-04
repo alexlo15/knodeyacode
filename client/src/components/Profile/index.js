@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Poop() {
+function Profile() {
   return (
     <div>
         <h3>This is the profile page</h3>
@@ -9,4 +9,4 @@ function Poop() {
   );
 }
 
-export default Poop;
+export default Profile;
