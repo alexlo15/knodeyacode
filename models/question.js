@@ -17,6 +17,14 @@ const questionSchema = new Schema({
   choice3: {
     type: String,
     required: true
+  },
+  topicId: {
+    type: Schema.Types.ObjectId,
+    ref: "Topic"
+  },
+  topic:{
+    type:String,
+    required:true
   }
 
   // date: { type: Date, default: Date.now }
