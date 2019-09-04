@@ -22,7 +22,7 @@ const questionSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "Topic"
   },
-  topic:{
+  topic: {
     type:String,
     required:true
   }

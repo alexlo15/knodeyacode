@@ -13,7 +13,7 @@ function NavBar() {
                 <div className="navbar-nav">
                     <a className="nav-item nav-link" href="/flashcard">Flashcard</a>
                     <a className="nav-item nav-link" href="/dragdrop">DragDrop</a>
-                    <a className="nav-item nav-link" href="/maintest" tabIndex="-1" aria-disabled="true">Maintest</a>
+                    {/* <a className="nav-item nav-link" href="/maintest" tabIndex="-1" aria-disabled="true">Maintest</a> */}
                 </div>
             </div>
         </nav>
