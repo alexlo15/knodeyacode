@@ -2,9 +2,11 @@ import React, { Component } from "react";
 // import { Draggable, Droppable } from "react-drag-and-drop";
 import "./ImgContainer.css";
 import Img from "../Img/Img";
-// import imgList from "./imageList.json";
+import API from "../../utils/API";
+let topicSelected = [];
 
 class ImgContainer extends Component {
+ 
   state = {
     images: [
       {
@@ -26,8 +28,11 @@ class ImgContainer extends Component {
         category: "notDragged"
       }
     ]
+   
   };
-
+  
+// This are drag and drop functionality
+// ====================================================
   onDragOver = ev => {
     ev.preventDefault();
   };
@@ -39,6 +44,7 @@ class ImgContainer extends Component {
 
   onDrop = (ev, cat) => {
     let id = ev.dataTransfer.getData("id");
+    topicSelected.push(id);
     let images = this.state.images.filter(img => {
       if (img.name === id) {
         img.category = cat;
@@ -52,12 +58,23 @@ class ImgContainer extends Component {
     });
     console.log("Dropped : " + id);
   };
+// ===========================================================
+onClick = ()=>{
+  // alert('click attached');
+  console.log(topicSelected);
+  API.getQuestions()
+    .then(res =>{
+      console.log(res);
+    })
+    .catch(err => console.log(err));
 
+}
   render() {
     var images = {
       notDragged: [],
       dragged: []
     };
+   
 
     this.state.images.forEach(img => {
       images[img.category].push(
@@ -81,6 +98,7 @@ class ImgContainer extends Component {
     // ));
 
     return (
+      
       <main>
         <div>
           <h2>ImgContainer component</h2>
@@ -100,6 +118,9 @@ class ImgContainer extends Component {
           onDrop={e => this.onDrop(e, "dragged")}
         >
           {images.dragged}
+        </div>
+        <div id="btnDiv">
+          <button className="btn btn-primary btnSubmit" onClick={this.onClick}>Submit</button>
         </div>
       </main>
     );

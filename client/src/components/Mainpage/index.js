@@ -2,6 +2,7 @@ import React from "react";
 import "./mainPage.css";
 
 function Mainpage() {
+<<<<<<< HEAD
   return (
     <div>
       <div className="parallax">
@@ -45,6 +46,19 @@ function Mainpage() {
                     tempora unde eos et cum quis! Maxime iure distinctio repellat!
                 </div>
 
+=======
+    return (
+        <div>
+            <div className="parallax">
+                <h1>Knode Your Code</h1>
+
+                <p>Please log in to play</p>
+                <button type="button" className="signIn btn btn-primary" >Sign in</button>
+            </div>
+            <div className="signIn">
+    
+            </div>
+>>>>>>> 98bbe157f2fb4156318b28125c93fac9da6b7d91
         </div>
       </div>
     </div>

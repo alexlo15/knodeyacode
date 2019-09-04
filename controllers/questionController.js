@@ -1,7 +1,6 @@
 const db = require("../models");
 
 // Defining methods for the booksController
-// Being sent to "routes/api/books.js"
 module.exports = {
   findAll: function(req, res) {
     db.Question
