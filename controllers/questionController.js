@@ -9,13 +9,20 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }
-  // ,findById: function(req, res) {
-  //   db.Book
-  //     .findById(req.params.id)
-  //     .then(dbModel => res.json(dbModel))
-  //     .catch(err => res.status(422).json(err));
-  // },
-  // create: function(req, res) {
+  ,findByTopic: function(req, res) {
+    // console.log(req.params.topic)
+    let topics  = [];
+    topics.push(req.params.topic.split(","));
+    console.log(topics);
+    db.Question
+      .find({topic: {$in: topics[0]} })
+     
+     
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  }
+ 
+  // ,create: function(req, res) {
   //   db.Book
   //     .create(req.body)
   //     .then(dbModel => res.json(dbModel))

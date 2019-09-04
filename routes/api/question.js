@@ -7,6 +7,9 @@ router.route("/")
   .get(questController.findAll);
 //   .post(booksController.create);
 
+router.route('/:topic')
+  .get(questController.findByTopic);
+  
 // // Matches with "/api/books/:id"
 // router
 //   .route("/:id")
