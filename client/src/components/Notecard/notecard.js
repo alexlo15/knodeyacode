@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function NavBar() {
+function Notecard() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark black">
             <a className="navbar-brand" href="/">Navbar</a>
@@ -10,9 +10,10 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a className="nav-item nav-link" href="/flashcard">Flashcard</a>
+                    <a className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
+                    <a className="nav-item nav-link" href="/test">Test</a>
                     <a className="nav-item nav-link" href="/dragdrop">DragDrop</a>
-                    <a className="nav-item nav-link" href="/maintest" tabIndex="-1" aria-disabled="true">Maintest</a>
+                    <a className="nav-item nav-link disabled" href="/maintest" tabindex="-1" aria-disabled="true">Maintest</a>
                 </div>
             </div>
         </nav>
