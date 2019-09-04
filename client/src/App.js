@@ -18,8 +18,8 @@ class App extends React.Component {
             {/* these routes tell what component(PAGE) to load on each path */}
             <Route exact path="/" component={Mainpage} />
             <Route exact path="/profile" component = {Profile} />
-            <Route exact path="/FlashCardPage" component={FlashCardPage} />
-            <Route exact path="/DragAndDropPage" component={DragDropPage} />
+            <Route exact path="/flashcard" component={FlashCardPage} />
+            <Route exact path="/dragdrop" component={DragDropPage} />
 
           </div>
         </Switch>
