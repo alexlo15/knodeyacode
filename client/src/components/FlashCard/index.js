@@ -1,6 +1,7 @@
 import React from "react";
 import "./flashCard.css";
-function FlashCard(){
+function FlashCard(props){
+    console.log(props);
     return(
         <main >
         <h2>
