@@ -116,7 +116,7 @@ onClick = ()=>{
           {images.dragged}
         </div>
         <div id="btnDiv">
-        <Link to={`/flashCardSubmit`}>
+        <Link to={`/FlashCard`}>
           <button className="btn btn-primary btnSubmit" onClick={this.onClick}>Submit</button>
           </Link>
         </div>

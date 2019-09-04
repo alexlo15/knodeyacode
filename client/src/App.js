@@ -1,24 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Mainpage from './components/Mainpage';
-import DragDropPage from './dragDropPAGE';
-import FlashPage from './flashcardPAGE';
+import DragDropPage from './pages/dragAndDropPage';
+import FlashCardPage from './pages/flashCardPage';
 import FlashCard from "./components/FlashCard";
+import Profile from "./pages/Profile";
+import NavBar from "./components/NavBar"
 
 class App extends React.Component {
 
   render() {
     return (
       <Router>
+        <NavBar/>
         <Switch>
           <div>
             {/* these routes tell what component(PAGE) to load on each path */}
             <Route exact path="/" component={Mainpage} />
-            <Route exact path="/flashcard" component={FlashPage} />
-            <Route exact path="/flashCardSubmit" component={FlashCard} />
-            <Route exact path="/dragdrop" component={DragDropPage} />
-            <Route exact path="/maintest" component={FlashPage} />
-            <Route exact path={`/flashCardSubmit`} component={FlashCard} />
+            <Route exact path="/profile" component = {Profile} />
+            <Route exact path="/FlashCardPage" component={FlashCardPage} />
+            <Route exact path="/DragAndDropPage" component={DragDropPage} />
+
           </div>
         </Switch>
       </Router>
