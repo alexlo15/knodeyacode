@@ -12,14 +12,13 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <NavBar />
+        <NavBar/>
         <Switch>
           <div>
             {/* these routes tell what component(PAGE) to load on each path */}
             <Route exact path="/" component={Mainpage} />
             <Route exact path="/profile" component = {Profile} />
-            <Route exact path="/FashCardPage" component={FlashCardPage} />
-            <Route exact path="/FlashCard" component={FlashCard} />
+            <Route exact path="/FlashCardPage" component={FlashCardPage} />
             <Route exact path="/DragAndDropPage" component={DragDropPage} />
 
           </div>

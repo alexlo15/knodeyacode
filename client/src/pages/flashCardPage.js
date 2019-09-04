@@ -1,6 +1,4 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import NavBar from './components/NavBar';
 import Sidebar from '../components/Sidebar';
 import ImgContainer from "../components/ImgContainer/ImgContainer";
 
@@ -10,7 +8,6 @@ class FlashCardPage extends React.Component {
   render() {
     return (
       <div className="Flashpage">
-        {/* <NavBar /> */}
         <div className="row">
           <div className="col-12 col-sm-2">
           <Sidebar />
