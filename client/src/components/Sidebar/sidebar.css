@@ -1,0 +1,11 @@
+.sidebar {
+    color: blue;
+    height: 200px;
+    width: 200px;
+    position: "relative";
+    overflow: "auto";
+    background: rgba(209, 209, 96, 0.726);
+    margin-left: 0.5px;
+    margin-top: 15%;
+    margin-bottom: 30%;
+};

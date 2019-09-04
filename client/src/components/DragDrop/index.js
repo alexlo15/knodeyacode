@@ -6,7 +6,7 @@ class DragDrop extends Component{
         return(
                 <div>
                     <h2>from DragAndDrop index file</h2>
-                    <DragImg />
+                    {/* <DragImg /> */}
                 </div>
                 
 
