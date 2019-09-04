@@ -7,10 +7,11 @@ export default {
     getQuestions: function() {
         return axios.get("/api/questions");
     },
-    // searchBooks: (title) => {
-    //     return axios.post("/search", {title: title});
-    // },
-    // addBookToDB: (bookData) => {
+    searchQuestions: (topic) => {
+        // return axios.post("/search", {title: title});
+        return axios.get(`/api/questions/${topic}`);
+    }
+    // ,addBookToDB: (bookData) => {
     //     return axios.post("/api/books", bookData);
     // },
     // deleteBook: (id) => {

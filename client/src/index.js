@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import DragDropPage from './dragDropPAGE';
 import FlashPage from './flashcardPAGE';
+import FlashCard from "./components/FlashCard";
 // this is the main index.js file that handles routes
 
 const routing = (
@@ -17,7 +18,7 @@ const routing = (
             <Route exact path="/flashcard" component={FlashPage} />
             <Route exact path="/dragdrop" component={DragDropPage} />
             <Route exact path="/maintest" component={FlashPage} />
-
+            <Route exact path={`/flashCardSubmit`} component={FlashCard} />
         </div>
     </Router>
 )
