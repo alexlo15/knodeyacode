@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import Card from './card'
 import DrawButton from "./nextbutton";
 
-export default class Flashcards extends Component {
+export default class NoteCards extends Component {
+    
     constructor() {
         super();
         this.state = {
@@ -15,32 +16,26 @@ export default class Flashcards extends Component {
             ],
             currentCard: {}
         }
-
+    
         this.updateCard = this.updateCard.bind(this);
     }
 
     //this is called a lifecycle hook
-    componentWillMount() {
+    componentDidMount() {
+        console.log(this.props.questionArray);
+
         const currentCards = this.state.cards;
 
-        //fetch JSON here!
-        fetch('https://raw.githubusercontent.com/alexlo15/knodeyacode/master/questions.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                data.forEach(function (item) {
-                    // let desc = item.description;
-                    // desc = desc.replace(/"/g, "");
+      
+           
+                this.props.questionArray.forEach(function (item) {
+                    
                     currentCards.push({
                         question: item.question,
-                        choice1: item.choice1,
+                        choice1: item.choice1
                     });
                 });
-            })
-            .catch(function (err) {
-                console.log(err);
-            });
+           
 
 
         this.setState({
