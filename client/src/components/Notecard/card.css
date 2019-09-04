@@ -33,6 +33,9 @@
     align-items: center;
     background: #353535;
   }
+  .card-container .front h2{
+    display: block;
+  }
   
   .card .back {
     height: 400px;

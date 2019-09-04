@@ -11,8 +11,8 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a className="nav-item nav-link" href="/flashcard">Flashcard</a>
-                    <a className="nav-item nav-link" href="/dragdrop">DragDrop</a>
+                    <a className="nav-item nav-link" href="/FashCardPage">Flashcard</a>
+                    <a className="nav-item nav-link" href="/DragAndDropPage">DragDrop</a>
                     {/* <a className="nav-item nav-link" href="/maintest" tabIndex="-1" aria-disabled="true">Maintest</a> */}
                 </div>
             </div>

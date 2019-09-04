@@ -4,7 +4,7 @@ import Mainpage from './components/Mainpage';
 import DragDropPage from './pages/dragAndDropPage';
 import FlashCardPage from './pages/flashCardPage';
 
-import FlashCard from "./components/FlashCard";
+// import FlashCard from "./components/FlashCard";
 import Profile from "./pages/Profile";
 
 import NavBar from "./components/NavBar"
