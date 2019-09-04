@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const topicSchema = new Schema({
-topicID:{
-    type:String,
-    required:true
+topicID: {
+    type: String,
+    required: true
 },
 name: {
     type: String,

@@ -20,29 +20,19 @@ function Mainpage() {
             <div className="aboutReasons">
 
                 <div className="reason1">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-                    laborum quae, nihil consectetur voluptatem at eos sint doloribus
-                    cupiditate soluta beatae dolores aperiam tempore quisquam et
-                    quibusdam! Corrupti, ducimus dolorem?
+                    It is a good interactive study tool for students to prepare for test and work on their weaknesses. 
                 </div>
 
                 <div className="reason2">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
-                    a quod ducimus hic nesciunt praesentium nostrum quisquam autem,
-                    optio id minima magni eligendi sunt dolor omnis possimus modi magnam
-                    eveniet!
+                    There are multiple games that can be used to practice coding. 
                 </div>
 
                 <div className="reason3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                    recusandae non error, porro nemo impedit fugit iure fuga rem labore
-                    tempora unde eos et cum quis! Maxime iure distinctio repellat!
+                    It can help students improve their scores drastically.
                 </div>
                 
                 <div className="reason4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                    recusandae non error, porro nemo impedit fugit iure fuga rem labore
-                    tempora unde eos et cum quis! Maxime iure distinctio repellat!
+                    Students can hone and achieve their skills. 
                 </div>
 
         </div>
