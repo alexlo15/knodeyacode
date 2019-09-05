@@ -27,25 +27,20 @@ function Profile() {
         </footer>
 
       </div>
-<<<<<<< HEAD
-    </div> 
-    <div id="profilemain">
-      <div id="profileImage">
-        <div id="triangle">
-          
+
+      <div id="profilemain">
+        <div id="profileImage">
+          <div id="triangle">
+
+          </div>
+
         </div>
 
       </div>
-        
-        </div>
-        <div id="profileGameTracker">
-        
-        </div>
-  </div>
-</div>
-=======
+      <div id="profileGameTracker">
+
+      </div>
     </div>
->>>>>>> 7d2cbd45f4e51e082d016ae4ba910bc4e5a8b0db
   );
 };
 
