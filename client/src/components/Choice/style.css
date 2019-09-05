@@ -1,4 +1,4 @@
-p:hover{
+.choiceBox:hover{
     cursor: pointer;
 }
 #dropArea{

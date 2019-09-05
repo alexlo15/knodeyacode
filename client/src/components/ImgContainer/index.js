@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./ImgContainer.css";
+import "./style.css";
 
 function ImgContainer(props) {
   return (

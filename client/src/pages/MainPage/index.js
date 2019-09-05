@@ -1,13 +1,19 @@
 import React from "react";
+import logo from "./images/logo.png"
 import "./style.css";
 
 function Mainpage() {
   return (
     <div>
       <div className="parallax">
-        <h1>Knode Your Code</h1>
-        <p>Please log in to play</p>
-        <a className="btn btn-primary" href="/profile">
+        <h1 className="mainTitle">
+          <img src={logo} alt={logo} />
+          Knode Your Code
+          <img src={logo} alt={logo} />
+        </h1>
+
+        <p className="mainp">Please log in to play</p>
+        <a className="btn btn-primary mainButton" href="/profile">
           Sign in
         </a>
       </div>
@@ -17,22 +23,22 @@ function Mainpage() {
 
         <h1 className="about">Why Study with Knode Your Code?</h1>
 
-            <div className="aboutReasons">
+        <div className="aboutReasons">
 
-                <div className="reason1">
-                    It is a good interactive study tool for students to prepare for test and work on their weaknesses. 
+          <div className="reason1">
+            It is a good interactive study tool for students to prepare for test and work on their weaknesses.
                 </div>
 
-                <div className="reason2">
-                    There are multiple games that can be used to practice coding. 
+          <div className="reason2">
+            There are multiple games that can be used to practice coding.
                 </div>
 
-                <div className="reason3">
-                    It can help students improve their scores drastically.
+          <div className="reason3">
+            It can help students improve their scores drastically.
                 </div>
-                
-                <div className="reason4">
-                    Students can hone and achieve their skills. 
+
+          <div className="reason4">
+            Students can hone and achieve their skills.
                 </div>
 
         </div>

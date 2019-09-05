@@ -1,6 +1,6 @@
 import React from "react";
 // import imgList from "./imageList.json";
-import "./Img.css";
+import "./style.css";
 
 function Img(props) {
   return (

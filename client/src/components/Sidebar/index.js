@@ -1,23 +1,24 @@
 import React from "react";
 import StickyBox from "react-sticky-box";
-import './sidebar.css';
+
+// styling sheet
+import './style.css';
 
 
 const Sidebar = () => (
 
-    < div className="sidebar" >
-        <StickyBox offsetTop={20}
-            offsetBottom={20} >
-            <div id="head">&nbsp; Games and Activies </div>
-           
+    <div className="sidebar">
+        <StickyBox offsetTop={20} offsetBottom={20} >
+            <div id="head">&nbsp; Games and Activties</div>
         </StickyBox >
-        <ul>
-            <li><a id="links" href="/leaderboard">Leaderboard</a></li>
+        
+        <ul className = "linkList">
             <li><a id="links" href="/profile">Profile</a></li>
-            <li><a id="links" href="/DragAndDropPage">Drag n Drop</a></li>
-            <li><a id="links" href="/FlashCardPage">Flash Cards</a></li>
-            <li><a id="links" href="/MemoryGame">Memory Match</a></li>
-            <li><a id="links" href="/WhiteBoard">White Board</a></li>
+            <li><a id="links" href="/draganddrop">Drag n Drop</a></li>
+            <li><a id="links" href="/flashcard">Flash Cards</a></li>
+            <li><a id="links" href="/memorygame">Memory Match</a></li>
+            <li><a id="links" href="/whiteboard">White Board</a></li>
+            <li><a id="links" href="/leaderboard">Leaderboard</a></li>
 
         </ul>
     </ div >
