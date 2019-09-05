@@ -12,6 +12,18 @@ function Profile() {
       <Sidebar />
       </div>
     </div> 
+    <div id="profilemain">
+      <div id="profileImage">
+        <div id="triangle">
+          
+        </div>
+
+      </div>
+        
+        </div>
+        <div id="profileGameTracker">
+        
+        </div>
   </div>
 </div>
   );
