@@ -7,6 +7,7 @@ const scoreSeed = [
 
 {
     userName: "Ash Ketchum",
+    email: "americalies2u@aol.com",
     score: 15
 }
     
