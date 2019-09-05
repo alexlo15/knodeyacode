@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Sidebar from "../components/Sidebar";
 import Img from "../components/Img";
 import ImgContainer from "../components/ImgContainer";
-import FlashCard from "../components/FlashCard"
+import FlashCard from "../components/FlashCard";
 import API from "../utils/API";
 let topicSelected = [];
 
@@ -97,11 +97,13 @@ class FlashCardPage extends Component {
 
     return (
       <div className="Flashpage">
+        
         <div className="row">
           <div className="col-12 col-sm-2">
-            <Sidebar />
+           
           </div>
           <div className="col-12 col-sm-10">
+            
             {this.state.questionArray.length>0  
             ? <FlashCard questionArray={this.state.questionArray} /> 
             :<ImgContainer
@@ -112,8 +114,11 @@ class FlashCardPage extends Component {
               imagesDragged={images.dragged}
             />
           }
+           <Sidebar />
           </div>
+          
         </div>
+        
       </div>
     );
   }

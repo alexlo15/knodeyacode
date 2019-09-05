@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Mainpage from './components/Mainpage';
 import DragDropPage from './pages/dragAndDropPage';
 import FlashCardPage from './pages/flashCardPage';
-
+import MemoryGamePage from "./pages/memoryGamePage";
+import WhiteBoardPage from "./pages/WhiteBoard/whiteboardPage";
 // import FlashCard from "./components/FlashCard";
 import Profile from "./pages/Profile";
 import Leaderboard from "./pages/leaderboard/leaderboard";
@@ -14,25 +15,34 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
-        <NavBar/>
-        <Switch>
-          
+      
+        <Router>
+          <NavBar />
+          <Switch>
+
             {/* these routes tell what component(PAGE) to load on each path */}
             <Route exact path="/" component={Mainpage} />
+<<<<<<< HEAD
             <Route exact path="/profile" component = {Profile} />
             <Route exact path="/leaderboard" component = {Leaderboard} />
 
+=======
+            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/MemoryGame" component={MemoryGamePage}/>
+>>>>>>> 7d2cbd45f4e51e082d016ae4ba910bc4e5a8b0db
             <Route exact path="/FashCardPage" component={FlashCardPage} />
             <Route exact path="/DragAndDropPage" component={DragDropPage} />
+            <Route exact path="/WhiteBoard" component={WhiteBoardPage} />
 
 
-          
-        </Switch>
-      </Router>
-    )
-  }
 
-}
+          </Switch>
+        </Router>
 
-export default App;
+    
+          )
+        }
+      
+      }
+      
+      export default App;
