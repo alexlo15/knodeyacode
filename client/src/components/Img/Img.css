@@ -2,6 +2,7 @@
     width: 100px;
     height: 150px;
     display: inline-block;
+
 }
 /* h2{
     display: inline-block;
@@ -9,13 +10,16 @@
 
 .imgDiv{
     display: inline-block;
-    margin-left: 20px;
-    border:2px solid #000;
+
+    margin-left: 50px;
+    border-radius: 10px;
+    /* border:2px solid #000; */
 
 }
 
 .imgDiv:hover{
     cursor: pointer;
     padding:2px;
-    box-shadow: 3px 3px 3px #222;
+    border: 1px solid #000;
+    box-shadow: 10px 3px 10px #000;
 }
