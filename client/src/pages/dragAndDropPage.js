@@ -1,6 +1,6 @@
 import React from "react";
 // import NavBar from "./components/NavBar";
-// import Sidebar from "./components/Sidebar/sidebarIndex";
+import Sidebar from "../components/Sidebar";
 
 class DragDropPage extends React.Component {
 
@@ -8,6 +8,8 @@ class DragDropPage extends React.Component {
         return (
             <div className="DragDrop">
                <h1>Drag And Drop Page</h1>
+
+            <Sidebar />
             </div>
         );
     }

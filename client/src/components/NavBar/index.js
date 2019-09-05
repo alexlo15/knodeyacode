@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-
+import logo from "./logo.png"
 function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark black">
 
-            <a className="navbar-brand" href="/">Knode Your Code</a>
+            <a className="navbar-brand logo" href="/"><img src={logo}/></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
