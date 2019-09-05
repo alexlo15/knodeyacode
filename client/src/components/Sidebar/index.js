@@ -15,7 +15,7 @@ const Sidebar = () => (
             <li><a id="links" href="/leaderboard">Leaderboard</a></li>
             <li><a id="links" href="/profile">Profile</a></li>
             <li><a id="links" href="/DragAndDropPage">Drag n Drop</a></li>
-            <li><a id="links" href="/FashCardPage">Flash Cards</a></li>
+            <li><a id="links" href="/FlashCardPage">Flash Cards</a></li>
             <li><a id="links" href="/MemoryGame">Memory Match</a></li>
             <li><a id="links" href="/WhiteBoard">White Board</a></li>
 

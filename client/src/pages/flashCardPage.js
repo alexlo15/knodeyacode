@@ -4,6 +4,7 @@ import Img from "../components/Img";
 import ImgContainer from "../components/ImgContainer";
 import FlashCard from "../components/FlashCard";
 import API from "../utils/API";
+import "./flashCardPage.css"
 let topicSelected = [];
 
 class FlashCardPage extends Component {
@@ -96,13 +97,19 @@ class FlashCardPage extends Component {
     });
 
     return (
-      <div className="Flashpage">
+      <div className="Flashpage container">
         
         <div className="row">
-          <div className="col-12 col-sm-2">
-           
+          <div className="col-12 col-md-2">
+          <Sidebar />
+        
           </div>
-          <div className="col-12 col-sm-10">
+
+          {/* <div className="col-12 col-md-2">
+          <p>poop</p>
+          </div> */}
+          
+          <div className="col-12 col-md-10">
             
             {this.state.questionArray.length>0  
             ? <FlashCard questionArray={this.state.questionArray} /> 
@@ -114,7 +121,7 @@ class FlashCardPage extends Component {
               imagesDragged={images.dragged}
             />
           }
-           <Sidebar />
+           
           </div>
           
         </div>
