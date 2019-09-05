@@ -1,7 +1,7 @@
 import React from "react";
 import API from "../utils/API";
 // import NavBar from "./components/NavBar";
-// import Sidebar from "./components/Sidebar/sidebarIndex";
+import Sidebar from "../components/Sidebar";
 
 class DragDropPage extends React.Component {
 
@@ -28,6 +28,10 @@ class DragDropPage extends React.Component {
         return (
             <div className="DragDrop">
                <h1>Drag And Drop Page</h1>
+
+
+            <Sidebar />
+
                <h3>Question componenet on the top</h3>
                <h3>Drop Area</h3>
                <h3>Threee Choices </h3>

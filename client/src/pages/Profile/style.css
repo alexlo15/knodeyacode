@@ -4,3 +4,15 @@
 body {
     background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
 }
+
+#ticker {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 152, 56);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 3%;
+}
