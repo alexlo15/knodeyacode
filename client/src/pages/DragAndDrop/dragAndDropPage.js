@@ -4,13 +4,15 @@ import API from "../../utils/API";
 import Sidebar from "../../components/Sidebar";
 import Choice from "../../components/Choice";
 import "./dragAndDropPage.css";
+import DragDrop from "../../components/Draggable";
 let   quesAnsArray=[];
+
 class DragDropPage extends Component {
   state = {
   
     questions: [],
-    choice1:[],
-    choices:[]
+    choice1: [],
+    choices: []
     // QuesAnsArray:[]
   };
 
@@ -53,6 +55,7 @@ class DragDropPage extends Component {
     API.getQuestions()
       .then(res => {
         console.log(res.data);
+
         
         res.data.map(item=>(
                 this.setState({
@@ -114,6 +117,7 @@ class DragDropPage extends Component {
             <Sidebar />
           </div>
           <div className="col-12 col-sm-10">
+            <DragDrop />
             <div>This div is for question</div>
             <div
                 id="dropArea"
@@ -130,7 +134,7 @@ class DragDropPage extends Component {
                 {choices.notDragged}
             </div>
             <button className="btn btn-primary">Submit</button>
-           
+
           </div>
         </div>
       </div>
