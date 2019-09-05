@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import Sidebar from "../components/Sidebar";
-import Img from "../components/Img";
-import ImgContainer from "../components/ImgContainer";
-import FlashCard from "../components/FlashCard";
-import API from "../utils/API";
-import "./flashCardPage.css"
+import Sidebar from "../../components/Sidebar";
+import Img from "../../components/Img";
+import ImgContainer from "../../components/ImgContainer";
+import FlashCard from "../../components/FlashCard";
+import API from "../../utils/API";
+import "./style.css"
+
 let topicSelected = [];
 
 class FlashCardPage extends Component {

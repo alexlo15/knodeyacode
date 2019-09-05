@@ -4,7 +4,7 @@ import API from "../../utils/API";
 import Sidebar from "../../components/Sidebar";
 import Choice from "../../components/Choice";
 import "./dragAndDropPage.css";
-import DragDrop from "../../components/Draggable";
+// import DragDrop from "../../components/Draggable";
 let   quesAnsArray=[];
 
 class DragDropPage extends Component {
@@ -117,7 +117,7 @@ class DragDropPage extends Component {
             <Sidebar />
           </div>
           <div className="col-12 col-sm-10">
-            <DragDrop />
+            {/* <DragDrop /> */}
             <div>This div is for question</div>
             <div
                 id="dropArea"

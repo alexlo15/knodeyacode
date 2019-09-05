@@ -1,43 +1,41 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Mainpage from './components/Mainpage';
-import DragDropPage from './pages/DragAndDrop/dragAndDropPage';
-import FlashCardPage from './pages/flashCardPage';
-import MemoryGamePage from "./pages/memoryGamePage";
-import WhiteBoardPage from "./pages/WhiteBoard/whiteboardPage";
-// import FlashCard from "./components/FlashCard";
-import Profile from "./pages/Profile";
-import Leaderboard from "./pages/leaderboard/leaderboard";
 
+// NavBar & Pages
 import NavBar from "./components/NavBar"
+import MainPage from './pages/MainPage';
+import ProfilePage from "./pages/ProfilePage";
+
+import DragDropPage from './pages/DragAndDropPage';
+import FlashCardPage from './pages/FlashCardPage';
+import MemoryGamePage from "./pages/MemoryPage";
+import WhiteBoardPage from "./pages/WhiteBoardPage";
+import LeaderboardPage from "./pages/LeaderboardPage";
+
 
 class App extends React.Component {
 
   render() {
     return (
-      
-        <Router>
-          <NavBar />
-          <Switch>
 
-            {/* these routes tell what component(PAGE) to load on each path */}
-            <Route exact path="/" component={Mainpage} />
-            <Route exact path="/profile" component = {Profile} />
-            <Route exact path="/leaderboard" component = {Leaderboard} />
-            <Route exact path="/MemoryGame" component={MemoryGamePage}/>
-            <Route exact path="/FlashCardPage" component={FlashCardPage} />
-            <Route exact path="/DragAndDropPage" component={DragDropPage} />
-            <Route exact path="/WhiteBoard" component={WhiteBoardPage} />
+      <Router>
+        <NavBar />
+        <Switch>
 
+          {/* these routes tell what PAGE to load on each path */}
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/profile" component={ProfilePage} />
+          <Route exact path="/draganddrop" component={DragDropPage} />
+          <Route exact path="/flashcard" component={FlashCardPage} />
+          <Route exact path="/memorygame" component={MemoryGamePage} />
+          <Route exact path="/whiteboard" component={WhiteBoardPage} />
+          <Route exact path="/leaderboard" component={LeaderboardPage} />
 
+        </Switch>
+      </Router>
 
-          </Switch>
-        </Router>
+    )
+  }
+}
 
-    
-          )
-        }
-      
-      }
-      
-      export default App;
+export default App;

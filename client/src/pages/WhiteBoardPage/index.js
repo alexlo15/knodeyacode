@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from '../../components/Sidebar';
 import { SketchField, Tools } from 'react-sketch';
-import "./whiteboard.css";
+import "./style.css";
 
 class WhiteBoardPage extends React.Component {
 
