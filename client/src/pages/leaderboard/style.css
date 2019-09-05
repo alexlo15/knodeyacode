@@ -4,35 +4,39 @@
     color: orange;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+#leaderdiv {
+    height: 90vh;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/25/01/21/abstract-1278017_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 #leaderboard {
     position: absolute;
     left: 20%;
     top: 20%;
     width: 60%;
     height: 70%;
-    background-image: url("https://cdn.pixabay.com/photo/2016/03/25/01/54/abstract-1278061_960_720.jpg");
-    background-repeat: cover;
-    
-
 }
 #table{
     position: absolute;
-    top: 13%;
+    top: 20%;
 }
 #even{
     width: 9999999999999999999999999999999px;
     background-color: white;
     border: black 1px solid;
     height: 40px;
-    opacity: .75;
+    color: black;
 }
 #odd{
     background-color: gray;
     border: black 1px solid;
     height: 40px;
-    opacity: .75;
+
 }
 #jstitle{
+    top: 5%;
     position: absolute;
     color:lime;
     background-color: black;
@@ -41,6 +45,7 @@
 }
 
 #htmltitle{
+    top: 5%;
     position: absolute;
     background-color: black;
     color:lime;
@@ -48,6 +53,7 @@
 
 }
 #csstitle{
+    top: 5%;
     position: absolute;
     color:lime;
     background-color: black;

@@ -1,0 +1,12 @@
+#flashcardtitle {
+    position: absolute;
+    left: 1000%;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#questioncontainer {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+
+}

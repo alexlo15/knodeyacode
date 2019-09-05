@@ -1,12 +1,14 @@
 .sidebar {
-    background-color: rgba(252, 180, 48, 0.726);
-    opacity: 0.5%;
     position: fixed;
-    color: darkblue;
+    color: lime;
     left: 0;
     top: 35;
+/* <<<<<<< andybranch */
+    height: 40%;
+/* ======= */
     bottom: 35;
     height: 50%;
+/* >>>>>>> master */
     width: 200px;
     margin-left: 0px;
     box-shadow: 5px 10px #474747;
@@ -14,6 +16,9 @@
     text-align: center;
     box-sizing: border-box;
     border-radius: 15px;
+}
+#fatherdiv {
+    position: absolute;
 }
 #head{
     text-align: center;
@@ -24,7 +29,7 @@
 
 #links{
   font-size: 22px;
-  color: darkblue;
+  color: lime;
   text-decoration: none;
   border:1px solid black;
   width: 100%;
