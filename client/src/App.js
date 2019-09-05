@@ -6,7 +6,7 @@ import FlashCardPage from './pages/flashCardPage';
 
 // import FlashCard from "./components/FlashCard";
 import Profile from "./pages/Profile";
-import Leaderboard from "./pages/leaderboard/leaderboard"
+import Leaderboard from "./pages/leaderboard/leaderboard";
 
 import NavBar from "./components/NavBar"
 
