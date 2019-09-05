@@ -3,12 +3,13 @@ import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
 import Sidebar from "../../components/Sidebar";
 import "./dragAndDropPage.css";
+import DragDrop from "../../components/Draggable";
 
 class DragDropPage extends Component {
   state = {
     questions: [],
-    choice1:[],
-    choices:[]
+    choice1: [],
+    choices: []
     // QuesAnsArray:[]
   };
 
@@ -20,30 +21,30 @@ class DragDropPage extends Component {
     API.getQuestions()
       .then(res => {
         console.log(res.data);
-        
-        res.data.map(item=>(
-                this.setState({
-                    questions:item.question,
-                    choice1:item.choice1,
-                    choices:[
-                        item.choice1,item.choice2,item.choice3
-                    ]
 
-                })
+        res.data.map(item => (
+          this.setState({
+            questions: item.question,
+            choice1: item.choice1,
+            choices: [
+              item.choice1, item.choice2, item.choice3
+            ]
+
+          })
         ));
-               
-            
-        
-       
+
+
+
+
         // this.setState({ questions: res.data });
       })
       .catch(err => console.log(err));
     //   =======================
-      
-    }
 
-    // =====================
-  
+  }
+
+  // =====================
+
 
   render() {
     // console.log(this.state.questions)
@@ -58,12 +59,13 @@ class DragDropPage extends Component {
             <Sidebar />
           </div>
           <div className="col-12 col-sm-10">
+            <DragDrop />
             <div>This div is for question</div>
             <div>drop area</div>
             <div>for choices 1 componenet 3 times</div>
             <button className="btn btn-primary">Submit</button>
-            {/* <div>
-              {this.state.questions.map(item => (
+            <div>
+              {/* {this.state.questions.map(item => (
                 <div>
                   <h3 key={item._id}> {item.question}</h3>
 
@@ -72,8 +74,8 @@ class DragDropPage extends Component {
                   <p key={item.choice3}> {item.choice3}</p>
                 </div>
               ))}
-              ;
-            </div> */}
+              ; */}
+            </div>
           </div>
         </div>
       </div>
