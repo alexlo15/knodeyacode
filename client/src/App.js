@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Mainpage from './components/Mainpage';
-import DragDropPage from './pages/dragAndDropPage';
+import DragDropPage from './pages/DragAndDrop/dragAndDropPage';
 import FlashCardPage from './pages/flashCardPage';
 import FlashCard from "./components/FlashCard";
 import Profile from "./pages/Profile";
