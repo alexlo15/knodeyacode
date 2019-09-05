@@ -1,6 +1,63 @@
 #profileTitle {
+    position: absolute;
+    left: 40%;
     color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 body {
     background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
+}
+
+<<<<<<< HEAD
+#profilemain {
+    position: absolute;
+    width: 37%;
+    height: 30%;
+    background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+    background-repeat: no-repeat;
+    left: 20%;
+    bottom: 50%;
+}
+#profileGameTracker {
+    position: absolute;
+    width: 37%;
+    height: 30%;
+    background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+    background-repeat: no-repeat;
+    left: 20%;
+    bottom: 10%;
+}
+#profileImage{
+    position: absolute;
+    top: 2%;
+    left: 60%;
+    width: 0;
+    height: 0;
+    border-top: 95px solid transparent;
+    border-right: 190px solid limegreen;
+    border-bottom: 95px solid transparent;
+}
+.row{
+    position: absolute;
+    top: 19.4%;
+}
+#triangle {
+    position: absolute;
+    left: 85px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to top left, dodgerblue, blueviolet)
+=======
+#ticker {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 152, 56);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 3%;
+>>>>>>> 7d2cbd45f4e51e082d016ae4ba910bc4e5a8b0db
 }
