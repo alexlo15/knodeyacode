@@ -6,6 +6,7 @@ import FlashCardPage from './pages/flashCardPage';
 
 // import FlashCard from "./components/FlashCard";
 import Profile from "./pages/Profile";
+import Leaderboard from "./pages/leaderboard/leaderboard"
 
 import NavBar from "./components/NavBar"
 
@@ -20,6 +21,7 @@ class App extends React.Component {
             {/* these routes tell what component(PAGE) to load on each path */}
             <Route exact path="/" component={Mainpage} />
             <Route exact path="/profile" component = {Profile} />
+            <Route exact path="/leaderboard" component = {Leaderboard} />
 
             <Route exact path="/FashCardPage" component={FlashCardPage} />
             <Route exact path="/DragAndDropPage" component={DragDropPage} />

@@ -1,0 +1,54 @@
+#leadertitle{
+    position: absolute;
+    left: 43%;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#leaderboard {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 70%;
+    background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+
+}
+#table{
+    position: absolute;
+    top: 13%;
+}
+#even{
+    width: 9999999999999999999999999999999px;
+    background-color: white;
+    border: black 1px solid;
+    height: 40px;
+    opacity: .75;
+}
+#odd{
+    background-color: gray;
+    border: black 1px solid;
+    height: 40px;
+    opacity: .75;
+}
+#jstitle{
+    position: absolute;
+    color:lime;
+    background-color: black;
+    left: 15%;
+
+}
+
+#htmltitle{
+    position: absolute;
+    background-color: black;
+    color:lime;
+    left: 45%;
+
+}
+#csstitle{
+    position: absolute;
+    color:lime;
+    background-color: black;
+    left: 70%;
+
+}
