@@ -5,7 +5,7 @@ import './sidebar.css';
 
 const Sidebar = () => (
 
-    < div className="row sidebar" >
+    < div className="sidebar" >
         <StickyBox offsetTop={20}
             offsetBottom={20} >
             <div id="head">&nbsp; Games and Activies </div>
