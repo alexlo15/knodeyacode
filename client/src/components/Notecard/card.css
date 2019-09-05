@@ -14,12 +14,12 @@
     position: absolute;
     border: 1px solid #300;
     transform-style: preserve-3d;
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
   }
   
   .card:hover {
     transform: rotateY(180deg);
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   
   .card .front {
@@ -33,9 +33,10 @@
     align-items: center;
     background: #353535;
   }
-  .card-container .front h2{
-    display: block;
-  }
+  /* h2 #questionH2{
+    display: inline-block;
+    color:red;
+  } */
   
   .card .back {
     height: 400px;
@@ -61,3 +62,6 @@
     font-size: 1em;
     padding: 10%;
   }
+  /* h2{
+    display: block;
+  } */
