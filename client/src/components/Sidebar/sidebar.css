@@ -3,7 +3,12 @@
     color: lime;
     left: 0;
     top: 35;
+/* <<<<<<< andybranch */
     height: 40%;
+/* ======= */
+    bottom: 35;
+    height: 50%;
+/* >>>>>>> master */
     width: 200px;
     margin-left: 0px;
     box-shadow: 5px 10px #474747;
