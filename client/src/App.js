@@ -1,31 +1,36 @@
 import React from 'react';
-// import logo from './logo.svg';
-import NavBar from "./components/NavBar";
-import './styles/App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Mainpage from './components/Mainpage';
+import DragDropPage from './pages/dragAndDropPage';
+import FlashCardPage from './pages/flashCardPage';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <NavBar />
-//       <Mainpage />
-//     </div>
-//   );
-// }
+// import FlashCard from "./components/FlashCard";
+import Profile from "./pages/Profile";
 
+import NavBar from "./components/NavBar"
 
 class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <NavBar />
-        <Mainpage />
-      </div>
+      <Router>
+        <NavBar/>
+        <Switch>
+          
+            {/* these routes tell what component(PAGE) to load on each path */}
+            <Route exact path="/" component={Mainpage} />
+            <Route exact path="/profile" component = {Profile} />
 
-    );
+            <Route exact path="/FashCardPage" component={FlashCardPage} />
+            <Route exact path="/DragAndDropPage" component={DragDropPage} />
+
+
+          
+        </Switch>
+      </Router>
+    )
   }
-}
 
+}
 
 export default App;
