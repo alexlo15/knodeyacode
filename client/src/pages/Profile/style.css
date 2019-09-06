@@ -1,12 +1,24 @@
+#fatherdiv{
+    /* background-image: url(./student_studying.jpg); */
+    background-image: url(../blank_slate.jpg);
+    /* background-image: url("https://res.cloudinary.com/demo/image/upload/w_250,h_250,c_mfit/w_700/sample.jpg"); */
+    /* background: red; */
+    height: 90vh;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #profileTitle {
     position: absolute;
     left: 40%;
     color: orange;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-body {
+/* body {
     background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
-}
+} */
 
 #profilemain {
     position: absolute;
