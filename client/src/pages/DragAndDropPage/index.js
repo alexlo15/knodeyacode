@@ -119,7 +119,12 @@ class DragDropPage extends Component {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-    return array;
+
+    let newArray = []
+    for (let i = 0; i < 10; i++){
+      newArray.push(array[i]);
+    }
+    return newArray;
   };
 
   onSubmitClick = () => {
@@ -131,6 +136,7 @@ class DragDropPage extends Component {
     console.log(this.state.questionCount);
   };
   render() {
+
     console.log(this.state.QuesAnsArray);
     var choices = {
       notDragged: [],
