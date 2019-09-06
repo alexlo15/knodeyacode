@@ -5,7 +5,7 @@ import GetTextFromAPI from "./getscorefunction";
 function StockTicker() {
     return (
         <Ticker offset="run-in" speed={10}>
-            {giGetTextFromAPI}
+            {GetTextFromAPI}
         </Ticker>
     );
 }
