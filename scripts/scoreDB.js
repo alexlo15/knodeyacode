@@ -8,8 +8,24 @@ const scoreSeed = [
 {
     userName: "Ash Ketchum",
     email: "americalies2u@aol.com",
-    score: 15
+    score: 12
+},
+{
+  userName: "Ash Ketchum",
+  email: "americalies2u@aol.com",
+  score: 13
+},
+{
+  userName: "Ash Ketchum",
+  email: "americalies2u@aol.com",
+  score: 15
+},
+{
+  userName: "Ash Ketchum",
+  email: "americalies2u@aol.com",
+  score: 14
 }
+
     
 ];
 

@@ -4,10 +4,11 @@ body {
   
   .grid-container {
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 80px 50px;
     grid-template-columns: auto auto auto auto;
     padding: 10px 15px 10px 15px;
     margin-left: 300px;
+ 
   }
   
   .grid-header-container {
@@ -19,6 +20,7 @@ body {
   
   .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
+  
   }
   
   .justify-left {
@@ -47,18 +49,19 @@ body {
     border: 0;
   }
   
-  .game-status-text {
+  /* .game-status-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(24, 21, 16);
     font-weight: bold;
   }
-  
+   */
   .card {
-    width: 50%;
-    height: 3em;
+    width: 75%;
+    
+    height: 2.5em;
     background-color: rgb(75, 42, 165);
     color: white;
-    font-size: 50px;
+    font-size: 30px;
   }
   
   .hide-card {
