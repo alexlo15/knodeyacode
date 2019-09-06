@@ -1,0 +1,48 @@
+.sidebar {
+    position: fixed;
+    color: lime;
+    left: 0;
+    top: 35;
+    bottom: 35;
+    height: 50%;
+    width: 215px;
+    width: 200px;
+    margin-left: 0px;
+    box-shadow: 5px 10px #474747;
+    vertical-align: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+#head {
+    padding-top: 4%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+}
+
+#links {
+    margin-right: 20%;
+    font-size: 18px;
+    color: lime;
+    text-decoration: none;
+    width: 100%;
+}
+
+#links:hover {
+    box-shadow: 5px 5px #474747;
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid rgb(153, 118, 70);
+}
+
+#links:active {
+    color: orangered;
+    text-decoration: none;
+    width: 100%;
+    transform: translateY(5px);
+}
+
+.linkList {
+    list-style: none;
+}
