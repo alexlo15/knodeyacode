@@ -25,7 +25,7 @@ class Profile extends React.Component {
           </div>
 
           <footer id="ticker">
-              <StockTicker />
+              {/* <StockTicker /> */}
 
 
           </footer>
