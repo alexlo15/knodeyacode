@@ -1,0 +1,22 @@
+.choiceBox:hover{
+    cursor: pointer;
+}
+#dropArea{
+    width: 60%;
+    height: 200px;
+    border:2px solid #000;
+}
+
+#dragComponentsDiv{
+    margin-top: 20px;
+    width: 60%;
+    height: 200px;
+    border:2px solid #000;
+}
+
+.choice{
+    border:2px solid #000;
+    background: #ccc;
+    margin-left: 10px;
+    display: inline-block;
+}
