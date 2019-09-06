@@ -27,19 +27,19 @@ function Mainpage() {
 
           <div className="reason1">
             It is a good interactive study tool for students to prepare for test and work on their weaknesses.
-                </div>
+          </div>
 
           <div className="reason2">
             There are multiple games that can be used to practice coding.
-                </div>
+          </div>
 
           <div className="reason3">
             It can help students improve their scores drastically.
-                </div>
+          </div>
 
           <div className="reason4">
             Students can hone and achieve their skills.
-                </div>
+          </div>
 
         </div>
       </div>

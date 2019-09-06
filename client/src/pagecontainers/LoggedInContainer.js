@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 //--------NavBar & Pages-------------//
-import NavBar from "../components/NavBar"
+import NavBar from "../components/shared/NavBar"
 
 //Profile Page
 import ProfilePage from "../pages/ProfilePage";

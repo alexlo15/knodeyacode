@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
-import Sidebar from "../../components/Sidebar";
-import Choice from "../../components/Choice";
+import Sidebar from "../../components/shared/Sidebar";
+import Choice from "../../components/dragdropURL/Choice";
 import "./style.css";
 // import DragDrop from "../../components/Draggable";
 let   quesAnsArray=[];

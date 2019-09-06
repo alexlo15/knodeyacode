@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
-import Header from '../../components/memorygame/header/header';
-import Card from '../../components/memorygame/card/tile';
-import GameOver from '../../components/memorygame/card/gameover';
+import Header from '../../components/memorygameURL/header/header';
+import Card from '../../components/memorygameURL/card/tile';
+import GameOver from '../../components/memorygameURL/card/gameover';
 import './style.css';
-import Sidebar from '../../components/Sidebar';
+import Sidebar from '../../components/shared/Sidebar';
  
 
 class MemoryGamePage extends PureComponent {

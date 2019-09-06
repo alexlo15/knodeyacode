@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Sidebar from "../../components/Sidebar";
-import Img from "../../components/Img";
-import ImgContainer from "../../components/ImgContainer";
-import FlashCard from "../../components/FlashCard";
+import Sidebar from "../../components/shared/Sidebar";
+import Img from "../../components/flashcardsURL/Img";
+import ImgContainer from "../../components/flashcardsURL/ImgContainer";
+import FlashCard from "../../components/flashcardsURL/FlashCardArea";
 import API from "../../utils/API";
 import "./style.css"
 
