@@ -1,5 +1,5 @@
 import React from 'react';
-import Timer from "../../Timer/timer";
+import Timer from "../Timer/timer";
 
 const Header = ({ restartGame }) => (
   <div className="grid-header-container">

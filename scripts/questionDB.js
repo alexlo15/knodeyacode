@@ -25,7 +25,7 @@ const questionSeed = [
   {
     question: `What is the correct HTML for adding a background color?`,
     choice1: `<body style="background-color:yellow;">`,
-    choice2: `<body style="color:yellow;">`,
+    choice2: `<body style:"color:yellow;">`,
     choice3: `<body style="color:yellow;">`,
     topicId: 1,
     topic:"HTML"
