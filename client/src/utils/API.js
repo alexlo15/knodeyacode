@@ -10,6 +10,9 @@ export default {
     searchQuestions: (topic) => {
         // return axios.post("/search", {title: title});
         return axios.get(`/api/questions/${topic}`);
+    },
+    getScores: function() {
+        return axios.get("/api/scores");
     }
     // ,addBookToDB: (bookData) => {
     //     return axios.post("/api/books", bookData);

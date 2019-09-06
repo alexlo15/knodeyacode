@@ -1,7 +1,7 @@
 import React from "react";
-import prettyMilliseconds from "pretty-ms";
+import ms from "pretty-ms";
 class Timer extends React.Component {
-    constructor(props) {
+    constructor(props, {restartGame}) {
         super(props)
         this.state = {
             time: 0,
@@ -44,25 +44,26 @@ class Timer extends React.Component {
     // }
 
     render() {
-        let start = (this.state.time == 0) ?
+        let start = (this.state.time === 0) ?
             <button onClick={this.startTimer}>start</button> :
             null
         let stop = (this.state.isOn) ?
             <button onClick={this.stopTimer}>stop</button> :
             null
-        let reset = (this.state.time != 0 && !this.state.isOn) ?
+        let reset = (this.state.time !== 0 && !this.state.isOn) ?
             <button onClick={this.resetTimer}>reset</button> :
             null
-        let resume = (this.state.time != 0 && !this.state.isOn) ?
+        let resume = (this.state.time !== 0 && !this.state.isOn) ?
             <button onClick={this.startTimer}>resume</button> :
             null
         return (
             <div>
-                <h3>timer: {this.state.time}</h3>
-                {start}
-                {resume}
-                {stop}
-                {reset}
+                <h4>Timer:{ms(this.state.time)} &nbsp;
+
+                {start}&nbsp;
+                {resume}&nbsp;
+                {stop}&nbsp;
+                {reset}&nbsp;</h4> 
             </div>
         )
     }
