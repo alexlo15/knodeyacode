@@ -101,10 +101,10 @@ class FlashCardPage extends Component {
       <div className="Flashpage container">
         
         <div className="row">
-          <div className="col-12 col-md-2">
+          {/* <div className="col-12 col-md-2"> */}
           <Sidebar />
         
-          </div>
+          {/* </div> */}
 
           {/* <div className="col-12 col-md-2">
           <p>poop</p>
