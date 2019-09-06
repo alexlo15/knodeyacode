@@ -1,8 +1,11 @@
 .sidebar {
+    position: absolute;
+    background-color: black;
+    opacity: .5;
     position: fixed;
     color: lime;
     left: 0;
-    top: 35;
+    top: 20%;
     bottom: 35;
     height: 50%;
     width: 215px;

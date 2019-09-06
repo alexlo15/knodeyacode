@@ -1,6 +1,16 @@
+#fatherdiv{
+    height: 90vh;
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 #whiteboard{
+    position: absolute;
+    right: 30%;
+    top: 15%;
     margin: 25px;
-    margin-left: 40%;
+    margin-left: 60%;
     border: 4px solid black;
     border-radius: 5px;
     box-shadow: 15px 25px rgb(65, 65, 65);
@@ -14,9 +24,11 @@
 }
 
 #reset{
-
+    position: absolute;
+    top: 70%;
+    left: 70%;
     font-size: 50px;
-    background-color: yellowgreen;
+    background-color: limegreen;
     border-radius: 5px 20px 5px;
     box-shadow: 5px 10px rgb(65,65,65);
 

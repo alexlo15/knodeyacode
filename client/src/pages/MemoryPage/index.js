@@ -86,10 +86,11 @@ class MemoryGamePage extends PureComponent {
 
   render() {
     return (
-     <div>
+     <div id="motherdiv">
        <Header restartGame={this.restartGame} /> 
        { this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
        <div className="grid-container">
+                <Sidebar />
           {
             this.state.shuffledCard.map((cardNumber, index) => 
               <Card
@@ -103,7 +104,7 @@ class MemoryGamePage extends PureComponent {
           }
         </div>
        }
-       <Sidebar />
+
      </div>
      
     );
