@@ -5,18 +5,12 @@ import "./style.css";
 
 class WhiteBoardPage extends React.Component {
 
-    // const refreshPage() {
-    //     window.location.reload(false);
-    //   }
-      
-
 
     render() {
         return (
             <div>
                 <Sidebar />
                 <div id="content">
-                    
                     <button id="reset" onClick={()=> window.location.reload(false)}>Reset</button>
                 </div>
 

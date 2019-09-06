@@ -20,30 +20,14 @@
     padding-right: 2%;
     padding-bottom: 5%;
 }
-#fatherdiv {
-    position: absolute;
-}
-#head{
-    text-align: center;
-    font-size: 20px;
-
-}
 
 #links {
     margin-right: 20%;
     font-size: 18px;
-    color: darkblue;
+    color: lime;
     text-decoration: none;
     width: 100%;
 }
-
-#links{
-  font-size: 22px;
-  color: lime;
-  text-decoration: none;
-  border:1px solid black;
-  width: 100%;
-   }
 
 #links:hover {
     box-shadow: 5px 5px #474747;
