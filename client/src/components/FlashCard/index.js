@@ -1,7 +1,6 @@
 import React from "react";
 import NoteCards from "../Notecard/notecard"
 import "./style.css";
-import "./flashCard.css";
 
 function FlashCard(props){
     console.log(props);

@@ -1,14 +1,12 @@
 #profileTitle {
-    /* position: absolute;
+    position: absolute;
     left: 40%;
     color: orange;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-#fatherdiv {
-    height: 90vh;
+body {
+    background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
 }
-
-
 
 #profilemain {
     position: absolute;
@@ -48,9 +46,10 @@
     top: -50px;
     width: 100px;
     height: 100px;
-    background-image: linear-gradient(to top left, dodgerblue, blueviolet);
+    background-image: linear-gradient(to top left, dodgerblue, blueviolet)
 }
 #ticker {
+
     position: fixed;
     left: 0;
     bottom: 0;

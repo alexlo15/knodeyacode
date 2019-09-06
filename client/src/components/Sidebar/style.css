@@ -3,13 +3,9 @@
     color: lime;
     left: 0;
     top: 35;
-/* <<<<<<< andybranch */
-    height: 40%;
-/* ======= */
     bottom: 35;
     height: 50%;
     width: 215px;
-/* >>>>>>> master */
     width: 200px;
     margin-left: 0px;
     box-shadow: 5px 10px #474747;
@@ -40,6 +36,7 @@
     text-decoration: none;
     width: 100%;
 }
+
 #links{
   font-size: 22px;
   color: lime;
@@ -53,8 +50,6 @@
     text-decoration: none;
     width: 100%;
     border: 1px solid rgb(153, 118, 70);
-
-
 }
 
 #links:active {
