@@ -1,7 +1,17 @@
-p{
-    color: hotpink;
+.Flashpage{
+    background-image: url(./notebook.jpg);
+    /* background-image: url(./supplies.jpg); */
+    height: 90vh;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
+/* p{
+    color: hotpink;
+} */
+
 .row{
-    width: 100%;
+    width: 80%;
 }

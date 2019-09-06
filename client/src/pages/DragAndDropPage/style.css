@@ -1,0 +1,39 @@
+.DragDrop .row{
+    width: 100%;
+}
+.cardDiv{
+    
+}
+#dragDropArea{
+    padding: 50px;
+    width: 80%;
+    height: 200px;
+    border: 1px solid #000;
+    margin: auto auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#questionDiv{
+    width: 80%;
+    /* height: 100px; */
+    min-height: 100px;
+    height: auto;
+    margin: auto auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px -2px 3px #000;
+}
+
+#questionDiv:hover{
+    background: #c488c4;
+}
+
+#dragComponentsDiv{
+    padding:10px;
+    text-align: center;
+}

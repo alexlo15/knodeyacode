@@ -1,0 +1,30 @@
+/* p:hover{
+    cursor: pointer;
+} */
+#dropArea{
+    width: 60%;
+    height: 200px;
+    /* padding:50px; */
+    border:2px solid #000;
+}
+
+#dragComponentsDiv{
+    margin-top: 20px;
+    width: 60%;
+    height: 200px;
+    border:2px solid #000;
+}
+
+.choice{
+    border:2px solid #000;
+    background: #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    height: auto;
+    padding:10px;
+    display: inline-block;
+}
+.choice:hover{
+    cursor: pointer;
+}
