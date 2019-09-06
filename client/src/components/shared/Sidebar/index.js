@@ -8,9 +8,9 @@ import './style.css';
 const Sidebar = () => (
 
     <div className="sidebar">
-        <StickyBox offsetTop={20} offsetBottom={20} >
-            <div id="head">&nbsp; Games and Activties</div>
-        </StickyBox >
+        {/* <StickyBox offsetTop={20} offsetBottom={20} > */}
+            <div id="head">Games and Activties</div>
+        {/* </StickyBox > */}
         
         <ul className = "linkList">
             <li><a id="links" href="/profile">Profile</a></li>

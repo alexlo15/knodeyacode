@@ -7,7 +7,7 @@ function Choice(props){
         draggable
         onDragStart={props.onDragStart}
          >
-               <p className="choiceBox"> {props.choice} </p>
+               <p> {props.choice} </p>
         </div>
     );
 }
