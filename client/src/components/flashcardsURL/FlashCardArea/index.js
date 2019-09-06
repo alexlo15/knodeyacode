@@ -8,7 +8,7 @@ function FlashCard(props){
         
         <main >
         <h2 id="flashcardtitle">
-            FlashCard Page
+            Flash Card Page
         </h2>
         <div id="questioncontainer">
         <NoteCards questionArray={props.questionArray}/>

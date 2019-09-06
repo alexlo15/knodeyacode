@@ -14,7 +14,7 @@ function Leaderboard() {
       </div>
     </div> 
     <div id="leaderboard">
-      <h2 id="jstitle">Javascript</h2><h2 id="htmltitle">html</h2><h2 id="csstitle">css</h2>
+      <h2 id="jstitle">JavaScript</h2><h2 id="htmltitle">HTML</h2><h2 id="csstitle">CSS</h2>
       <table id="table">
         <tr>
           <th id="odd">1</th>

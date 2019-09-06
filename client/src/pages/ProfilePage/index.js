@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../../components/shared/Sidebar";
 import "./style.css";
-import Ticker from "react-ticker";
+// import Ticker from "react-ticker";
 import StockTicker from "../../components/ticker/ticker";
 import API from "../../utils/API";
 
@@ -25,7 +25,7 @@ class Profile extends React.Component {
           </div>
 
           <footer id="ticker">
-              <StockTicker />
+              {/* <StockTicker /> */}
 
 
           </footer>
