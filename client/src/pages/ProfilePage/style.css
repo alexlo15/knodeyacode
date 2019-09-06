@@ -11,6 +11,8 @@
 }
 
 #profileTitle {
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
     position: absolute;
     left: 40%;
     color: orange;
@@ -24,7 +26,7 @@
     position: absolute;
     width: 37%;
     height: 30%;
-    background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+    /* background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif"); */
     background-repeat: no-repeat;
     left: 20%;
     bottom: 50%;
@@ -33,7 +35,7 @@
     position: absolute;
     width: 37%;
     height: 30%;
-    background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+    /* background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif"); */
     background-repeat: no-repeat;
     left: 20%;
     bottom: 10%;
