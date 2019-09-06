@@ -1,7 +1,7 @@
 import React from "react";
 import ms from "pretty-ms";
 class Timer extends React.Component {
-    constructor(props, {restartGame}) {
+    constructor(props) {
         super(props)
         this.state = {
             time: 0,
