@@ -15,7 +15,7 @@ import WhiteBoardPage from "../pages/WhiteBoardPage";
 
 // Leaderboard
 import LeaderboardPage from "../pages/LeaderboardPage";
-
+import Result from "../components/dragdropURL/Result"
 
 class LoggedIn extends React.Component {
 
@@ -33,7 +33,7 @@ class LoggedIn extends React.Component {
           <Route exact path="/memorygame" component={MemoryGamePage} />
           <Route exact path="/whiteboard" component={WhiteBoardPage} />
           <Route exact path="/leaderboard" component={LeaderboardPage} />
-
+          <Route exact path="/Result" component={Result}/>
         </Switch>
       </Router>
 

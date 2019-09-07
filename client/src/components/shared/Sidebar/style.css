@@ -7,10 +7,10 @@
     background: #ccc;
     color:#000;
     left: 0;
-    top: 20%;
+    top: 200px;
     bottom: 35;
-    height: 50%;
-    width: 215px;
+    height: 300px;
+    /* width: 215px; */
     width: 200px;
     margin-left: 0px;
     box-shadow: 5px 10px #474747;
@@ -72,11 +72,11 @@
     width: 60%;
     height: 70%;
 }
-#table{
+/* #table{
     position: absolute;
     top: 20%;
-}
-#even{
+} */
+/* #even{
     width: 9999999999999999999999999999999px;
     background-color: white;
     border: black 1px solid;
@@ -88,7 +88,7 @@
     border: black 1px solid;
     height: 40px;
 
-}
+} */
 #jstitle{
     top: 5%;
     position: absolute;

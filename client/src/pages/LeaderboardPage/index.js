@@ -1,58 +1,72 @@
-import React from "react";
+import React, { Component } from "react";
+import API from "../../utils/API"
 import Sidebar from "../../components/shared/Sidebar";
 import "../../components/shared/Sidebar/style.css";
+import "./style.css"
 
+class Leaderboard extends Component {
 
-function Leaderboard() {
-  return (
-    <div id="leaderdiv">
-      <Sidebar />
-        <h3 id="leadertitle">LEADERBOARD</h3>
-      <div className="Flashpage">
-      <div className="row">
-      <div className="col-12 col-sm-2">
-      
-      </div>
-    </div> 
-    <div id="leaderboard">
-      <h2 id="jstitle">Drag n Drop</h2><h2 id="htmltitle">Flash Cards</h2><h2 id="csstitle">Memory Match</h2>
-      <table id="table">
-        <tr>
-          <th id="odd">1</th>
-        </tr>
-        <tr>
-          <th id="even">2</th>
-        </tr>
-        <tr>
-          <th id="odd">3</th>
-        </tr>
-        <tr>
-          <th id="even">4</th>
-        </tr>
-        <tr>
-          <th id="odd">5</th>
-        </tr>
-        <tr>
-          <th id="even">6</th>
-        </tr>
-        <tr>
-          <th id="odd">7</th>
-        </tr>
-        <tr>
-          <th id="even">8</th>
-        </tr>
-        <tr>
-          <th id="odd">9</th>
-        </tr>
-        <tr>
-          <th id="even">10</th>
-        </tr>
-      </table>
+  state={
+    scoreData:[]
+  }
+
+    componentDidMount(){
+      this.loadScores();
+    }
+
+    loadScores=()=>{
+      API.getScores()
+      .then(res=>{
         
+        this.setState({
+          scoreData:res.data
+        })
+        console.log(this.state.scoreData)
+
+      })
+      .catch(err=>console.log(err));
+
+    }
+  render() {
+
+    let tableRow = this.state.scoreData.map(user=>{
+      return (
+        <tr key={user._id}>
+          <td>{user.userName}</td>
+          <td>{user.email}</td>
+          <td>{user.score}</td>
+        </tr>
+      )
+      })
+
+
+    return (
+      <div id="leaderdiv">
+        <h3 id="leadertitle">LEADERBOARD</h3>
+
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Sidebar />
+          </div>
+          <div className="col-12 col-sm-10">
+
+          <table id='table'>
+               <tbody className="scoreTableBody">
+                
+                  <tr>
+                    <th>UserName</th>
+                    <th>Email</th>
+                    <th>Score</th>
+                  </tr>
+                  {tableRow}
+               </tbody>
+            </table>
+
+          </div>
         </div>
-  </div>
-</div>
-  );
+      </div>
+    );
+  }
 }
 
 export default Leaderboard;
