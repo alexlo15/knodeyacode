@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../../components/shared/Sidebar";
-import "./style.css";
+import "../../components/shared/Sidebar/style.css";
 
 
 function Leaderboard() {

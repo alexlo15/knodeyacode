@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from '../../components/shared/Sidebar';
 import { SketchField, Tools } from 'react-sketch';
-import "./style.css";
+import "../../components/shared/Sidebar/style.css";
 
 class WhiteBoardPage extends React.Component {
 

@@ -1,8 +1,5 @@
-#fatherdiv{
-    /* background-image: url(./student_studying.jpg); */
-    background-image: url(../blank_slate.jpg);
-    /* background-image: url("https://res.cloudinary.com/demo/image/upload/w_250,h_250,c_mfit/w_700/sample.jpg"); */
-    /* background: red; */
+#brotherrdiv{
+    background-image: url("https://res.cloudinary.com/demo/image/upload/w_250,h_250,c_mfit/w_700/sample.jpg");
     height: 90vh;  
     background-attachment: fixed;
     background-repeat: no-repeat;

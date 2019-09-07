@@ -15,7 +15,7 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <div id="fatherdiv">
+      <div id="brotherdiv">
         <h3 id="profileTitle">This is the profile page</h3>
         <div className="Flashpage">
           <div className="row">
