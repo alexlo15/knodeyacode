@@ -1,0 +1,40 @@
+.resultLink{
+    color:#fff;
+}
+
+.resultLink:hover{
+    color:#fff;
+}
+
+.btnDiv{
+    position: relative;
+}
+.DragDrop .row{
+   position: relative;
+   top:auto; 
+}
+.DragDrop #btnDiv{
+    top:auto;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+#pageHeading{
+    text-align: center;
+    font-size: 3em;
+}
+#score{
+    margin-top: -40px;
+    margin-left: 10px;
+    padding:5px;
+    text-align: center;
+    border:2px solid #000;
+    height: 60px;   
+    box-shadow: 3px 3px 4px #ccc;
+    border-radius: 10px;
+    background: #678;
+    color: #fff;
+}
