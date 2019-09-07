@@ -1,5 +1,5 @@
 import React from "react";
-import API from "../../../utils/API";
+import { Link } from "react-router-dom";
 // import NavBar from "./components/NavBar";
 import Sidebar from "../../shared/Sidebar";
 import "./style.css";
@@ -16,7 +16,9 @@ function Result(props) {
             <h1>Quiz Finished !!!!</h1>
             <h2>Your Score : {props.score}</h2>
             <p>Check your place on Leaderboard ....</p>
-            <button>Take Me to Leaderboard</button>
+            <Link to="/leaderboard" role="button" className="linkToLeaderboard">
+              Take Me to Leaderboard
+            </Link>
           </div>
         </div>
       </div>

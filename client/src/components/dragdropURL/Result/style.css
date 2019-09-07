@@ -9,3 +9,16 @@
     background: rgb(233, 53, 53);
     text-align: center;
 }
+.linkToLeaderboard{
+    /* height: 30px;
+    width: 200px; */
+    padding:10px;
+    border:2px solid #000;
+    background: rgb(53, 115, 240);
+    color: #fff;
+}
+
+.linkToLeaderboard:hover{
+    color:#000;
+    text-decoration: none;
+}

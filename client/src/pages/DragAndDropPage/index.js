@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
-import { Link } from "react-router-dom";
+
 import Sidebar from "../../components/shared/Sidebar";
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
-// import Result from "../../components/dragdropURL/"
+import Result from "../../components/dragdropURL/Result";
+
 import "../../components/shared/Sidebar/style.css";
 import "./style.css";
-import Result from "../../components/dragdropURL/Result";
+
 
 let quesAnsArray = [];
 
@@ -128,16 +129,25 @@ class DragDropPage extends Component {
       });
       console.log(this.state.questionCount);
     } else {
+      this.saveScore();
       this.setState({
         gameFinished: true
       });
+
     }
   };
 
-  onResultClick = () => {
-    // alert('result attached');
-    // alert(this.state.score);
-  };
+  saveScore = ()=>{
+    console.log('in save score fun');
+    API.saveScore({
+      userName:'AAA',
+      email:'aaa@gmail.com',
+      score:this.state.score
+    })
+    .then(res=>console.log('score saved'))
+    .catch(err=>console.log(err));
+    
+  }
   render() {
     console.log(this.state.QuesAnsArray);
     var choices = {
@@ -198,17 +208,28 @@ class DragDropPage extends Component {
 
     return (
       <div className="DragDrop">
-        <h2 id="pageHeading" className={this.state.gameFinished===true ?'hide'  :"show"}>Drag And Drop Quiz</h2>
+        <h2
+          id="pageHeading"
+          className={this.state.gameFinished === true ? "hide" : "show"}
+        >
+          Drag And Drop Quiz
+        </h2>
         <div className="row">
           <div className="col-12 col-sm-2 cardDiv">
-            <h2 id="score" className={this.state.gameFinished===false ?'show'  :"hide"}>
+            <h2
+              id="score"
+              className={this.state.gameFinished === false ? "show" : "hide"}
+            >
               Score : <span>{this.state.score}</span>
             </h2>
             <Sidebar />
           </div>
 
           <div className="col-12 col-sm-10">
-            <div id="questionGameContainer" className={this.state.gameFinished===false ?'show'  :"hide"}>
+            <div
+              id="questionGameContainer"
+              className={this.state.gameFinished === false ? "show" : "hide"}
+            >
               <div id="questionDiv">{QuestionComp}</div>
               <div
                 id="dragDropArea"

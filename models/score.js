@@ -17,7 +17,7 @@ const scoreSchema = new Schema({
     }
 
 }, {
-    timestamps: true,
+    timestamps: false,
 });
 
 const Score = mongoose.model("Score", scoreSchema);
