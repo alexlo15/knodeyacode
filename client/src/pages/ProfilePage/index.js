@@ -3,6 +3,7 @@ import Sidebar from "../../components/shared/Sidebar";
 import '../../components/shared/Sidebar/style.css';
 import Ticker from "react-ticker";
 import StockTicker from "../../components/ticker/ticker";
+// import NewTicker from "../../components/ticker/newTicker"
 import API from "../../utils/API";
 
 
@@ -26,6 +27,9 @@ class Profile extends React.Component {
 
           <footer id="ticker">
               {/* <StockTicker /> */}
+
+
+              {/* <NewTicker /> */}
 
 
           </footer>

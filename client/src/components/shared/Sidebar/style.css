@@ -4,7 +4,8 @@
     background-color: black;
     opacity: .5;
     position: fixed;
-    color: lime;
+    background: #ccc;
+    color:#000;
     left: 0;
     top: 20%;
     bottom: 35;
@@ -28,7 +29,7 @@
 #links {
     margin-right: 20%;
     font-size: 18px;
-    color: lime;
+    color:#000;
     text-decoration: none;
     width: 100%;
 }
