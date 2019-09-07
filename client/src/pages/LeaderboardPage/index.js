@@ -1,20 +1,21 @@
 import React from "react";
 import Sidebar from "../../components/shared/Sidebar";
-import "./style.css";
+import "../../components/shared/Sidebar/style.css";
 
 
 function Leaderboard() {
   return (
     <div id="leaderdiv">
+      <Sidebar />
         <h3 id="leadertitle">LEADERBOARD</h3>
       <div className="Flashpage">
       <div className="row">
       <div className="col-12 col-sm-2">
-      <Sidebar />
+      
       </div>
     </div> 
     <div id="leaderboard">
-      <h2 id="jstitle">Javascript</h2><h2 id="htmltitle">html</h2><h2 id="csstitle">css</h2>
+      <h2 id="jstitle">Drag n Drop</h2><h2 id="htmltitle">Flash Cards</h2><h2 id="csstitle">Memory Match</h2>
       <table id="table">
         <tr>
           <th id="odd">1</th>
