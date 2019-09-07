@@ -6,5 +6,8 @@ export default {
     },
     searchQuestions: (topic) => {
         return axios.get(`/api/questions/${topic}`);
+    },
+    getScores: function() {
+        return axios.get("/api/scores");
     }
 }
