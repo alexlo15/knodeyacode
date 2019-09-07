@@ -4,7 +4,7 @@ import API from "../../utils/API";
 import Sidebar from "../../components/shared/Sidebar";
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
-import "./style.css";
+import "../../components/shared/Sidebar/style.css";
 
 let quesAnsArray = [];
 

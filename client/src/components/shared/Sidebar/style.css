@@ -238,4 +238,205 @@ body {
 .react-card-front {
     position: unset !important;
 }
+/* MAIN PAGE CSS */
 
+.mainTitle {
+color: white;
+font-family: 'Libre Caslon Text', serif;
+font-size: 100px;
+font-weight: bold;
+text-shadow: 0 3px 3px rgb(0, 0, 0), 0 3px 3px rgb(0, 0, 0);
+text-align: center;
+}
+
+.mainp {
+font-family: 'Libre Caslon Text', serif;
+font-size: 18px;
+text-align: center;
+}
+
+.parallax {
+/* The image used */
+background-image: url('https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+
+/* Full height */
+height: 100%;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+padding: 15% 0 15% 0;
+text-align: center;
+}
+
+.mainButton {
+background: #00258f;
+font-family: 'Libre Caslon Text', serif;
+text-align: center;
+}
+
+.signIn {
+text-align: center;
+height: 500px;
+background: white;
+color: #00258f;
+font-size: 20px;
+/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+}
+
+.about {
+font-size: 50px;
+font-family: 'Libre Caslon Text', serif;
+text-shadow: none;
+color: #00258f;
+}
+
+.reason1,
+.reason2,
+.reason3,
+.reason4 {
+box-sizing: border-box;
+float: left;
+/* This width is for if there are three columns */
+/* width: 33.33%; */
+/* This width is for if there are four columns */
+width: 25%;
+padding: 50px;
+}
+
+.logo {
+
+animation-name: rotate;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+}
+
+@keyframes rotate {
+
+100% {
+    transform: rotate(360deg);
+}
+}
+/* DRAG AND DROP CSS */
+.DragDrop .row{
+    width: 100%;
+}
+.cardDiv{
+    
+}
+#dragDropArea{
+    padding: 50px;
+    width: 80%;
+    height: 200px;
+    border: 1px solid #000;
+    margin: auto auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#questionDiv{
+    width: 80%;
+    /* height: 100px; */
+    min-height: 100px;
+    height: auto;
+    margin: auto auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px -2px 3px #000;
+}
+
+#questionDiv:hover{
+    background: #c488c4;
+}
+
+#dragComponentsDiv{
+    padding:10px;
+    text-align: center;
+}
+/* FLASH CARD CSS */
+.row{
+    width: 100%;
+    /* position: relative; */
+}
+/* PROFILE PAGE CSS */
+#brotherrdiv{
+    background-image: url("https://res.cloudinary.com/demo/image/upload/w_250,h_250,c_mfit/w_700/sample.jpg");
+    height: 90vh;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#profileTitle {
+    position: absolute;
+    left: 40%;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* body {
+    background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
+} */
+
+#profilemain {
+    position: absolute;
+    width: 37%;
+    height: 30%;
+    background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+    background-repeat: no-repeat;
+    left: 20%;
+    bottom: 50%;
+}
+#profileGameTracker {
+    position: absolute;
+    width: 37%;
+    height: 30%;
+    background-image: url("https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif");
+    background-repeat: no-repeat;
+    left: 20%;
+    bottom: 10%;
+}
+#profileImage{
+    position: absolute;
+    top: 2%;
+    left: 60%;
+    width: 0;
+    height: 0;
+    border-top: 95px solid transparent;
+    border-right: 190px solid limegreen;
+    border-bottom: 95px solid transparent;
+}
+.row{
+    position: absolute;
+    top: 19.4%;
+}
+#triangle {
+    position: absolute;
+    left: 85px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to top left, dodgerblue, blueviolet)
+}
+#ticker {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 3%;
+}
