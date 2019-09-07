@@ -14,7 +14,8 @@ class DragDropPage extends Component {
     QuesAnsArray: [],
     buttonClicked: false,
     questionCount: 0,
-    score:0
+    score:0,
+    userSelected:""
     // choices: {
     //   notDragged: [],
     //   dragged: []
@@ -51,19 +52,23 @@ class DragDropPage extends Component {
     //     score:this.state.score+1
     //   })
     // }
-
+    // this.setState({
+    //   userSelected:choice
+    // })
     
     this.setState({
       ...this.state,
+      userSelected:choice,
       choices,
     });
     console.log("Dropped : " + choice);
-    this.generateScore(choice,this.state.questionCount);
+    console.log('choice from drop : ' + this.state.userSelected)
+    // this.generateScore(choice,this.state.questionCount);
   };
 
-  generateScore=(choice,questionCount)=>{
+  generateScore=(choice)=>{
     let rightAnswer = this.state.QuesAnsArray[this.state.questionCount].choice1.trim();
-
+    console.log('from fun choice : ' +choice)
    
     if(choice.trim() === rightAnswer ){
       this.setState({
@@ -71,6 +76,7 @@ class DragDropPage extends Component {
             })
 
     }
+    console.log('scroe from fun: '+this.state.score);
     
   }
 
@@ -128,7 +134,8 @@ class DragDropPage extends Component {
   };
 
   onSubmitClick = () => {
-    
+    console.log(this.state.userSelected)
+    this.generateScore(this.state.userSelected);
     this.setState({
       buttonClicked: true,
       questionCount: this.state.questionCount + 1
@@ -144,7 +151,7 @@ class DragDropPage extends Component {
     };
     if (quesAnsArray.length > 0) {
       if (this.state.buttonClicked === false) {
-        console.log("in button click false");
+        // console.log("in button click false");
 
         quesAnsArray[this.state.questionCount].choices.forEach(item => {
           choices[item.category].push(
@@ -160,7 +167,7 @@ class DragDropPage extends Component {
           
         });
       } else if (this.state.buttonClicked === true) {
-        console.log("in button click true");
+        // console.log("in button click true");
         quesAnsArray[this.state.questionCount].choices.forEach(item => {
           choices[item.category].push(
             <Choice
