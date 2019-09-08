@@ -6,8 +6,7 @@
         "choice2": "Hastly Text Markup Language",
         "choice3": "Handlebar Text Markup Language",
         "topicId": 1
-    }
-    /* 2 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13002",
         "question": "What is the correct HTML element for the largest heading",
@@ -15,8 +14,7 @@
         "choice2": "<p>",
         "choice3": "<h6>",
         "topicId": 1
-    }
-    /* 3 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13003",
         "question": "What is the correct HTML for adding a background color?",
@@ -24,8 +22,7 @@
         "choice2": "<body style=\"color:yellow;\">",
         "choice3": "<body style=\"color:yellow;\">",
         "topicId": 1
-    }
-    /* 4 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13004",
         "question": "What is the correct HTML for creating a hyperlink?",
@@ -33,8 +30,7 @@
         "choice2": "<a src=\"xyz\">XYZ</a>",
         "choice3": "<a url=\"xyz\">XYZ</a>",
         "topicId": 1
-    }
-    /* 5 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13005",
         "question": "How can you open a link in a new tab/browser window?",
@@ -42,8 +38,7 @@
         "choice2": "<a href=\"href\" target=\"_blank\">",
         "choice3": "<a href=\"src\" target=\"_blank\">",
         "topicId": 1
-    }
-    /* 6 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13006",
         "question": "Markup tags tell the web browser",
@@ -51,8 +46,7 @@
         "choice2": "How to organise the page",
         "choice3": "How to display message box on page",
         "topicId": 2
-    }
-    /* 7 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13007",
         "question": "www is based on which model?",
@@ -60,8 +54,7 @@
         "choice2": "Local-server",
         "choice3": "3-tier",
         "topicId": 2
-    }
-    /* 8 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13008",
         "question": "What are Empty elements and is it valid?",
@@ -69,8 +62,7 @@
         "choice2": "No, there is no such terms as Empty Element",
         "choice3": "No, it is not valid to use Empty Element",
         "topicId": 2
-    }
-    /* 9 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13009",
         "question": "Which of the following attributes of text box control allow to limit the maximum character?",
@@ -78,8 +70,7 @@
         "choice2": "size",
         "choice3": "len",
         "topicId": 2
-    }
-    /* 10 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1300a",
         "question": "Web pages starts with which ofthe following tag?",
@@ -87,8 +78,7 @@
         "choice2": "<Body>",
         "choice3": "<Title>",
         "topicId": 2
-    }
-    /* 11 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1300b",
         "question": "HTML is a subset of",
@@ -96,8 +86,7 @@
         "choice2": "SGMD",
         "choice3": "SGMT",
         "topicId": 3
-    }
-    /* 12 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1300c",
         "question": "The attribute, which define the relationship between current document and HREF'ed URL is",
@@ -105,8 +94,7 @@
         "choice2": "URL",
         "choice3": "REV",
         "topicId": 3
-    }
-    /* 13 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1300d",
         "question": "Correct HTML to left align the content inside a table cell is",
@@ -114,8 +102,7 @@
         "choice2": "<td raligh = \"left\" >",
         "choice3": "<td leftalign>",
         "topicId": 3
-    }
-    /* 14 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1300e",
         "question": "Which of the tag is used to creates a number list?",
@@ -123,8 +110,7 @@
         "choice2": "<OL>",
         "choice3": "<LI>",
         "topicId": 3
-    }
-    /* 15 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1300f",
         "question": "Symbol used at the beginning of the HREF text is",
@@ -132,8 +118,7 @@
         "choice2": "$",
         "choice3": "&",
         "topicId": 3
-    }
-    /* 16 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13010",
         "question": "What does CSS stand for?",
@@ -141,8 +126,7 @@
         "choice2": "Creative Style Sheet",
         "choice3": "Computer Style Sheets",
         "topicId": 4
-    }
-    /* 17 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13011",
         "question": "What is the correct HTML for referring to an external style sheet?",
@@ -150,8 +134,7 @@
         "choice2": "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystle.css\">",
         "choice3": "<stylesheet>mystyle.css</stylesheet>",
         "topicId": 4
-    }
-    /* 18 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13012",
         "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
@@ -159,8 +142,7 @@
         "choice2": "in the <body> section",
         "choice3": "at the end of the document",
         "topicId": 4
-    }
-    /* 19 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13013",
         "question": "Which HTML tag is used to define an internal style sheet?",
@@ -168,8 +150,7 @@
         "choice2": "<css>",
         "choice3": "<script>",
         "topicId": 4
-    }
-    /* 20 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13014",
         "question": "Which HTML attribute is used to define inline styles?",
@@ -177,8 +158,7 @@
         "choice2": "class",
         "choice3": "font",
         "topicId": 4
-    }
-    /* 21 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13015",
         "question": "Which is the correct CSS syntax?",
@@ -186,17 +166,15 @@
         "choice2": "body:color=black;",
         "choice3": "{body:color=black;}",
         "topicId": 5
-    }
-    /* 22 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13016",
         "question": "How do you insert a comment in a CSS file?",
-        "choice1": "/*this is a comment*/",
+        "choice1": "//*a comment*/",
         "choice2": "//this is a comment//",
         "choice3": "this is a comment",
         "topicId": 5
-    }
-    /* 23 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13017",
         "question": "Which property is used to change the background color?",
@@ -204,8 +182,7 @@
         "choice2": "bgcolor",
         "choice3": "color",
         "topicId": 5
-    }
-    /* 24 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13018",
         "question": "How do you add a background color for all <h1> elements?",
@@ -213,8 +190,7 @@
         "choice2": "h1.all {background-color:#ffffff;",
         "choice3": "all.h1 {background-color:#ffffff;",
         "topicId": 5
-    }
-    /* 25 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13019",
         "question": "Which CSS property is used to change the text color of an element?",
@@ -222,8 +198,7 @@
         "choice2": "color",
         "choice3": "fgcolor",
         "topicId": 5
-    }
-    /* 26 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1301a",
         "question": "Which CSS property controls the text size?",
@@ -231,8 +206,7 @@
         "choice2": "font-style",
         "choice3": "font-size",
         "topicId": 6
-    }
-    /* 27 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1301b",
         "question": "Which property is used to change the font of an element?",
@@ -240,8 +214,7 @@
         "choice2": "font-style",
         "choice3": "font-weight",
         "topicId": 6
-    }
-    /* 28 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1301c",
         "question": "How do you make the text bold?",
@@ -249,8 +222,7 @@
         "choice2": "font-weight:bold;",
         "choice3": "style:bold;",
         "topicId": 6
-    }
-    /* 29 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1301d",
         "question": "Which property is used to change the left margin of an element?",
@@ -258,8 +230,7 @@
         "choice2": "padding-left",
         "choice3": "indent",
         "topicId": 6
-    }
-    /* 30 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1301e",
         "question": "How do you select elements with class name \"test\"?",
@@ -267,8 +238,7 @@
         "choice2": "#test",
         "choice3": "test",
         "topicId": 6
-    }
-    /* 31 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1301f",
         "question": "Variables are the ______ of programming?",
@@ -276,8 +246,7 @@
         "choice2": "Verbs",
         "choice3": "Pronouns",
         "topicId": 7
-    }
-    /* 32 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13020",
         "question": "Which of the following are not a Variable?",
@@ -285,8 +254,7 @@
         "choice2": "Strings",
         "choice3": "Numbers",
         "topicId": 7
-    }
-    /* 33 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13021",
         "question": "Booleans can only be ?",
@@ -294,8 +262,7 @@
         "choice2": "Numbers",
         "choice3": "Strings",
         "topicId": 7
-    }
-    /* 34 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13022",
         "question": "What numbers will be returned?  Math.floor(Math.random(*10;",
@@ -303,8 +270,7 @@
         "choice2": "1 - 10",
         "choice3": "0 - 11",
         "topicId": 7
-    }
-    /* 35 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13023",
         "question": "Var x = 3; Var y = 5; Var z = x * y; What i s Var z ?",
@@ -312,8 +278,7 @@
         "choice2": "8",
         "choice3": "2",
         "topicId": 7
-    }
-    /* 36 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13024",
         "question": "Strings can be created in JS by using?",
@@ -321,8 +286,7 @@
         "choice2": "Varchar",
         "choice3": "{}",
         "topicId": 8
-    }
-    /* 37 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13025",
         "question": "Var x = \"Dolphins\" + 3 + 3",
@@ -330,8 +294,7 @@
         "choice2": "Dolphins3 3",
         "choice3": "Dolphins +3 +3",
         "topicId": 8
-    }
-    /* 38 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13026",
         "question": "What are elements of an Array called?",
@@ -339,8 +302,7 @@
         "choice2": "Position",
         "choice3": "Boolean",
         "topicId": 8
-    }
-    /* 39 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13027",
         "question": "Var characters = [\"Micky\", \"Goofy\", \"Minnie\"]; Which Character is in the 1st index?",
@@ -348,8 +310,7 @@
         "choice2": "Micky",
         "choice3": "Minnie",
         "topicId": 8
-    }
-    /* 40 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13028",
         "question": " What vegetables does the for loop read?   Var vegetables = [“Carrots”, “Peas”, “Lettuce”, “Tomatoes”] For(var i=0; i<vegetables.length; i++ Console.log(“I love eating ” + vegetables[3];",
@@ -357,8 +318,7 @@
         "choice2": "Carrots",
         "choice3": "Peas",
         "topicId": 8
-    }
-    /* 41 */
+    },
     {
         "_id": "5d6815038a3f3616ecd13029",
         "question": "Javascript is the programming language ",
@@ -366,8 +326,7 @@
         "choice2": "Node.JS",
         "choice3": "Internet",
         "topicId": 9
-    }
-    /* 42 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1302a",
         "question": "Which company developed JavaScript",
@@ -375,8 +334,7 @@
         "choice2": "Dell",
         "choice3": "Apple",
         "topicId": 9
-    }
-    /* 43 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1302b",
         "question": "After your page loads, a box appears and ask for your age. What is this function called?",
@@ -384,8 +342,7 @@
         "choice2": "Alert",
         "choice3": "Confirm",
         "topicId": 9
-    }
-    /* 44 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1302c",
         "question": "How many indexes can an Array have?",
@@ -393,8 +350,7 @@
         "choice2": "50",
         "choice3": "5",
         "topicId": 9
-    }
-    /* 45 */
+    },
     {
         "_id": "5d6815038a3f3616ecd1302d",
         "question": "Inside which HTML element do we put the JavaScript?",
