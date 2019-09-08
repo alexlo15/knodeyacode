@@ -13,7 +13,7 @@ function Mainpage() {
         </h1>
 
         <p className="mainp">Please log in to play</p>
-        <a className="btn btn-primary mainButton" href="/profile">
+        <a id="login" className="btn btn-primary mainButton" href="/profile">
           Sign in
         </a>
       </div>
