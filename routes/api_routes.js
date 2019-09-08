@@ -4,6 +4,7 @@ const router = require("express").Router();
 
 // API Routes
 router.use("/api/questions", apiRoutes);
+router.use("/api/scores", apiRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {

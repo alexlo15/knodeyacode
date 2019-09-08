@@ -16,7 +16,11 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
+<<<<<<< HEAD
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodenpyacode",{ useNewUrlParser: true });
+=======
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode",{ useNewUrlParser: true });
+>>>>>>> 193ad12507c8441849fa8dee417a25a03e272568
 
 
 

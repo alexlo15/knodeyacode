@@ -13,11 +13,12 @@ class MemoryGamePage extends PureComponent {
     shuffledCard: MemoryGamePage.duplicateCard().sort(() => Math.random() - 0.5),
     clickCount: 1,
     prevSelectedCard: -1,
-    prevCardId: -1
+    prevCardId: -1,
+
   };
 
   static duplicateCard = () => {
-    return [0,1,2,3,4,5,6,7].reduce((preValue, current, index, array) => {
+    return ["<h1></h1>","<p></p>","<a href></a>","<div></div>","<span></span>","<>","Computers","7"].reduce((preValue, current, index, array) => {
       return preValue.concat([current, current])
     },[]);
   };
@@ -86,7 +87,7 @@ class MemoryGamePage extends PureComponent {
   render() {
     return (
      <div>
-       <Header restartGame={this.restartGame} />
+       <Header restartGame={this.restartGame} /> 
        { this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
        <div className="grid-container">
           {
