@@ -4,7 +4,7 @@ import "./style.css";
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark black">
+        <nav id="navbar" className="navbar navbar-expand-lg navbar-dark bg-primary">
 
             <a className="navbar-brand logo" href="/"><img src={logo} alt={logo}/></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
