@@ -1,0 +1,21 @@
+.row{
+    width: 100%;
+    /* position: relative; */
+}
+.Flashpage{
+    /* background-image: url(../supplies.jpg); */
+    /* background-image: url(./supplies.jpg); */
+    height: 90vh;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* p{
+    color: hotpink;
+} */
+
+.row{
+    width: 80%;
+}
