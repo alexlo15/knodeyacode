@@ -1,5 +1,5 @@
 import React, {Component, useEffect, useState} from "react";
-import Ticker from "react-ticker";
+// import Ticker from "react-ticker";
 import API from "../../utils/API"
 
 
@@ -17,9 +17,11 @@ const getTextFromApi = async (index) => {
     const [text, setText] = useState('')
     useEffect(() => {
       getTextFromApi().then(text => {
+        // console.log(`from fun---`);
+        console.log(text);
         setText(names[text])
       })
-    }, [])
+    })
   
     return text
       ? <h1>{text}</h1>

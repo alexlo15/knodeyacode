@@ -4,7 +4,7 @@ import Img from "../../components/flashcardsURL/Img";
 import ImgContainer from "../../components/flashcardsURL/ImgContainer";
 import FlashCard from "../../components/flashcardsURL/FlashCardArea";
 import API from "../../utils/API";
-import "./style.css"
+import "../../components/shared/Sidebar/style.css";
 
 let topicSelected = [];
 

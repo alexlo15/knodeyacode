@@ -1,39 +1,40 @@
+.resultLink{
+    color:#fff;
+}
+
+.resultLink:hover{
+    color:#fff;
+}
+
+.btnDiv{
+    position: relative;
+}
 .DragDrop .row{
-    width: 100%;
+   position: relative;
+   top:auto; 
 }
-.cardDiv{
-    
+.DragDrop #btnDiv{
+    top:auto;
 }
-#dragDropArea{
-    padding: 50px;
-    width: 80%;
-    height: 200px;
-    border: 1px solid #000;
-    margin: auto auto;
-    margin-top:10px;
-    margin-bottom: 10px;
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+#pageHeading{
     text-align: center;
+    font-size: 3em;
 }
-
-
-#questionDiv{
-    width: 80%;
-    /* height: 100px; */
-    min-height: 100px;
-    height: auto;
-    margin: auto auto;
-    margin-top: 50px;
+#score{
+    margin-top: -40px;
+    margin-left: 10px;
+    padding:5px;
     text-align: center;
-    border: 1px solid #000;
+    border:2px solid #000;
+    height: 60px;   
+    box-shadow: 3px 3px 4px #ccc;
     border-radius: 10px;
-    box-shadow: 3px -2px 3px #000;
-}
-
-#questionDiv:hover{
-    background: #c488c4;
-}
-
-#dragComponentsDiv{
-    padding:10px;
-    text-align: center;
+    background: #678;
+    color: #fff;
 }
