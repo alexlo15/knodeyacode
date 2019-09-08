@@ -12,5 +12,10 @@ export default {
     },
     saveScore: function(scoreData){
         return axios.post('/api/scores',scoreData);
+    },
+
+    // user functions
+    updateIfStudiedTopic: function(id, booleanData) {
+        return axios.put(`/api/user/${id}`, booleanData);
     }
 }

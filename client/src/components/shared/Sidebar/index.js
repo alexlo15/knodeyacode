@@ -19,7 +19,6 @@ const Sidebar = () => (
             <li><a id="links" href="/memorygame">Memory Match</a></li>
             <li><a id="links" href="/whiteboard">White Board</a></li>
             <li><a id="links" href="/leaderboard">Leaderboard</a></li>
-
         </ul>
     </ div >
 );
