@@ -309,9 +309,11 @@ height: 90px;
   .grid-container {
     display: inline-grid;
     grid-gap: 450px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     padding: 10px 150px 10px 150px;
     position: absolute;
+    size: 50%;
+
   }
 
 #cardDiv{
