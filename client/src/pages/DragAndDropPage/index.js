@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
 
-import Sidebar from "../../components/shared/Sidebar";
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
 import Result from "../../components/dragdropURL/Result";
 
-import "../../components/shared/Sidebar/style.css";
-// import "./style.css";
+import "../../components/shared/Navigation/style.css";
+import "./style.css";
+
 
 let quesAnsArray = [];
 
@@ -218,9 +218,6 @@ class DragDropPage extends Component {
               </h2>
 
           <div className="row">
-            <div className="col-12 col-sm-2 cardDiv">
-                           <Sidebar />
-            </div>
 
 
             <div className="col-12 col-sm-10">
