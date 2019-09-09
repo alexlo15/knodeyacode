@@ -54,25 +54,20 @@
 /* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS */
 #leadertitle{
     position: absolute;
-    left: 43%;
-    color: black;
+    left: 35%;
+    color: silver;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     opacity: .5;
+    top: 1%;
 }
 #leaderdiv {
     height: 90vh;
-    background-image: url(https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
+    background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-#leaderboard {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 60%;
-    height: 70%;
-}
+
 /* #table{
     position: absolute;
     top: 20%;
@@ -117,10 +112,17 @@
     opacity: .75;
 
 }
+#borderOuter {
+    position: absolute;
+    left: 15%;
+    width: 50%;
+    background-image:url(https://www.solidbackgrounds.com/images/950x350/950x350-charleston-green-solid-color-background.jpg);
+    border: silver solid 4px;
+}
 /* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS */
 #fatherdiv{
     height: 90vh;
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg);
+    background-image: url(https://images.unsplash.com/photo-1547414876-def1cc35dcbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -128,7 +130,7 @@
 #whiteboard{
     position: absolute;
     right: 30%;
-    top: 15%;
+    top: 25%;
     margin: 25px;
     margin-left: 60%;
     border: 4px solid black;
@@ -145,7 +147,7 @@
 
 #reset{
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 70%;
     font-size: 50px;
     background-color: limegreen;
@@ -161,7 +163,7 @@
 /* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS */
 #motherdiv{
     height: 90vh;
-    background-image: url(https://cdn.pixabay.com/photo/2017/09/05/10/19/business-2717063_960_720.jpg);
+    background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -172,13 +174,16 @@ body {
 
 .grid-container {
     display: grid;
-    grid-gap: 10px 100px;
+    grid-gap: 200px 200px;
     grid-template-columns: auto auto auto auto;
     padding: 10px 15px 10px 15px;
     positIon: absolute;
     left: 30%;
     top: 30%;
-
+}
+#cardDiv{
+    width: 100%;
+    height: 100%;
 }
 
 .grid-header-container {
@@ -233,6 +238,8 @@ body {
 .card-front {
     background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
     box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
+    width: 1px;
+    height: 1em;
 }
 
 .card-back {
@@ -349,6 +356,10 @@ animation-timing-function: linear;
 }
 }
 /* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS */
+#DragDrop{
+    background-image: url(https://images.unsplash.com/photo-1531315365-3c3d78651881?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80)
+
+}
 .DragDrop .row{
     width: 100%;
 }
@@ -464,6 +475,10 @@ animation-timing-function: linear;
     text-align: center;
     height: 3%;
 }
+/* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR */
+#navbar {
+    background-color: rgb(83, 114, 134)!important;
+  }
 
 /* Drag & Drop  */
 #DragDropPage{
