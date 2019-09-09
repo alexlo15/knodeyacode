@@ -3,6 +3,8 @@ import Sidebar from "../../components/shared/Navigation";
 import '../../components/shared/Navigation/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import AuthUserContext from '../../components/Session/context'
+import { withAuthorization } from '../../components/Session/index'
 // import './styles.css';
 // import Ticker from "react-ticker";
 // import StockTicker from "../../components/ticker/ticker";
@@ -84,7 +86,7 @@ class Profile extends React.Component {
       </>
         
     );
-  };
+  }
 };
 
 const condition = authUser => !!authUser
