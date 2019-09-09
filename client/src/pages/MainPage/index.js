@@ -81,8 +81,8 @@ function MainpageBase(props) {
         </div>
         <div>
         <h1>Hi!</h1>
-        <input name='username' onChange={handleInputChange} type="text" value={state.username}></input>
-        <input name='password' onChange={handleInputChange} type='password' value={state.password}></input>
+        <input id="usernameInput" name='username' onChange={handleInputChange} type="text" value={state.username}></input>
+        <input id="passwordInput" name='password' onChange={handleInputChange} type='password' value={state.password}></input>
         <button disabled={state.email === '' || state.password === ''} onClick={signUpUser}>Sign Up</button>
         <button disabled={state.email === '' || state.password === ''} onClick={signInUser}>Sign In</button>
       </div>
