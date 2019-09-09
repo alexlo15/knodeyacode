@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://alex:password123@ds253857.mlab.com:53857/heroku_6rw37vks");
 
 const scoreSeed = [
 
@@ -11,20 +12,42 @@ const scoreSeed = [
     score: 12
 },
 {
-  userName: "Ash Ketchum",
-  email: "americalies2u@aol.com",
+  userName: "Mash Chum",
+  email: "america2u@aol.com",
   score: 13
 },
 {
-  userName: "Ash Ketchum",
-  email: "americalies2u@aol.com",
+  userName: "Suzzen Ketchum",
+  email: "calies2u@aol.com",
   score: 15
+},
+{
+  userName: "Ashley Ketchum",
+  email: "meries2u@aol.com",
+  score: 14
+},
+{
+  userName: "David olsen",
+  email: "david2u@aol.com",
+  score: 14
+},
+{
+  userName: "Mioses Young",
+  email: "moses@aol.com",
+  score: 14
+},
+{
+  userName: "Rahul Nair",
+  email: "rahulN@aol.com",
+  score: 14
 },
 {
   userName: "Ash Ketchum",
   email: "americalies2u@aol.com",
   score: 14
 }
+
+
 
     
 ];

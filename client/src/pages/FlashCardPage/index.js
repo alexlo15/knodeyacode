@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Sidebar from "../../components/shared/Sidebar";
 import Img from "../../components/flashcardsURL/Img";
 import ImgContainer from "../../components/flashcardsURL/ImgContainer";
 import FlashCard from "../../components/flashcardsURL/FlashCardArea";
 import API from "../../utils/API";
-import "../../components/shared/Sidebar/style.css";
+import "../../components/shared/Navigation/style.css";
+import Sidebar from "../../components/shared/Navigation"
 
 let topicSelected = [];
 
@@ -30,8 +30,9 @@ class FlashCardPage extends Component {
         category: "notDragged"
       }
     ],
-    questionArray: []
-  };
+    questionArray: [],
+    userName: "5d75870a1c73633b04e65267"
+    };
 
   // This are drag and drop functionality
   // ====================================================
@@ -75,9 +76,27 @@ class FlashCardPage extends Component {
         })
         .catch(err => console.log(err));
     }
+
+  
+    if(topicSelected === "CSS"){
+      console.log("went thru")
+      const studying = {
+        flashcardCSS: true,
+        flashcardHTML: false,
+        flashcardJS: true
+      }
+
+      API.updateIfStudiedTopic(this.state.userName, studying)
+      .then(res => {
+        console.log(res.data);
+      }).catch(err => console.log(err));
+    }
+  
   };
 
   render() {
+    console.log(topicSelected);
+    console.log(topicSelected === "CSS")
     var images = {
       notDragged: [],
       dragged: []
@@ -98,38 +117,44 @@ class FlashCardPage extends Component {
     });
 
     return (
-      <div className="Flashpage container">
-        
-        <div className="row">
-          {/* <div className="col-12 col-md-2"> */}
-          <Sidebar />
-        
-          {/* </div> */}
+      <div id="Flashpagebox">
 
-          {/* <div className="col-12 col-md-2">
+
+      
+        <Sidebar />
+
+        <div className="Flashpage container">
+
+          <div className="row">
+            {/* <div className="col-12 col-md-2"> */}
+
+            {/* </div> */}
+
+            {/* <div className="col-12 col-md-2">
           <p>poop</p>
           </div> */}
-          
-          <div className="col-12 col-md-10">
-            
-            {this.state.questionArray.length>0  
-            ? <FlashCard questionArray={this.state.questionArray} /> 
-            :<ImgContainer
-              onDrop={this.onDrop}
-              onDragOver={this.onDragOver}
-              onSubmitClick={this.onSubmitClick}
-              imagesNotDragged={images.notDragged}
-              imagesDragged={images.dragged}
-            />
-          }
-           
-          </div>
-          
-        </div>
-        
-      </div>
-    );
-  }
-}
 
+            <div className="col-12 col-md-10">
+
+              {this.state.questionArray.length > 0
+                ? <FlashCard questionArray={this.state.questionArray} />
+                : <ImgContainer
+                  onDrop={this.onDrop}
+                  onDragOver={this.onDragOver}
+                  onSubmitClick={this.onSubmitClick}
+                  imagesNotDragged={images.notDragged}
+                  imagesDragged={images.dragged}
+                />
+              }
+
+            </div>
+
+          </div>
+
+        </div>
+        </div>
+        );
+}
+}
+ 
 export default FlashCardPage;

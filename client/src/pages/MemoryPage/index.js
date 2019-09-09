@@ -2,13 +2,13 @@ import React, { PureComponent } from 'react';
 import Header from '../../components/memorygameURL/header/header';
 import Card from '../../components/memorygameURL/card/tile';
 import GameOver from '../../components/memorygameURL/card/gameover';
-import '../../components/shared/Sidebar/style.css';
-import Sidebar from '../../components/shared/Sidebar';
- 
+import '../../components/shared/Navigation/style.css';
+import Sidebar from "../../components/shared/Navigation"
+
 
 class MemoryGamePage extends PureComponent {
 
-  state = { 
+  state = {
     isFlipped: Array(16).fill(false),
     shuffledCard: MemoryGamePage.duplicateCard().sort(() => Math.random() - 0.5),
     clickCount: 1,
@@ -18,23 +18,31 @@ class MemoryGamePage extends PureComponent {
   };
 
   static duplicateCard = () => {
-    return ["<h1></h1>","<p></p>","<a href></a>","<div></div>","<span></span>","<>","Computers","7"].reduce((preValue, current, index, array) => {
+    return [<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt ="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt ="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt ="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt ="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt =""height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/AngularJS_logo.svg" alt ="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt ="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt ="" height="300px" width="300px"></img>,
+    ].reduce((preValue, current, index, array) => {
       return preValue.concat([current, current])
-    },[]);
-  };
+    }, []);
+  }; 
 
   handleClick = event => {
     event.preventDefault();
     const cardId = event.target.id;
     const newFlipps = this.state.isFlipped.slice();
     this.setState({
-        prevSelectedCard: this.state.shuffledCard[cardId],
-        prevCardId: cardId
+      prevSelectedCard: this.state.shuffledCard[cardId],
+      prevCardId: cardId
     });
 
     if (newFlipps[cardId] === false) {
       newFlipps[cardId] = !newFlipps[cardId];
-      this.setState(prevState => ({ 
+      this.setState(prevState => ({
         isFlipped: newFlipps,
         clickCount: this.state.clickCount + 1
       }));
@@ -86,31 +94,35 @@ class MemoryGamePage extends PureComponent {
 
   render() {
     return (
-     <div id="motherdiv">
-       <Sidebar />
-       <Header restartGame={this.restartGame} /> 
-       { this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
-       <div className="grid-container">
-                
-          {
-            
-            this.state.shuffledCard.map((cardNumber, index) => 
-              <Card
-                key={index} 
-                id={index} 
-                cardNumber={cardNumber} 
-                isFlipped={this.state.isFlipped[index]} 
-                handleClick={this.handleClick}     
-              />
-            )
-          }
-        </div>
-       }
+      <>
+      <Sidebar/>
+      <div id="motherdiv">
+        <Header restartGame={this.restartGame} />
+        {this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
+          <div className="grid-container">
 
-     </div>
-     
+            {
+
+              this.state.shuffledCard.map((cardNumber, index) =>
+                <Card
+                  key={index}
+                  id={index}
+                  cardNumber={cardNumber}
+                  isFlipped={this.state.isFlipped[index]}
+                  handleClick={this.handleClick}
+                />
+              )
+            }
+          </div>
+        }
+
+      </div>
+      </>
+
     );
   }
 }
+
+
 
 export default MemoryGamePage;

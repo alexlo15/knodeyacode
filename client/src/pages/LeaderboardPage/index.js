@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import API from "../../utils/API"
-import Sidebar from "../../components/shared/Sidebar";
-import "../../components/shared/Sidebar/style.css";
+import "../../components/shared/Navigation/style.css";
 import "./style.css"
+import Sidebar from "../../components/shared/Navigation"
 
 class Leaderboard extends Component {
 
@@ -41,11 +41,12 @@ class Leaderboard extends Component {
 
 
     return (
+      <>
+      <Sidebar />
       <div id="leaderdiv">
 
         <div className="row">
           <div className="col-12 col-sm-2">
-            <Sidebar />
           </div>
           <div className="col-12 col-sm-10">
           <div id="borderOuter">
@@ -67,6 +68,7 @@ class Leaderboard extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }

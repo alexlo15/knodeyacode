@@ -1,28 +1,28 @@
 import React from "react";
-import Sidebar from '../../components/shared/Sidebar';
+import Sidebar from '../../components/shared/Navigation';
 import { SketchField, Tools } from 'react-sketch';
-import "../../components/shared/Sidebar/style.css";
+import "../../components/shared/Navigation/style.css";
 
 class WhiteBoardPage extends React.Component {
 
 
     render() {
         return (
+            <>
+            <Sidebar/>
             <div id="fatherdiv">
-                <Sidebar />
                 <div id="content">
                     <button id="reset" onClick={()=> window.location.reload(false)}>Reset</button>
                 </div>
 
                 <div id="whiteboard">
-                    <SketchField width='500px'
-                        height='400px'
+                    <SketchField
                         tool={Tools.Pencil}
-                        backgroundColor="white"
                         lineColor='black'
                         lineWidth={3} />
                 </div>
-            </div>)
+            </div>
+            </>)
     }
 }
 

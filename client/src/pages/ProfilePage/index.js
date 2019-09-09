@@ -1,12 +1,13 @@
 import React from "react";
-import Sidebar from "../../components/shared/Sidebar";
-import '../../components/shared/Sidebar/style.css';
-import AuthUserContext from '../../components/Session/context'
-import { withAuthorization } from '../../components/Session/index'
-import Ticker from "react-ticker";
-import StockTicker from "../../components/ticker/ticker";
-// import NewTicker from "../../components/ticker/newTicker"
-import API from "../../utils/API";
+import Sidebar from "../../components/shared/Navigation";
+import '../../components/shared/Navigation/style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ProgressBar from 'react-bootstrap/ProgressBar';
+// import './styles.css';
+// import Ticker from "react-ticker";
+// import StockTicker from "../../components/ticker/ticker";
+// // import NewTicker from "../../components/ticker/newTicker"
+// import API from "../../utils/API";
 
 
 class Profile extends React.Component {
@@ -27,43 +28,63 @@ class Profile extends React.Component {
     console.log(this.context)
     console.log(this.props)
     return (
-      <div id="brotherdiv">
-        <h1>{this.context.email}</h1>
+      <>
         <button className="btn btn-primary btn-lg" onClick={this.signOutUser}>Sign Out</button>
-        <h3 id="profileTitle">This is the profile page</h3>
-        <div className="Flashpage">
-          <div className="row">
-            <div className="col-12 col-sm-2">
-              <Sidebar />
-            </div>
+        <Sidebar />
+        <div id="profileBackground">
+          <div id="message">
+            <h2 id="profileTitle">Welcome to Knode your Code!</h2>
+            <h3 id="profileUser">Hello, {this.context.email}!</h3>
+            <p id="profileText">Congratulations on starting your journey with us! Please see the navigation bar on the side to look through what we offer.</p>
           </div>
 
-          <footer id="ticker">
+          <div id="progress">
+            <h3 id="progressUser">{this.context.email}, This is your progress below:</h3>
+            <p id="progressText">FlashCards:
+          <ProgressBar animated now={45} striped variant="primary" label={`45%`} />
+            </p>
+            <p id="progressText">Your Highest Score on Drag and Drop Quiz:
+          <ProgressBar animated now={95} striped variant="primary" label={`95%`} />
+            </p>
+          </div>
+        </div>
+        {/* <div id="brotherdiv">
+          <h3 id="profileTitle">This is the profile page</h3>
+          <div className="Flashpage">
+            <div className="row">
+              <div className="col-12 col-sm-2">
+              </div>
+            </div>
+
+            <footer id="ticker">
               {/* <StockTicker /> */}
 
 
-              {/* <NewTicker /> */}
+        {/* <NewTicker /> */}
 
+        {/* 
+            </footer>
 
-          </footer>
+          </div>
 
-        </div>
+          <div id="profilemain">
+            <div id="profileImage">
+              <div id="triangle">
 
-        <div id="profilemain">
-          <div id="profileImage">
-            <div id="triangle">
+              </div>
 
             </div>
 
           </div>
+          <div id="profileGameTracker">
 
-        </div>
-        <div id="profileGameTracker">
+          </div>
+        </div> */}
 
-        </div>
-      </div>
+      </>
+        
     );
-  }
+  };
 };
 
 const condition = authUser => !!authUser

@@ -7,7 +7,7 @@ import studyman from "./images/studyicon2.png";
 import matchy from "./images/matchingicon.png";
 import brainy from "./images/brains.png";
 import progress from "./images/progress.PNG";
-import "../../components/shared/Sidebar/style.css";
+
 
 function MainpageBase(props) {
 
