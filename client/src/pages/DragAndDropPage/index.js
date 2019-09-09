@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
+import Sidebar from "../../components/shared/Navigation"
 
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
@@ -208,6 +209,8 @@ class DragDropPage extends Component {
 
 
     return (
+      <>
+      <Sidebar/>
       <div id="DragDropPage">
         <div className="DragDrop">
           <h2
@@ -268,6 +271,7 @@ class DragDropPage extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }

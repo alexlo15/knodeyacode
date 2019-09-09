@@ -12,5 +12,13 @@ export default {
     },
     saveScore: function(scoreData){
         return axios.post('/api/scores',scoreData);
+    },
+
+    // user functions
+    getUsers: function() {
+        return axios.get("/api/users");
+    },
+    updateIfStudiedTopic: function(id, booleanData) {
+        return axios.put(`/api/users/${id}`, booleanData);
     }
 }
