@@ -28,6 +28,7 @@ font-size:75px;
 
 .NavPlz{
   position: sticky;
+  z-index: 0;
 
 }
 
@@ -59,6 +60,7 @@ height: 90vh;
 overflow: hidden;
 position: sticky;
 
+
 }
 
 .main-menu>ul {
@@ -66,8 +68,9 @@ margin:7px 0;
 }
 
 .main-menu li {
+padding-top: 20%;
 position:relative;
-display:block;
+display:inline-block;
 width:250px;
 }
 
@@ -150,7 +153,7 @@ background-color:#5fa2db;
 
 .navbar{
 height: 90px;
-z-index: 0;
+/* z-index: 0; */
 
 }
 
@@ -254,10 +257,10 @@ z-index: 0;
 #whiteboard{
     width: 1000px;
     height: 600px;
-    position: relative;
+    position: absolute;
     background-color: white;
     right: 30%;
-    top: 10%;
+    top: 20%;
     margin-left: 60%;
     border: 4px solid black;
     border-radius: 5px;
@@ -272,9 +275,9 @@ z-index: 0;
 }
 
 #reset{
-    position: relative;
-    right: 200%;
-    top: 90%;
+    position: absolute;
+    right:20%;
+    top: 50%;
     font-size: 50px;
     background-color: limegreen;
     border-radius: 5px 20px 5px;
@@ -289,10 +292,13 @@ z-index: 0;
 /* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS */
 #motherdiv{
     height: 90vh;
+    width: 100%;
     background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    left: 5%;
+    
   }
   
 
@@ -305,11 +311,13 @@ z-index: 0;
     grid-gap: 450px;
     grid-template-columns: auto auto auto auto;
     padding: 10px 150px 10px 150px;
+    position: absolute;
   }
 
 #cardDiv{
     width: 100%;
     height: 100%;
+    
 }
 
 .grid-header-container {
@@ -321,6 +329,7 @@ z-index: 0;
   
   .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
+    
   }
   
   .justify-left {
@@ -356,12 +365,12 @@ z-index: 0;
   }
   
   .card {
-    size: 20%;
+    height: 5%;
+    width: 5%;
     font-size: 35px;
     background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
     box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
-    width: 1px;
-    height: 1em;
+    position: absolute;
 }
 
 .card-back {
@@ -596,8 +605,9 @@ animation-timing-function: linear;
     background-image: url(../../../pages/concrete_seamless.png);
     width: 95%;
     height: 90vh;
-    position: relative;
- 
+    position: absolute;
+    display: inline;
+    padding-left: 5%;
 
     /* min-height: 700px; */
     background-attachment: fixed;
@@ -626,12 +636,12 @@ animation-timing-function: linear;
     background-position: center;
 }
 
-#profileTitle {
+/* #profileTitle {
     position: absolute;
     left: 40%;
     color: orange;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+} */
 /* body {
     background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
 } */
@@ -700,10 +710,93 @@ animation-timing-function: linear;
 #Flashpagebox{
     background-image: url(../../../pages/bookworm1.jpg);
     /* background-image: url(./supplies.jpg); */
-    height: 90vh;  
+    height: 100vh;  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+
+/* profile page */
+#message, #progress{
+    text-align: center;
+    background-color: rgb(206, 204, 199);
+    border: 1px solid black;
+    margin: 0% 5% 1% 10%;
+    padding: 1%;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(65, 65, 65);
+}
+
+/* #message{
+    margin-top: 1%;
+} */
+
+#profileTitle, #profileUser, #profileText, #progressUser{
+    font-family: 'EB Garamond', serif;
+}
+
+#progressUser, #progressText{
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+}
+
+#profileBackground{
+    background-image: url(../../../pages/cleardesk.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Flashpagebox .card-container{ 
+    cursor: pointer;
+   height: 400px;
+   width: 700px;
+   perspective: 800px;
+   position: relative;
+   transition: ease-in;
+   word-wrap: break-word;
+}
+
+#questioncontainer{
+    width: 500px;
+    margin: auto auto;
+    z-index: 9;
+}
+
+#Flashpagebox .card{
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    border: 1px solid #300;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+
+}
+
+#Flashpagebox .card .front{
+    height: 400px;
+    width: 700px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    padding: 20px;
+    text-align: center;
+}
+#Flashpagebox .card .back{
+
+    height: 400px;
+    width: 700px;
+    text-align: center;
+    transform: rotateY(180deg);
+    background: #ccc;
+
+}

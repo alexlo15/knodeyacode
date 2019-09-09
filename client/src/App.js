@@ -5,8 +5,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Components
 // import LoggedOut from "./pagecontainers/LoggedOutContainer";
 // import LoggedIn from "./pagecontainers/LoggedInContainer";
-
+import Profile from './pages/ProfilePage'
+import { withAuthentication } from './components/Session'
 import MainPage from './pages/MainPage';
+import Test from './pages/Test'
 
 
 //Profile Page
@@ -52,4 +54,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withAuthentication(App);
