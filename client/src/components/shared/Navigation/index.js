@@ -5,7 +5,7 @@ import logo from "../Navigation/logo.png"
 import './style.css';
 
 
-const Sidebar = () => (
+const Sidebar = (props) => (
 
     // <div className="sidebar">
     //         <div id="head">Games and Activties</div>

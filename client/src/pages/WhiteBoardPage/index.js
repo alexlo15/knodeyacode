@@ -14,10 +14,8 @@ class WhiteBoardPage extends React.Component {
                 </div>
 
                 <div id="whiteboard">
-                    <SketchField width='500px'
-                        height='400px'
+                    <SketchField
                         tool={Tools.Pencil}
-                        backgroundColor="white"
                         lineColor='black'
                         lineWidth={3} />
                 </div>
