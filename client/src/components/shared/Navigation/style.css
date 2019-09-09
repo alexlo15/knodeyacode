@@ -800,3 +800,31 @@ animation-timing-function: linear;
     background: #ccc;
 
 }
+
+
+/* SIGN IN PAGE */
+#sign-InTitle, #emailLabel, #passwordLabel{
+    color: white;
+    font-family: 'Libre Caslon Text', serif;
+
+}
+
+#sign-Inbackground{
+    background: #000000;
+    height: 100vh;
+}
+#sign-In{
+    border: 1px solid black;
+    margin: 0% 30% 10% 30%;
+    text-align: center;
+    padding: 5%;
+    padding-top: 10%;
+}
+
+#signButton{
+    margin: 1%;
+}
+
+#emailLabel, #passwordLabel{
+    text-align: left;
+}
