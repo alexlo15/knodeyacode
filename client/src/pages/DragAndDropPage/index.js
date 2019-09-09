@@ -146,7 +146,9 @@ class DragDropPage extends Component {
       .catch(err => console.log(err));
   };
   render() {
+    
     console.log(this.state.QuesAnsArray);
+    
     var choices = {
       notDragged: [],
       dragged: []
@@ -202,6 +204,8 @@ class DragDropPage extends Component {
     } else {
       // console.log("data not");
     }
+    
+
 
     return (
       <div id="DragDropPage">
@@ -217,6 +221,7 @@ class DragDropPage extends Component {
             <div className="col-12 col-sm-2 cardDiv">
                            <Sidebar />
             </div>
+
 
             <div className="col-12 col-sm-10">
               <div className="dragDropBorder">
