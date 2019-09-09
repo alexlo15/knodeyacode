@@ -14,7 +14,7 @@ let quesAnsArray = [];
 
 class DragDropPage extends Component {
   state = {
-    QuesAnsArray: [],
+    quesAnsArray: [],
     buttonClicked: false,
     questionCount: 0,
     score: 0,
@@ -147,7 +147,7 @@ class DragDropPage extends Component {
   };
   render() {
     
-    console.log(this.state.QuesAnsArray);
+    console.log(this.state.quesAnsArray);
     
     var choices = {
       notDragged: [],
@@ -195,7 +195,7 @@ class DragDropPage extends Component {
       var QuestionComp = (
         <Question
           questions={
-            this.state.QuesAnsArray[this.state.questionCount].questions
+            this.state.quesAnsArray[this.state.questionCount].questions
           }
         />
       );
