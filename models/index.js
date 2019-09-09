@@ -1,7 +1,7 @@
 module.exports = {
-  Question: require("./Question"),
-  Topic: require("./Topic"),
-  Score: require("./Score"),
-  Note: require("./note"),
+  Question: require("./question"),
+  Topic: require("./topic"),
+  Score: require("./score"),
+  
   User: require("./user")
 };
