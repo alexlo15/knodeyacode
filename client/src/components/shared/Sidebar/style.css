@@ -255,6 +255,7 @@ text-align: center;
 
 .mainp {
 font-family: 'Libre Caslon Text', serif;
+color: white;
 font-size: 18px;
 text-align: center;
 }
@@ -348,10 +349,56 @@ animation-timing-function: linear;
     transform: rotate(360deg);
 }
 }
+
+
 /* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS */
-.DragDrop .row{
-    width: 100%;
+.resultLink{
+    color:#fff;
 }
+
+.resultLink:hover{
+    color:#fff;
+}
+
+#btnDiv{
+    position: relative;
+}
+
+.DragDrop .row{
+   position: relative;
+   top:auto; 
+   width: 100%;
+}
+.DragDrop #btnDiv{
+    top:auto;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+#pageHeading{
+    font-family: 'EB Garamond', serif;
+    margin-left: 15%;
+    text-align: center;
+    font-size: 3em;
+}
+#score{
+    margin-top: -40px;
+    margin-left: 10px;
+    padding:5px;
+    text-align: center;
+    border:2px solid #000;
+    height: 60px;   
+    box-shadow: 3px 3px 4px #ccc;
+    border-radius: 10px;
+    background: #678;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+
+}
+
 .cardDiv{
     
 }
@@ -359,11 +406,14 @@ animation-timing-function: linear;
     padding: 50px;
     width: 80%;
     height: 200px;
-    border: 1px solid #000;
+    border: 2px solid midnightblue;
+    border-radius: 25px;
+    box-shadow: 3px -2px 3px midnightblue;
     margin: auto auto;
     margin-top:10px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: center;   
+    
 }
 
 
@@ -375,19 +425,50 @@ animation-timing-function: linear;
     margin: auto auto;
     margin-top: 50px;
     text-align: center;
-    border: 1px solid #000;
+    /* border: 2px solid #fdd3ac; */
+    border: 2px solid midnightblue;
     border-radius: 10px;
-    box-shadow: 3px -2px 3px #000;
+    box-shadow: 3px -2px 3px midnightblue;
+    font-family: 'EB Garamond', serif;
+
 }
 
-#questionDiv:hover{
-    background: #c488c4;
+/* #questionDiv:hover, */
+ #choice:hover{
+    background: midnightblue;
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    color: white;
+
 }
 
 #dragComponentsDiv{
     padding:10px;
+    border: 2px solid midnightblue;
+    border-radius: 25px;
+    box-shadow: 3px -2px 3px midnightblue;
     text-align: center;
+    height: auto;
+    width: 80%;
+    font-family: 'EB Garamond', serif;
+
 }
+
+#choice.choice{
+    border: 2px solid #fdd3ac;
+    border-radius: 25px;
+    box-shadow: 3px -2px 3px midnightblue;
+}
+
+#DragDropPage{
+    background-image: url(../../../pages/concrete_seamless.png);
+    height: 90vh;  
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 /* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS */
 .row{
     width: 100%;
@@ -463,14 +544,4 @@ animation-timing-function: linear;
     color: rgb(0, 0, 0);
     text-align: center;
     height: 3%;
-}
-
-/* Drag & Drop  */
-#DragDropPage{
-    background-image: url(../../../pages/concrete_seamless.png);
-    height: 90vh;  
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
 }
