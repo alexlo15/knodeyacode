@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import firebase from "firebase";
+// import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 // Components
 import LoggedOut from "./pagecontainers/LoggedOutContainer";
 import LoggedIn from "./pagecontainers/LoggedInContainer";
