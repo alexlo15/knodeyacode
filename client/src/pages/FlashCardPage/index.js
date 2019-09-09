@@ -75,9 +75,27 @@ class FlashCardPage extends Component {
         })
         .catch(err => console.log(err));
     }
+
+
+    if (topicSelected === "CSS") {
+      console.log("went thru")
+      const studying = {
+        flashcardCSS: true,
+        flashcardHTML: false,
+        flashcardJS: true
+      }
+
+      API.updateIfStudiedTopic(this.state.userName, studying)
+        .then(res => {
+          console.log(res.data);
+        }).catch(err => console.log(err));
+    }
+
   };
 
   render() {
+    console.log(topicSelected);
+    console.log(topicSelected === "CSS")
     var images = {
       notDragged: [],
       dragged: []
@@ -101,7 +119,7 @@ class FlashCardPage extends Component {
       <div id="Flashpagebox">
 
 
-      
+
         <Sidebar />
 
         <div className="Flashpage container">
@@ -114,27 +132,27 @@ class FlashCardPage extends Component {
             {/* <div className="col-12 col-md-2">
           <p>poop</p>
           </div> */}
-          
-          <div className="col-12 col-md-10">
-            
-            {this.state.questionArray.length>0  
-            ? <FlashCard questionArray={this.state.questionArray} /> 
-            :<ImgContainer
-              onDrop={this.onDrop}
-              onDragOver={this.onDragOver}
-              onSubmitClick={this.onSubmitClick}
-              imagesNotDragged={images.notDragged}
-              imagesDragged={images.dragged}
-            />
-          }
-           
-          </div>
-          
-        </div>
-        </div>
-        </div>
-        
-        );
-}
 
-export default FlashCardPage;
+            <div className="col-12 col-md-10">
+
+              {this.state.questionArray.length > 0
+                ? <FlashCard questionArray={this.state.questionArray} />
+                : <ImgContainer
+                  onDrop={this.onDrop}
+                  onDragOver={this.onDragOver}
+                  onSubmitClick={this.onSubmitClick}
+                  imagesNotDragged={images.notDragged}
+                  imagesDragged={images.dragged}
+                />
+              }
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    );
+  }
+}
+  export default FlashCardPage;

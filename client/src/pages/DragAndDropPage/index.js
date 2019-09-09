@@ -146,15 +146,9 @@ class DragDropPage extends Component {
       .catch(err => console.log(err));
   };
   render() {
-<<<<<<< HEAD
-    
-    console.log(this.state.quesAnsArray);
-    
-=======
 
     console.log(this.state.QuesAnsArray);
 
->>>>>>> 6e9a1df8c97d956862585483d8c1697cb4b6264c
     var choices = {
       notDragged: [],
       dragged: []

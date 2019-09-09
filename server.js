@@ -18,6 +18,7 @@ app.use(routes);
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode",{ useNewUrlParser: true });
 
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://alex:password123@ds253857.mlab.com:53857/heroku_6rw37vks",{ useNewUrlParser: true });
 
 
 

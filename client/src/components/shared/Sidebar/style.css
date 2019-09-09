@@ -578,8 +578,9 @@ animation-timing-function: linear;
     background-image: url(../../../pages/concrete_seamless.png);
     width: 95%;
     height: 90vh;
-    position: relative;
- 
+    position: absolute;
+    display: inline;
+    padding-left: 5%;
 
     /* min-height: 700px; */
     background-attachment: fixed;
@@ -608,12 +609,12 @@ animation-timing-function: linear;
     background-position: center;
 }
 
-#profileTitle {
+/* #profileTitle {
     position: absolute;
     left: 40%;
     color: orange;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+} */
 /* body {
     background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
 } */
@@ -682,10 +683,93 @@ animation-timing-function: linear;
 #Flashpagebox{
     background-image: url(../../../pages/bookworm1.jpg);
     /* background-image: url(./supplies.jpg); */
-    height: 90vh;  
+    height: 100vh;  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+
+/* profile page */
+#message, #progress{
+    text-align: center;
+    background-color: rgb(206, 204, 199);
+    border: 1px solid black;
+    margin: 0% 5% 1% 10%;
+    padding: 1%;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(65, 65, 65);
+}
+
+/* #message{
+    margin-top: 1%;
+} */
+
+#profileTitle, #profileUser, #profileText, #progressUser{
+    font-family: 'EB Garamond', serif;
+}
+
+#progressUser, #progressText{
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+}
+
+#profileBackground{
+    background-image: url(../../../pages/cleardesk.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Flashpagebox .card-container{ 
+    cursor: pointer;
+   height: 400px;
+   width: 700px;
+   perspective: 800px;
+   position: relative;
+   transition: ease-in;
+   word-wrap: break-word;
+}
+
+#questioncontainer{
+    width: 500px;
+    margin: auto auto;
+    z-index: 9;
+}
+
+#Flashpagebox .card{
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    border: 1px solid #300;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+
+}
+
+#Flashpagebox .card .front{
+    height: 400px;
+    width: 700px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    padding: 20px;
+    text-align: center;
+}
+#Flashpagebox .card .back{
+
+    height: 400px;
+    width: 700px;
+    text-align: center;
+    transform: rotateY(180deg);
+    background: #ccc;
+
+}
