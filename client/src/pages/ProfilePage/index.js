@@ -17,6 +17,7 @@ class Profile extends React.Component {
   render() {
     return (
       <>
+      <Sidebar/>
 
         <div id="brotherdiv">
           <h3 id="profileTitle">This is the profile page</h3>

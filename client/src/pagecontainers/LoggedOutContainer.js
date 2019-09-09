@@ -13,7 +13,7 @@ class LoggedOut extends React.Component {
       <Router>
         <Switch>
           {/* these routes tell what PAGE to load on each path */}
-          <Route exact path="/" component={MainPage} />
+          {/* <Route exact path="/" component={MainPage} /> */}
         </Switch>
       </Router>
 

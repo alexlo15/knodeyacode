@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API"
 import "../../components/shared/Navigation/style.css";
 import "./style.css"
+import Sidebar from "../../components/shared/Navigation"
 
 class Leaderboard extends Component {
 
@@ -40,6 +41,8 @@ class Leaderboard extends Component {
 
 
     return (
+      <>
+      <Sidebar />
       <div id="leaderdiv">
 
         <div className="row">
@@ -65,6 +68,7 @@ class Leaderboard extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }

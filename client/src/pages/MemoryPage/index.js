@@ -3,6 +3,7 @@ import Header from '../../components/memorygameURL/header/header';
 import Card from '../../components/memorygameURL/card/tile';
 import GameOver from '../../components/memorygameURL/card/gameover';
 import '../../components/shared/Navigation/style.css';
+import Sidebar from "../../components/shared/Navigation"
 
 
 class MemoryGamePage extends PureComponent {
@@ -93,6 +94,8 @@ class MemoryGamePage extends PureComponent {
 
   render() {
     return (
+      <>
+      <Sidebar/>
       <div id="motherdiv">
         <Header restartGame={this.restartGame} />
         {this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
@@ -114,6 +117,7 @@ class MemoryGamePage extends PureComponent {
         }
 
       </div>
+      </>
 
     );
   }
