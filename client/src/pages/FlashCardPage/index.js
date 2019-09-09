@@ -98,15 +98,20 @@ class FlashCardPage extends Component {
     });
 
     return (
-      <div className="Flashpage container">
-        
-        <div className="row">
-          {/* <div className="col-12 col-md-2"> */}
-          <Sidebar />
-        
-          {/* </div> */}
+      <div id="Flashpagebox">
 
-          {/* <div className="col-12 col-md-2">
+
+      
+        <Sidebar />
+
+        <div className="Flashpage container">
+
+          <div className="row">
+            {/* <div className="col-12 col-md-2"> */}
+
+            {/* </div> */}
+
+            {/* <div className="col-12 col-md-2">
           <p>poop</p>
           </div> */}
           
@@ -126,10 +131,10 @@ class FlashCardPage extends Component {
           </div>
           
         </div>
+        </div>
+        </div>
         
-      </div>
-    );
-  }
+        );
 }
 
 export default FlashCardPage;

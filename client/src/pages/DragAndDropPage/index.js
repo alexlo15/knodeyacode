@@ -146,9 +146,15 @@ class DragDropPage extends Component {
       .catch(err => console.log(err));
   };
   render() {
+<<<<<<< HEAD
     
     console.log(this.state.quesAnsArray);
     
+=======
+
+    console.log(this.state.QuesAnsArray);
+
+>>>>>>> 6e9a1df8c97d956862585483d8c1697cb4b6264c
     var choices = {
       notDragged: [],
       dragged: []
@@ -204,18 +210,18 @@ class DragDropPage extends Component {
     } else {
       // console.log("data not");
     }
-    
+
 
 
     return (
       <div id="DragDropPage">
         <div className="DragDrop">
-        <h2
-                id="score"
-                className={this.state.gameFinished === false ? "show" : "hide"}
-              >
-                Score : <span>{this.state.score}</span>
-              </h2>
+          <h2
+            id="score"
+            className={this.state.gameFinished === false ? "show" : "hide"}
+          >
+            Score : <span>{this.state.score}</span>
+          </h2>
 
           <div className="row">
             <div className="col-12 col-sm-2 cardDiv">
@@ -258,11 +264,11 @@ class DragDropPage extends Component {
                         Next
                       </button>
                     ) : (
-                      <Result score={this.state.score} />
-                    )
-                    // : <button className="btn btn-primary" onClick={this.onResultClick}>
-                    //   <Link to="/Result" className="resultLink" >Result</Link>
-                    //   </button>
+                        <Result score={this.state.score} />
+                      )
+                      // : <button className="btn btn-primary" onClick={this.onResultClick}>
+                      //   <Link to="/Result" className="resultLink" >Result</Link>
+                      //   </button>
                     }
                   </div>
                 </div>
