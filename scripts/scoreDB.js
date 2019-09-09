@@ -11,20 +11,42 @@ const scoreSeed = [
     score: 12
 },
 {
-  userName: "Ash Ketchum",
-  email: "americalies2u@aol.com",
+  userName: "Mash Chum",
+  email: "america2u@aol.com",
   score: 13
 },
 {
-  userName: "Ash Ketchum",
-  email: "americalies2u@aol.com",
+  userName: "Suzzen Ketchum",
+  email: "calies2u@aol.com",
   score: 15
+},
+{
+  userName: "Ashley Ketchum",
+  email: "meries2u@aol.com",
+  score: 14
+},
+{
+  userName: "David olsen",
+  email: "david2u@aol.com",
+  score: 14
+},
+{
+  userName: "Mioses Young",
+  email: "moses@aol.com",
+  score: 14
+},
+{
+  userName: "Rahul Nair",
+  email: "rahulN@aol.com",
+  score: 14
 },
 {
   userName: "Ash Ketchum",
   email: "americalies2u@aol.com",
   score: 14
 }
+
+
 
     
 ];

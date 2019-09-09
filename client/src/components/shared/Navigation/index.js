@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../Navigation/logo.png"
+import logo from "../Navigation/logo.png";
+import {Link} from "react-router-dom";
 
 // styling sheet
 import './style.css';
@@ -24,7 +25,7 @@ const Sidebar = () => (
     <div className="NavPlz">
         <nav className="navbar navbar-expand-lg navbar-dark black">
 
-            <a className="navbar-brand logo" href="/"><img src={logo} alt={logo} /></a>
+            <Link to ="/" className="navbar-brand logo"><img src={logo} alt={logo} /></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -36,55 +37,91 @@ const Sidebar = () => (
             {/* <h3>Games and Activities</h3> */}
             <ul className="linklist">
                 <li>
-                    <a id="links" href="/profile">
+                    {/* <a id="links" href="/profile">
                         <i class="fa fa-home fa-2x"></i>
                         <span class="nav-text">
                             Profile
                         </span>
-                    </a>
+                    </a> */}
+                    <Link to="/profile">
+                    <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Profile
+                        </span>
+                    </Link>
 
                 </li>
                 <li class="has-subnav">
-                    <a id="links" href="/draganddrop">
+                    {/* <a id="links" href="/draganddrop">
                         <i class="fa fa-laptop fa-2x"></i>
                         <span class="nav-text">
                             Drag and Drop
                         </span>
-                    </a>
+                    </a> */}
+                    <Link to="/draganddrop">
+                    <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Drag and Drop
+                        </span>
+                    </Link>
 
                 </li>
                 <li class="has-subnav">
-                    <a id="links" href="/flashcard">
+                    {/* <a id="links" href="/flashcard">
                         <i class="fa fa-folder-open fa-2x"></i>
                         <span class="nav-text">
                             Flash Cards
                         </span>
-                    </a>
+                    </a> */}
+                    <Link to="/flashcard">
+                    <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Flash Cards
+                        </span>
+                    </Link>
 
                 </li>
                 <li>
-                    <a id="links" href="/whiteboard">
+                    {/* <a id="links" href="/whiteboard">
                         <i class="fa fa-bar-chart-o fa-2x"></i>
                         <span class="nav-text">
                             White Board
                             </span>
-                    </a>
-                </li>
-                <li>
-                    <a id="links" href="/leaderboard">
-                        <i class="fa fa-table fa-2x"></i>
+                    </a> */}
+                    <Link to="/whiteboard">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
                         <span class="nav-text">
-                            Leaderboard
+                            White Board
                         </span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a id="links" href="/memorygame">
+                    {/* <a id="links" href="/memorygame">
                         <i class="fa fa-info fa-2x"></i>
                         <span class="nav-text">
                             Memory Match
                         </span>
-                    </a>
+                    </a> */}
+                    <Link to="/memorygame">
+                    <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Memory Match
+                        </span>
+                    </Link>
+                </li>
+                <li>
+                    {/* <a id="links" href="/leaderboard">
+                        <i class="fa fa-table fa-2x"></i>
+                        <span class="nav-text">
+                            Leaderboard
+                        </span>
+                    </a> */}
+                    <Link to="/leaderboard">
+                    <i class="fa fa-table fa-2x"></i>
+                        <span class="nav-text">
+                            Leaderboard
+                        </span>
+                    </Link>
                 </li>
             </ul>
 

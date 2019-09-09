@@ -8,6 +8,8 @@ class WhiteBoardPage extends React.Component {
 
     render() {
         return (
+            <>
+            <Sidebar/>
             <div id="fatherdiv">
                 <div id="content">
                     <button id="reset" onClick={()=> window.location.reload(false)}>Reset</button>
@@ -21,7 +23,8 @@ class WhiteBoardPage extends React.Component {
                         lineColor='black'
                         lineWidth={3} />
                 </div>
-            </div>)
+            </div>
+            </>)
     }
 }
 
