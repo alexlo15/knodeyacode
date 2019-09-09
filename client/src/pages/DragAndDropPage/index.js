@@ -8,8 +8,7 @@ import Question from "../../components/dragdropURL/Question";
 import Result from "../../components/dragdropURL/Result";
 
 import "../../components/shared/Sidebar/style.css";
-import "./style.css";
-
+// import "./style.css";
 
 let quesAnsArray = [];
 
@@ -133,21 +132,19 @@ class DragDropPage extends Component {
       this.setState({
         gameFinished: true
       });
-
     }
   };
 
-  saveScore = ()=>{
-    console.log('in save score fun');
+  saveScore = () => {
+    console.log("in save score fun");
     API.saveScore({
-      userName:'AAA',
-      email:'aaa@gmail.com',
-      score:this.state.score
+      userName: "AAA",
+      email: "aaa@gmail.com",
+      score: this.state.score
     })
-    .then(res=>console.log('score saved'))
-    .catch(err=>console.log(err));
-    
-  }
+      .then(res => console.log("score saved"))
+      .catch(err => console.log(err));
+  };
   render() {
     
     console.log(this.state.QuesAnsArray);
@@ -212,67 +209,67 @@ class DragDropPage extends Component {
 
     return (
       <div id="DragDropPage">
-      <div className="DragDrop">
+        <div className="DragDrop">
         <h2
-          id="pageHeading"
-          className={this.state.gameFinished === true ? "hide" : "show"}
-        >
-          Drag And Drop Quiz
-        </h2>
-        <div className="row">
-          <div className="col-12 col-sm-2 cardDiv">
-            <h2
-              id="score"
-              className={this.state.gameFinished === false ? "show" : "hide"}
-            >
-              Score : <span>{this.state.score}</span>
-            </h2>
-            <Sidebar />
-          </div>
+                id="score"
+                className={this.state.gameFinished === false ? "show" : "hide"}
+              >
+                Score : <span>{this.state.score}</span>
+              </h2>
 
-          <div className="col-12 col-sm-10">
-            <div
-              id="questionGameContainer"
-              className={this.state.gameFinished === false ? "show" : "hide"}
-            >
-              <div id="questionDiv">{QuestionComp}</div>
-              <div
-                id="dragDropArea"
-                onDragOver={e => this.onDragOver(e)}
-                onDrop={e => this.onDrop(e, "dragged")}
-              >
-                {choices.dragged}
-              </div>
-              <div
-                id="dragComponentsDiv"
-                onDrop={e => this.onDrop(e, "notDragged")}
-                onDragOver={e => this.onDragOver(e)}
-              >
-                {choices.notDragged}
-              </div>
+          <div className="row">
+            <div className="col-12 col-sm-2 cardDiv">
+                           <Sidebar />
             </div>
 
-            <div className="row" id="btnDiv">
-              <div className="col-12">
-                {this.state.gameFinished === false ? (
-                  <button id="draganddropButton"
-                    className="btn btn-primary"
-                    onClick={this.onSubmitClick}
+
+            <div className="col-12 col-sm-10">
+              <div className="dragDropBorder">
+                <div
+                  id="questionGameContainer"
+                  className={
+                    this.state.gameFinished === false ? "show" : "hide"
+                  }
+                >
+                  <div id="questionDiv">{QuestionComp}</div>
+                  <div
+                    id="dragDropArea"
+                    onDragOver={e => this.onDragOver(e)}
+                    onDrop={e => this.onDrop(e, "dragged")}
                   >
-                    Next
-                  </button>
-                ) : (
-                  <Result score={this.state.score} />
-                )
-                // : <button className="btn btn-primary" onClick={this.onResultClick}>
-                //   <Link to="/Result" className="resultLink" >Result</Link>
-                //   </button>
-                }
+                    {choices.dragged}
+                  </div>
+                  <div
+                    id="dragComponentsDiv"
+                    onDrop={e => this.onDrop(e, "notDragged")}
+                    onDragOver={e => this.onDragOver(e)}
+                  >
+                    {choices.notDragged}
+                  </div>
+                </div>
+
+                <div className="row" id="btnDiv">
+                  <div className="col-12">
+                    {this.state.gameFinished === false ? (
+                      <button
+                        className="btn btn-primary"
+                        onClick={this.onSubmitClick}
+                      >
+                        Next
+                      </button>
+                    ) : (
+                      <Result score={this.state.score} />
+                    )
+                    // : <button className="btn btn-primary" onClick={this.onResultClick}>
+                    //   <Link to="/Result" className="resultLink" >Result</Link>
+                    //   </button>
+                    }
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }
