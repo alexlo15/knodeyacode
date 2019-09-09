@@ -1,6 +1,12 @@
 const db = require("../models");
 
-module.exports ={
+module.exports = {
+    getUsers: function(req, res) {
+        db.User
+          .find()
+          .then(dbUserdata => res.json(dbUserdata))
+          .catch(err => res.status(422).json(err));
+      },
 
     updateIfStudiedTopic: function(req, res){
         db.User

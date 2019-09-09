@@ -30,8 +30,9 @@ class FlashCardPage extends Component {
         category: "notDragged"
       }
     ],
-    questionArray: []
-  };
+    questionArray: [],
+    userName: "5d75870a1c73633b04e65267"
+    };
 
   // This are drag and drop functionality
   // ====================================================
@@ -76,10 +77,26 @@ class FlashCardPage extends Component {
         .catch(err => console.log(err));
     }
 
-    
+  
+    if(topicSelected == "CSS"){
+      console.log("went thru")
+      const studying = {
+        flashcardCSS: true,
+        flashcardHTML: false,
+        flashcardJS: true
+      }
+
+      API.updateIfStudiedTopic(this.state.userName, studying)
+      .then(res => {
+        console.log(res.data);
+      }).catch(err => console.log(err));
+    }
+  
   };
 
   render() {
+    console.log(topicSelected);
+    console.log(topicSelected == "CSS")
     var images = {
       notDragged: [],
       dragged: []

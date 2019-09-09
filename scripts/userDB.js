@@ -7,7 +7,10 @@ const userSeed = [
 
     {
         userName: "Ash Ketchum",
-        email: "americalies2u@aol.com"
+        email: "americalies2u@aol.com",
+        flashcardCSS: false,
+        flashcardHTML: false,
+        flashcardJS: false
     }
 
 ];
