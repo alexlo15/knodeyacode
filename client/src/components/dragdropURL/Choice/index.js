@@ -3,7 +3,7 @@ import React from "react";
 import "./style.css"
 function Choice(props){
     return(
-        <div className="choice" 
+        <div id="choice" className="choice" 
         draggable
         onDragStart={props.onDragStart}
          >
