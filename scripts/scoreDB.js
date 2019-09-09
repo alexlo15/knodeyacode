@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://alex:password123@ds253857.mlab.com:53857/heroku_6rw37vks");
 
 const scoreSeed = [
 
