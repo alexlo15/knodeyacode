@@ -378,6 +378,14 @@ height: 90px;
   .react-card-front {
     position: unset !important;
   }
+  .card img{
+      padding-top: 20%;
+      padding-left: 25%;
+      width: 75%;
+      border-style: none;
+      height: auto;
+      vertical-align: middle;
+  }
 
 
 /* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS */
