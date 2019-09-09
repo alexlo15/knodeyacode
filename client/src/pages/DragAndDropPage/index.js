@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
+import Sidebar from "../../components/shared/Navigation"
 
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
@@ -146,9 +147,9 @@ class DragDropPage extends Component {
       .catch(err => console.log(err));
   };
   render() {
-    
+
     console.log(this.state.QuesAnsArray);
-    
+
     var choices = {
       notDragged: [],
       dragged: []
@@ -204,18 +205,20 @@ class DragDropPage extends Component {
     } else {
       // console.log("data not");
     }
-    
+
 
 
     return (
+      <>
+      <Sidebar/>
       <div id="DragDropPage">
         <div className="DragDrop">
-        <h2
-                id="score"
-                className={this.state.gameFinished === false ? "show" : "hide"}
-              >
-                Score : <span>{this.state.score}</span>
-              </h2>
+          <h2
+            id="score"
+            className={this.state.gameFinished === false ? "show" : "hide"}
+          >
+            Score : <span>{this.state.score}</span>
+          </h2>
 
           <div className="row">
 
@@ -255,11 +258,11 @@ class DragDropPage extends Component {
                         Next
                       </button>
                     ) : (
-                      <Result score={this.state.score} />
-                    )
-                    // : <button className="btn btn-primary" onClick={this.onResultClick}>
-                    //   <Link to="/Result" className="resultLink" >Result</Link>
-                    //   </button>
+                        <Result score={this.state.score} />
+                      )
+                      // : <button className="btn btn-primary" onClick={this.onResultClick}>
+                      //   <Link to="/Result" className="resultLink" >Result</Link>
+                      //   </button>
                     }
                   </div>
                 </div>
@@ -268,6 +271,7 @@ class DragDropPage extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }

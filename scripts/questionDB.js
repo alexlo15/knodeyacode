@@ -3,7 +3,8 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/knodeyacode");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://alex:password123@ds253857.mlab.com:53857/heroku_6rw37vks");
 
 const questionSeed = [
   {

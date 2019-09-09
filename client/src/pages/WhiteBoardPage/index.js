@@ -8,20 +8,21 @@ class WhiteBoardPage extends React.Component {
 
     render() {
         return (
+            <>
+            <Sidebar/>
             <div id="fatherdiv">
                 <div id="content">
                     <button id="reset" onClick={()=> window.location.reload(false)}>Reset</button>
                 </div>
 
                 <div id="whiteboard">
-                    <SketchField width='500px'
-                        height='400px'
+                    <SketchField
                         tool={Tools.Pencil}
-                        backgroundColor="white"
                         lineColor='black'
                         lineWidth={3} />
                 </div>
-            </div>)
+            </div>
+            </>)
     }
 }
 
