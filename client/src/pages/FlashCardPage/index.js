@@ -117,8 +117,12 @@ class FlashCardPage extends Component {
     });
 
     return (
-      <>
+      <div id="Flashpagebox">
+
+
+      
         <Sidebar />
+
         <div className="Flashpage container">
 
           <div className="row">
@@ -148,7 +152,7 @@ class FlashCardPage extends Component {
           </div>
 
         </div>
-        </>
+        </div>
         );
 }
 }

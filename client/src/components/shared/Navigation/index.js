@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import './style.css';
 
 
-const Sidebar = () => (
+const Sidebar = (props) => (
 
     // <div className="sidebar">
     //         <div id="head">Games and Activties</div>
