@@ -67,7 +67,8 @@ class DragDropPage extends Component {
         score: this.state.score + 1
       });
     }
-    // console.log('score from fun: '+this.state.score);
+    // console.log('scor
+    e from fun: '+this.state.score);
   };
 
   // ==================================
