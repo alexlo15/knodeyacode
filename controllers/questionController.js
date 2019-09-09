@@ -16,8 +16,6 @@ module.exports = {
     console.log(topics);
     db.Question
       .find({topic: {$in: topics[0]} })
-     
-     
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }

@@ -1,62 +1,32 @@
-#leadertitle{
-    position: absolute;
-    left: 43%;
-    color: orange;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-#leaderdiv {
-    height: 90vh;
-    background-image: url(https://cdn.pixabay.com/photo/2016/03/25/01/21/abstract-1278017_960_720.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#leaderboard {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 60%;
-    height: 70%;
-}
 #table{
-    position: absolute;
-    top: 20%;
+    width:70%;
+    border:2px solid rgb(3, 33, 103);
+    min-height:300px ;
+    height: 500px;
+    overflow: auto;
+    margin:auto auto;
+    margin-top: 50px;
+    
+    background: rgb(31, 248, 241);
+    padding:10px;
+    text-align: center;
 }
-#even{
-    width: 9999999999999999999999999999999px;
-    background-color: white;
-    border: black 1px solid;
-    height: 40px;
-    color: black;
+.scoreTableBody{
+    padding:10px;
 }
-#odd{
-    background-color: gray;
-    border: black 1px solid;
-    height: 40px;
-
+.scoreTableBody tr{
+    padding:5px;
+    border-bottom: 1px solid #000;
 }
-#jstitle{
-    top: 5%;
-    position: absolute;
-    color:lime;
-    background-color: black;
-    left: 15%;
-
+table th{
+    background: greenyellow;
 }
 
-#htmltitle{
-    top: 5%;
-    position: absolute;
-    background-color: black;
-    color:lime;
-    left: 45%;
-
+table tr:nth-child(odd){
+    background: #b8d1f5;
 }
-#csstitle{
-    top: 5%;
-    position: absolute;
-    color:lime;
-    background-color: black;
-    left: 70%;
 
+table tr:nth-child(even){
+    background: #dae5f4;
 }
+

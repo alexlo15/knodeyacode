@@ -9,5 +9,8 @@ export default {
     },
     getScores: function() {
         return axios.get("/api/scores");
+    },
+    saveScore: function(scoreData){
+        return axios.post('/api/scores',scoreData);
     }
 }

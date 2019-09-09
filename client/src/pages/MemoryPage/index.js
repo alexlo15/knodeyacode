@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import Header from '../../components/memorygameURL/header/header';
 import Card from '../../components/memorygameURL/card/tile';
 import GameOver from '../../components/memorygameURL/card/gameover';
-import './style.css';
+import '../../components/shared/Sidebar/style.css';
 import Sidebar from '../../components/shared/Sidebar';
  
 
@@ -86,11 +86,14 @@ class MemoryGamePage extends PureComponent {
 
   render() {
     return (
-     <div>
+     <div id="motherdiv">
+       <Sidebar />
        <Header restartGame={this.restartGame} /> 
        { this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
        <div className="grid-container">
+                
           {
+            
             this.state.shuffledCard.map((cardNumber, index) => 
               <Card
                 key={index} 
@@ -103,7 +106,7 @@ class MemoryGamePage extends PureComponent {
           }
         </div>
        }
-       <Sidebar />
+
      </div>
      
     );

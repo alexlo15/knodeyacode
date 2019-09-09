@@ -1,8 +1,9 @@
 import React from "react";
 import Sidebar from "../../components/shared/Sidebar";
-import "./style.css";
-// import Ticker from "react-ticker";
+import '../../components/shared/Sidebar/style.css';
+import Ticker from "react-ticker";
 import StockTicker from "../../components/ticker/ticker";
+// import NewTicker from "../../components/ticker/newTicker"
 import API from "../../utils/API";
 
 
@@ -15,7 +16,7 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <div id="fatherdiv">
+      <div id="brotherdiv">
         <h3 id="profileTitle">This is the profile page</h3>
         <div className="Flashpage">
           <div className="row">
@@ -26,6 +27,9 @@ class Profile extends React.Component {
 
           <footer id="ticker">
               {/* <StockTicker /> */}
+
+
+              {/* <NewTicker /> */}
 
 
           </footer>
