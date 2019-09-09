@@ -745,6 +745,7 @@ animation-timing-function: linear;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
 
 #Flashpagebox .card-container{ 
     cursor: pointer;
