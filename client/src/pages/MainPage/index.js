@@ -1,6 +1,10 @@
 import React from "react";
-import logo from "./images/logo.png"
-import "../../components/shared/Navigation/style.css";
+import logo from "./images/logo.png";
+import studyman from "./images/studyicon2.png";
+import matchy from "./images/matchingicon.png";
+import brainy from "./images/brains.png";
+import progress from "./images/progress.PNG";
+import "../../components/shared/Sidebar/style.css";
 
 function Mainpage() {
   return (
@@ -20,27 +24,36 @@ function Mainpage() {
 
       {/* This is where the body color is in the main page  */}
       <div className="signIn">
-
         <h1 className="about">Why Study with Knode Your Code?</h1>
 
         <div className="aboutReasons">
-
           <div className="reason1">
-            It is a good interactive study tool for students to prepare for test and work on their weaknesses.
+          <img src={studyman} alt="Study" />
+          <br></br>
+            It is a good interactive study tool for students to prepare for test
+            and work on their weaknesses. 
           </div>
 
+
           <div className="reason2">
-            There are multiple games that can be used to practice coding.
+          <img src={matchy} alt="Match" />
+          <br></br>
+            There are multiple games ranging from matching, to whiteboarding
+            that can be used to practice.
           </div>
 
           <div className="reason3">
-            It can help students improve their scores drastically.
+          <img src={brainy} alt="Brain" />
+          <br></br>
+            It can help all developers from beginners to veterans improve their
+            coding skills and knowledge.
           </div>
 
           <div className="reason4">
-            Students can hone and achieve their skills.
+          <img src={progress} alt="Progress" />
+          <br></br>
+            Students can hone and achieve their skills while monitoring their progress.
           </div>
-
         </div>
       </div>
     </div>

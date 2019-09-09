@@ -178,25 +178,19 @@ z-index: 0;
 /* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS */
 #leadertitle{
     position: absolute;
-    left: 43%;
-    color: black;
+    left: 35%;
+    color: rgb(83, 114, 134);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    opacity: .5;
+    top: 1%;
 }
 #leaderdiv {
     height: 90vh;
-    background-image: url(https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80);
+    background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-#leaderboard {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 60%;
-    height: 70%;
-}
+
 /* #table{
     position: absolute;
     top: 20%;
@@ -241,10 +235,17 @@ z-index: 0;
     opacity: .75;
 
 }
+#borderOuter {
+    position: absolute;
+    left: 15%;
+    width: 50%;
+    background-image:url(https://www.solidbackgrounds.com/images/950x350/950x350-charleston-green-solid-color-background.jpg);
+    border: rgb(83, 114, 134) solid 4px;
+}
 /* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS */
 #fatherdiv{
     height: 90vh;
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg);
+    background-image: url(https://images.unsplash.com/photo-1547414876-def1cc35dcbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -252,7 +253,7 @@ z-index: 0;
 #whiteboard{
     position: absolute;
     right: 30%;
-    top: 15%;
+    top: 25%;
     margin: 25px;
     margin-left: 60%;
     border: 4px solid black;
@@ -269,7 +270,7 @@ z-index: 0;
 
 #reset{
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 70%;
     font-size: 50px;
     background-color: limegreen;
@@ -285,7 +286,7 @@ z-index: 0;
 /* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS */
 #motherdiv{
     height: 90vh;
-    background-image: url(https://cdn.pixabay.com/photo/2017/09/05/10/19/business-2717063_960_720.jpg);
+    background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -302,8 +303,13 @@ z-index: 0;
     grid-template-columns: auto auto auto auto;
     padding: 10px 150px 10px 150px;
   }
-  
-  .grid-header-container {
+
+#cardDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-header-container {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #c9d1f5;
@@ -350,19 +356,12 @@ z-index: 0;
     size: 20%;
     font-size: 35px;
     background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
-    
-  }
-    
-  .hide-card {
-    visibility: hidden;
-  }
-  
-  .card-front {
-    background-color: #999999;
-    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
-  }
-  
-  .card-back {
+    box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
+    width: 1px;
+    height: 1em;
+}
+
+.card-back {
     font-weight: bold;
   }
   
@@ -384,6 +383,7 @@ text-align: center;
 
 .mainp {
 font-family: 'Libre Caslon Text', serif;
+color: white;
 font-size: 18px;
 text-align: center;
 }
@@ -401,7 +401,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 
-padding: 15% 0 15% 0;
+padding: 15% 0 20% 0;
 text-align: center;
 }
 
@@ -412,10 +412,13 @@ text-align: center;
 }
 
 .signIn {
+padding: 3% 0 0 0;
 text-align: center;
-height: 400px;
-background: white;
-color: #00258f;
+height: 500px;
+/* background: slategray; */
+background: black;  
+/* color: #00258f; */
+color: white;
 font-size: 20px;
 /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -429,6 +432,11 @@ text-shadow: none;
 color: #00258f;
 }
 
+.aboutReasons{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+
+}
 .reason1,
 .reason2,
 .reason3,
@@ -439,7 +447,19 @@ float: left;
 /* width: 33.33%; */
 /* This width is for if there are four columns */
 width: 25%;
-padding: 50px;
+padding: 45px;
+margin-top: 3%;
+padding-bottom: 3%;
+}
+
+.reason1,
+.reason2,
+.reason3{
+box-sizing: border-box;
+float: left;
+border-right: #00258f 3px dotted;
+height: 100%;
+
 }
 
 .logo {
@@ -457,10 +477,56 @@ animation-timing-function: linear;
     transform: rotate(360deg);
 }
 }
+
+
 /* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS */
-.DragDrop .row{
-    width: 100%;
+.resultLink{
+    color:#fff;
 }
+
+.resultLink:hover{
+    color:#fff;
+}
+
+#btnDiv{
+    position: relative;
+}
+
+.DragDrop .row{
+   position: relative;
+   top:auto; 
+   width: 100%;
+}
+.DragDrop #btnDiv{
+    top:auto;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+#pageHeading{
+    font-family: 'EB Garamond', serif;
+    margin-left: 15%;
+    text-align: center;
+    font-size: 3em;
+}
+#score{
+    margin-top: -50px;
+    margin-left: 10px;
+    padding:5px;
+    text-align: center;
+    border:2px solid #000;
+    height: 60px;   
+    box-shadow: 3px 3px 4px #ccc;
+    border-radius: 10px;
+    background: #678;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+
+}
+
 .cardDiv{
     
 }
@@ -468,11 +534,14 @@ animation-timing-function: linear;
     padding: 50px;
     width: 80%;
     height: 200px;
-    border: 1px solid #000;
+    border: 2px solid midnightblue;
+    border-radius: 25px;
+    box-shadow: 3px -2px 3px midnightblue;
     margin: auto auto;
     margin-top:10px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: center;   
+    
 }
 
 
@@ -484,19 +553,56 @@ animation-timing-function: linear;
     margin: auto auto;
     margin-top: 50px;
     text-align: center;
-    border: 1px solid #000;
+    /* border: 2px solid #fdd3ac; */
+    border: 2px solid midnightblue;
     border-radius: 10px;
-    box-shadow: 3px -2px 3px #000;
+    box-shadow: 3px -2px 3px midnightblue;
+    font-family: 'EB Garamond', serif;
+
 }
 
-#questionDiv:hover{
-    background: #c488c4;
+/* #questionDiv:hover, */
+ #choice:hover{
+    background: midnightblue;
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    color: white;
+
 }
 
 #dragComponentsDiv{
     padding:10px;
+    border: 2px solid midnightblue;
+    border-radius: 25px;
+    box-shadow: 3px -2px 3px midnightblue;
     text-align: center;
+    height: auto;
+    width: 80%;
+    font-family: 'EB Garamond', serif;
+
 }
+
+#choice.choice{
+    border: 2px solid #fdd3ac;
+    border-radius: 25px;
+    box-shadow: 3px -2px 3px midnightblue;
+    margin: 1%;
+}
+
+#DragDropPage{
+    background-image: url(../../../pages/concrete_seamless.png);
+    height: 90vh;  
+    /* min-height: 700px; */
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.dragDropBorder{
+    /* border: solid 2px midnightblue; */
+}
+
 /* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS */
 .row{
     width: 100%;
@@ -574,5 +680,18 @@ animation-timing-function: linear;
     height: 3%;
 }
 
+/* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR */
+#navbar {
+    background-color: rgb(83, 114, 134)!important;
+  }
 
+/* Drag & Drop  */
+#DragDropPage{
+    background-image: url(../../../pages/concrete_seamless.png);
+    height: 90vh;  
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+}
 
