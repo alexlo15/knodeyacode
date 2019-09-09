@@ -4,6 +4,7 @@ import ImgContainer from "../../components/flashcardsURL/ImgContainer";
 import FlashCard from "../../components/flashcardsURL/FlashCardArea";
 import API from "../../utils/API";
 import "../../components/shared/Navigation/style.css";
+import Sidebar from "../../components/shared/Navigation"
 
 let topicSelected = [];
 
@@ -117,7 +118,7 @@ class FlashCardPage extends Component {
 
     return (
       <>
-
+        <Sidebar />
         <div className="Flashpage container">
 
           <div className="row">
