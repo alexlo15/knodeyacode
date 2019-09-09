@@ -78,7 +78,7 @@ class FlashCardPage extends Component {
     }
 
   
-    if(topicSelected == "CSS"){
+    if(topicSelected === "CSS"){
       console.log("went thru")
       const studying = {
         flashcardCSS: true,
@@ -96,7 +96,7 @@ class FlashCardPage extends Component {
 
   render() {
     console.log(topicSelected);
-    console.log(topicSelected == "CSS")
+    console.log(topicSelected === "CSS")
     var images = {
       notDragged: [],
       dragged: []
@@ -117,8 +117,12 @@ class FlashCardPage extends Component {
     });
 
     return (
-      <>
+      <div id="Flashpagebox">
+
+
+      
         <Sidebar />
+
         <div className="Flashpage container">
 
           <div className="row">
@@ -148,7 +152,7 @@ class FlashCardPage extends Component {
           </div>
 
         </div>
-        </>
+        </div>
         );
 }
 }
