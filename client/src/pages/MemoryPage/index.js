@@ -94,8 +94,7 @@ class MemoryGamePage extends PureComponent {
                 
           {
             
-            this.state.shuffledCard.map((cardNumber, index) =>
-            <div id="cardDiv"> 
+            this.state.shuffledCard.map((cardNumber, index) => 
               <Card
                 key={index} 
                 id={index} 
@@ -103,7 +102,6 @@ class MemoryGamePage extends PureComponent {
                 isFlipped={this.state.isFlipped[index]} 
                 handleClick={this.handleClick}     
               />
-            </div>
             )
           }
         </div>

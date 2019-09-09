@@ -161,7 +161,7 @@
 /* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS */
 #motherdiv{
     height: 90vh;
-    background-image: url(https://cdn.pixabay.com/photo/2017/09/05/10/19/business-2717063_960_720.jpg);
+    background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -236,6 +236,8 @@ body {
 .card-front {
     background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
     box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
+    width: 1px;
+    height: 1em;
 }
 
 .card-back {
@@ -332,6 +334,10 @@ animation-timing-function: linear;
 }
 }
 /* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS *//* DRAG AND DROP CSS */
+#DragDrop{
+    background-image: url(https://images.unsplash.com/photo-1531315365-3c3d78651881?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80)
+
+}
 .DragDrop .row{
     width: 100%;
 }

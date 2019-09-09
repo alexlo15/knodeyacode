@@ -149,7 +149,9 @@ class DragDropPage extends Component {
     
   }
   render() {
+    
     console.log(this.state.QuesAnsArray);
+    
     var choices = {
       notDragged: [],
       dragged: []
@@ -205,6 +207,8 @@ class DragDropPage extends Component {
     } else {
       // console.log("data not");
     }
+    
+
 
     return (
       <div className="DragDrop">
