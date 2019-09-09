@@ -1,24 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// Landing Page
-import MainPage from '../pages/MainPage';
+// // Landing Page
+// import MainPage from '../pages/MainPage';
 
 
-class LoggedOut extends React.Component {
+// class LoggedOut extends React.Component {
 
-  render() {
-    return (
+//   render() {
+//     return (
 
-      <Router>
-        <Switch>
-          {/* these routes tell what PAGE to load on each path */}
-          {/* <Route exact path="/" component={MainPage} /> */}
-        </Switch>
-      </Router>
+//       <Router>
+//         <Switch>
+//           {/* these routes tell what PAGE to load on each path */}
+//           <Route exact path="/" component={MainPage} />
+//         </Switch>
+//       </Router>
 
-    )
-  }
-}
+//     )
+//   }
+// }
 
-export default LoggedOut;
+// export default LoggedOut;
