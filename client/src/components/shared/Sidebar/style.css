@@ -385,7 +385,7 @@ animation-timing-function: linear;
     font-size: 3em;
 }
 #score{
-    margin-top: -40px;
+    margin-top: -50px;
     margin-left: 10px;
     padding:5px;
     text-align: center;
@@ -458,15 +458,21 @@ animation-timing-function: linear;
     border: 2px solid #fdd3ac;
     border-radius: 25px;
     box-shadow: 3px -2px 3px midnightblue;
+    margin: 1%;
 }
 
 #DragDropPage{
     background-image: url(../../../pages/concrete_seamless.png);
     height: 90vh;  
+    /* min-height: 700px; */
     background-attachment: fixed;
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
+}
+
+.dragDropBorder{
+    /* border: solid 2px midnightblue; */
 }
 
 /* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS */
