@@ -58,7 +58,7 @@ class DragDropPage extends Component {
   };
 
   generateScore = choice => {
-    let rightAnswer = this.state.QuesAnsArray[
+    let rightAnswer = this.state.quesAnsArray[
       this.state.questionCount
     ].choice1.trim();
 
@@ -67,8 +67,7 @@ class DragDropPage extends Component {
         score: this.state.score + 1
       });
     }
-    // console.log('scor
-    e from fun: '+this.state.score);
+    // console.log('score from fun: '+this.state.score);
   };
 
   // ==================================
