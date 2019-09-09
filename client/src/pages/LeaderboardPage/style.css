@@ -19,7 +19,7 @@
     border-bottom: 1px solid #000;
 }
 table th{
-    background: greenyellow;
+    background: rgb(83, 114, 134);
 }
 
 table tr:nth-child(odd){
