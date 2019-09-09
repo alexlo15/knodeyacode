@@ -55,7 +55,7 @@ class Leaderboard extends Component {
                <tbody className="scoreTableBody">
                 
                   <tr>
-                    <th>UserName</th>
+                    <th>Username</th>
                     <th>Email</th>
                     <th>Score</th>
                   </tr>
