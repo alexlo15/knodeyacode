@@ -28,6 +28,7 @@ font-size:75px;
 
 .NavPlz{
   position: sticky;
+  z-index: 0;
 
 }
 
@@ -145,11 +146,10 @@ text-decoration:none;
     border: 1px solid rgb(153, 118, 70);
 }
 
-#links:active {
-    color: orangered;
-    text-decoration: none;
-    width: 100%;
-    transform: translateY(5px);
+.navbar{
+height: 90px;
+/* z-index: 0; */
+
 }
 
 .linkList {
@@ -234,10 +234,10 @@ text-decoration:none;
 #whiteboard{
     width: 1000px;
     height: 600px;
-    position: relative;
+    position: absolute;
     background-color: white;
     right: 30%;
-    top: 10%;
+    top: 20%;
     margin-left: 60%;
     border: 4px solid black;
     border-radius: 5px;
@@ -252,9 +252,9 @@ text-decoration:none;
 }
 
 #reset{
-    position: relative;
-    right: 200%;
-    top: 90%;
+    position: absolute;
+    right:20%;
+    top: 50%;
     font-size: 50px;
     background-color: limegreen;
     border-radius: 5px 20px 5px;
@@ -269,14 +269,25 @@ text-decoration:none;
 /* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS */
 #motherdiv{
     height: 90vh;
+    width: 100%;
     background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    left: 5%;
+
   }
 body {
     margin: 0;
-}
+  }
+  
+  .grid-container {
+    display: inline-grid;
+    grid-gap: 450px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 150px 10px 150px;
+    position: absolute;
+  }
 
 .grid-container {
     display: grid;
@@ -328,24 +339,21 @@ body {
     color: white;
     background-color: #5168e9;
     border: 0;
-}
-.card {
-    width: 75%;
-    height: 2.5em;
-    background-color: white;
-    color: black;
-    font-size: 30px;
-}
-
-.hide-card {
-    visibility: hidden;
-}
-
-.card-front {
+  }
+  
+  .game-status-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(24, 21, 16);
+    font-weight: bold;
+  }
+  
+  .card {
+    height: 5%;
+    width: 5%;
+    font-size: 35px;
     background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
     box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
-    width: 1px;
-    height: 1em;
+    position: absolute;
 }
 
 .card-back {
