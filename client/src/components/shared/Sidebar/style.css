@@ -385,15 +385,15 @@ animation-timing-function: linear;
     font-size: 3em;
 }
 #score{
-    margin-top: -50px;
-    margin-left: 10px;
+    margin-top: -12px;
+    /* margin-left: 10px; */
     padding:5px;
     text-align: center;
-    border:2px solid #000;
+    /* border:2px solid #000; */
     height: 60px;   
-    box-shadow: 3px 3px 4px #ccc;
-    border-radius: 10px;
-    background: #678;
+    /* box-shadow: 3px 3px 4px #ccc; */
+    /* border-radius: 10px; */
+    background: #000;
     color: #fff;
     font-family: 'EB Garamond', serif;
 
