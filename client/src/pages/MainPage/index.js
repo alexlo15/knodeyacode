@@ -1,4 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
+import {withRouter} from 'react-router-dom'
+import {withFirebase} from '../../components/Firebase/index'
+import { compose } from 'recompose'
 import logo from "./images/logo.png";
 import studyman from "./images/studyicon2.png";
 import matchy from "./images/matchingicon.png";
@@ -6,7 +9,28 @@ import brainy from "./images/brains.png";
 import progress from "./images/progress.PNG";
 import "../../components/shared/Sidebar/style.css";
 
-function Mainpage() {
+function MainpageBase(props) {
+
+  const [state, setState] = useState({username: '', password: ''})
+
+  const handleInputChange = event => {
+    const {name, value} = event.target
+    setState(prevState => ({ ...prevState, [name]: value}))
+  }
+
+  const signUpUser = () => {
+    console.log(props);
+    props.firebase.createUser(state.username, state.password).then(() => {
+      props.history.push('/profile')
+    })
+  }
+
+  const signInUser = () => {
+    props.firebase.signInUser(state.username, state.password).then(() => {
+      props.history.push('/profile')
+    })
+  }
+
   return (
     <div>
       <div className="parallax">
@@ -55,9 +79,18 @@ function Mainpage() {
             Students can hone and achieve their skills while monitoring their progress.
           </div>
         </div>
+        <div>
+        <h1>Hi!</h1>
+        <input id="usernameInput" name='username' onChange={handleInputChange} type="text" value={state.username}></input>
+        <input id="passwordInput" name='password' onChange={handleInputChange} type='password' value={state.password}></input>
+        <button disabled={state.email === '' || state.password === ''} onClick={signUpUser}>Sign Up</button>
+        <button disabled={state.email === '' || state.password === ''} onClick={signInUser}>Sign In</button>
+      </div>
       </div>
     </div>
   );
 }
+
+const Mainpage = compose(withRouter, withFirebase)(MainpageBase)
 
 export default Mainpage;

@@ -25,6 +25,7 @@
     "express": "^4.16.3",
     "firebase": "^6.5.0",
     "if-env": "^1.0.4",
+<<<<<<< HEAD
     "mongoose": "^5.3.16",
     "pretty-ms": "^5.0.0",
     "react": "^16.9.0",
@@ -36,5 +37,8 @@
     "react-scripts": "^3.1.1",
     "react-sticky-box": "^0.8.0",
     "react-ticker": "^1.2.0"
+=======
+    "mongoose": "^5.3.16"
+>>>>>>> 2db880f94ed2d55094be02153089d4f58df07396
   }
 }
