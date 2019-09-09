@@ -618,12 +618,12 @@ animation-timing-function: linear;
     background-position: center;
 }
 
-#profileTitle {
+/* #profileTitle {
     position: absolute;
     left: 40%;
     color: orange;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+} */
 /* body {
     background-image: linear-gradient(to bottom right, dodgerblue, blueviolet)
 } */
@@ -695,3 +695,35 @@ animation-timing-function: linear;
     background-position: center;
 }
 
+/* profile page */
+#message, #progress{
+    text-align: center;
+    background-color: rgb(206, 204, 199);
+    border: 1px solid black;
+    margin: 0% 5% 1% 10%;
+    padding: 1%;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(65, 65, 65);
+}
+
+/* #message{
+    margin-top: 1%;
+} */
+
+#profileTitle, #profileUser, #profileText, #progressUser{
+    font-family: 'EB Garamond', serif;
+}
+
+#progressUser, #progressText{
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+}
+
+#profileBackground{
+    background-image: url(../../../pages/cleardesk.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
