@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
 
-import Sidebar from "../../components/shared/Sidebar";
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
 import Result from "../../components/dragdropURL/Result";
 
-import "../../components/shared/Sidebar/style.css";
+import "../../components/shared/Navigation/style.css";
 import "./style.css";
 
 
@@ -222,7 +221,6 @@ class DragDropPage extends Component {
             >
               Score : <span>{this.state.score}</span>
             </h2>
-            <Sidebar />
           </div>
 
           <div className="col-12 col-sm-10">

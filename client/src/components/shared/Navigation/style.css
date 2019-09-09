@@ -1,56 +1,180 @@
 /* SIDEBAR CSS *//* SIDEBAR CSS *//* SIDEBAR CSS *//* SIDEBAR CSS *//* SIDEBAR CSS *//* SIDEBAR CSS *//* SIDEBAR CSS */
-.sidebar {
-    position: absolute;
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2.5em;
+}
+
+.linklist{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.fa {
+position: sticky;
+display: table-cell;
+width: 50px;
+height: 50%;
+text-align: center;
+vertical-align: middle;
+font-size:75px;
+
+
+}
+
+.NavPlz{
+  position: sticky;
+
+}
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+/* background:#5da3ff;
+top:0;
+bottom:0;
+height:100%;
+
+
+z-index:9; */
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+float: left;
+background: #000000;
+width: 100px;
+height: 80vw;
+overflow: hidden;
+position: sticky;
+
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:rgb(153, 153, 153);
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+font-family: 'Titillium Web', sans-serif;
+font-size: 20px;
+}
+/* 
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+} */
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color: rgb(0, 0, 0);
+background-color:#5fa2db;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+
+/* EVERYTHING ABOVE THIS IS SIDEBAR CSS */
+/* IMMEDIATE BELOW IS THE NAVBAR */
+.black{
     background-color: black;
-    opacity: .5;
-    position: fixed;
-    background: #ccc;
-    color:#000;
-    left: 0;
-    top: 200px;
-    bottom: 35;
-    height: 300px;
-    /* width: 215px; */
-    width: 200px;
-    margin-left: 0px;
-    box-shadow: 5px 10px #474747;
-    vertical-align: center;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 15px;
 }
 
-#head {
-    padding-top: 4%;
-    padding-right: 2%;
-    padding-bottom: 5%;
+.navbar{
+height: 90px;
+z-index: 0;
+
 }
 
-#links {
-    margin-right: 20%;
-    font-size: 18px;
-    color:#000;
-    text-decoration: none;
-    width: 100%;
+.logo{
+   
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
 
-#links:hover {
-    box-shadow: 5px 5px #474747;
-    text-decoration: none;
-    width: 100%;
-    border: 1px solid rgb(153, 118, 70);
-}
+@keyframes rotate{
 
-#links:active {
-    color: orangered;
-    text-decoration: none;
-    width: 100%;
-    transform: translateY(5px);
-}
+    100%{
+      transform:rotate(360deg);
+    }
+  }
 
-.linkList {
-    list-style: none;
-}
+
+
+
+
+
+  
 /* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS */
 #leadertitle{
     position: absolute;
@@ -166,82 +290,87 @@
     background-size: cover;
     background-position: center;
   }
-body {
+  
+
+  body {
     margin: 0;
-}
-
-.grid-container {
-    display: grid;
-    grid-gap: 10px 100px;
+  }
+  
+  .grid-container {
+    display: inline-grid;
+    grid-gap: 450px;
     grid-template-columns: auto auto auto auto;
-    padding: 10px 15px 10px 15px;
-    positIon: absolute;
-    left: 30%;
-    top: 30%;
-
-}
-
-.grid-header-container {
+    padding: 10px 150px 10px 150px;
+  }
+  
+  .grid-header-container {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #c9d1f5;
     padding: 10px;
-}
-
-.grid-item {
+  }
+  
+  .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
-
-}
-
-.justify-left {
+  }
+  
+  .justify-left {
     text-align: left
-}
-
-.justify-end {
+  }
+  
+  .justify-end {
     text-align: right;
-}
-
-.justify-center {
+  }
+  
+  .justify-center {
     text-align: center;
-}
-
-.timer {
+  }
+  
+  .timer {
     color: #5168e9;
     font-size: 20px;
     font-weight: bold;
-}
-
-.restart-button {
+  }
+  
+  .restart-button {
     width: 15em;
     height: 3em;
     color: white;
     background-color: #5168e9;
     border: 0;
-}
-.card {
-    width: 75%;
-    height: 2.5em;
-    background-color: white;
-    color: black;
-    font-size: 30px;
-}
-
-.hide-card {
-    visibility: hidden;
-}
-
-.card-front {
-    background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
-    box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
-}
-
-.card-back {
+  }
+  
+  .game-status-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(24, 21, 16);
     font-weight: bold;
-}
-
-.react-card-front {
+  }
+  
+  .card {
+    size: 20%;
+    font-size: 35px;
+    background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
+    
+  }
+    
+  .hide-card {
+    visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #999999;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  }
+  
+  .card-back {
+    font-weight: bold;
+  }
+  
+  .react-card-front {
     position: unset !important;
-}
+  }
+
+
 /* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS */
 
 .mainTitle {
@@ -284,7 +413,7 @@ text-align: center;
 
 .signIn {
 text-align: center;
-height: 500px;
+height: 400px;
 background: white;
 color: #00258f;
 font-size: 20px;
@@ -444,3 +573,6 @@ animation-timing-function: linear;
     text-align: center;
     height: 3%;
 }
+
+
+

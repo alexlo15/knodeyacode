@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./images/logo.png"
-import "../../components/shared/Sidebar/style.css";
+import "../../components/shared/Navigation/style.css";
 
 function Mainpage() {
   return (

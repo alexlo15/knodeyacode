@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 //--------NavBar & Pages-------------//
-import NavBar from "../components/shared/NavBar"
-
+import Sidebar from "../components/shared/Navigation/index";
 //Profile Page
 import ProfilePage from "../pages/ProfilePage";
 
@@ -23,7 +22,8 @@ class LoggedIn extends React.Component {
     return (
 
       <Router>
-        <NavBar />
+        <Sidebar />
+
         <Switch>
 
           {/* these routes tell what PAGE to load on each path */}
@@ -33,7 +33,7 @@ class LoggedIn extends React.Component {
           <Route exact path="/memorygame" component={MemoryGamePage} />
           <Route exact path="/whiteboard" component={WhiteBoardPage} />
           <Route exact path="/leaderboard" component={LeaderboardPage} />
-          <Route exact path="/Result" component={Result}/>
+          <Route exact path="/Result" component={Result} />
         </Switch>
       </Router>
 

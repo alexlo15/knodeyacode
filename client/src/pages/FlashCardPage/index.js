@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Sidebar from "../../components/shared/Sidebar";
 import Img from "../../components/flashcardsURL/Img";
 import ImgContainer from "../../components/flashcardsURL/ImgContainer";
 import FlashCard from "../../components/flashcardsURL/FlashCardArea";
 import API from "../../utils/API";
-import "../../components/shared/Sidebar/style.css";
+import "../../components/shared/Navigation/style.css";
 
 let topicSelected = [];
 
@@ -98,38 +97,40 @@ class FlashCardPage extends Component {
     });
 
     return (
-      <div className="Flashpage container">
-        
-        <div className="row">
-          {/* <div className="col-12 col-md-2"> */}
-          <Sidebar />
-        
-          {/* </div> */}
+      <>
 
-          {/* <div className="col-12 col-md-2">
+        <div className="Flashpage container">
+
+          <div className="row">
+            {/* <div className="col-12 col-md-2"> */}
+
+            {/* </div> */}
+
+            {/* <div className="col-12 col-md-2">
           <p>poop</p>
           </div> */}
-          
-          <div className="col-12 col-md-10">
-            
-            {this.state.questionArray.length>0  
-            ? <FlashCard questionArray={this.state.questionArray} /> 
-            :<ImgContainer
-              onDrop={this.onDrop}
-              onDragOver={this.onDragOver}
-              onSubmitClick={this.onSubmitClick}
-              imagesNotDragged={images.notDragged}
-              imagesDragged={images.dragged}
-            />
-          }
-           
-          </div>
-          
-        </div>
-        
-      </div>
-    );
-  }
-}
 
+            <div className="col-12 col-md-10">
+
+              {this.state.questionArray.length > 0
+                ? <FlashCard questionArray={this.state.questionArray} />
+                : <ImgContainer
+                  onDrop={this.onDrop}
+                  onDragOver={this.onDragOver}
+                  onSubmitClick={this.onSubmitClick}
+                  imagesNotDragged={images.notDragged}
+                  imagesDragged={images.dragged}
+                />
+              }
+
+            </div>
+
+          </div>
+
+        </div>
+        </>
+        );
+}
+}
+ 
 export default FlashCardPage;
