@@ -211,6 +211,7 @@ class DragDropPage extends Component {
 
 
     return (
+      <div id="DragDropPage">
       <div className="DragDrop">
         <h2
           id="pageHeading"
@@ -271,6 +272,7 @@ class DragDropPage extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
