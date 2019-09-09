@@ -255,7 +255,7 @@ class DragDropPage extends Component {
             <div className="row" id="btnDiv">
               <div className="col-12">
                 {this.state.gameFinished === false ? (
-                  <button
+                  <button id="draganddropButton"
                     className="btn btn-primary"
                     onClick={this.onSubmitClick}
                   >

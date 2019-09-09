@@ -42,15 +42,16 @@ class Leaderboard extends Component {
 
     return (
       <div id="leaderdiv">
-        <h3 id="leadertitle">LEADERBOARD</h3>
 
         <div className="row">
           <div className="col-12 col-sm-2">
             <Sidebar />
           </div>
           <div className="col-12 col-sm-10">
+          <div id="borderOuter">
 
           <table id='table'>
+          <h3 id="leadertitle">LEADERBOARD</h3>
                <tbody className="scoreTableBody">
                 
                   <tr>
@@ -61,6 +62,7 @@ class Leaderboard extends Component {
                   {tableRow}
                </tbody>
             </table>
+          </div>
 
           </div>
         </div>
