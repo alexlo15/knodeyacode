@@ -13,17 +13,14 @@ email: {
 
 flashcardCSS: {
     type: Boolean,
-    default: false
 },
 
 flashcardHTML: {
     type: Boolean,
-    default: false
 },
 
 flashcardJS: {
     type: Boolean,
-    default: false
 },
 
 });
