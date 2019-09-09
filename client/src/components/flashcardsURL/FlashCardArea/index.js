@@ -7,9 +7,9 @@ function FlashCard(props){
     return(
         
         <main >
-        <h2 id="flashcardtitle">
+        {/* <h2 id="flashcardtitle">
             FlashCard Page
-        </h2>
+        </h2> */}
         <div id="questioncontainer">
         <NoteCards questionArray={props.questionArray}/>
 
