@@ -10,21 +10,12 @@
 //   render() {
 //     return (
 
-<<<<<<< HEAD
-      <Router>
-        <Switch>
-          {/* these routes tell what PAGE to load on each path */}
-          <Route exact path="/" component={MainPage} />
-        </Switch>
-      </Router>
-=======
 //       <Router>
 //         <Switch>
 //           {/* these routes tell what PAGE to load on each path */}
 //           <Route exact path="/" component={MainPage} />
 //         </Switch>
 //       </Router>
->>>>>>> 2db880f94ed2d55094be02153089d4f58df07396
 
 //     )
 //   }

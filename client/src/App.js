@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-<<<<<<< HEAD
-=======
 // import firebase from "firebase";
 // import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 // Components
@@ -26,7 +24,6 @@ import WhiteBoardPage from "./pages/WhiteBoardPage";
 import LeaderboardPage from "../src/pages/LeaderboardPage";
 import Result from "../src/components/dragdropURL/Result";
 
->>>>>>> 2db880f94ed2d55094be02153089d4f58df07396
 
 // Components
 import LoggedOut from "./pagecontainers/LoggedOutContainer";
