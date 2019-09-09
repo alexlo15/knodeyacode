@@ -248,14 +248,14 @@ height: 90px;
 }
 /* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS */
 #fatherdiv{
-    height: 95vh;
+    height: 150vh;
     background-image: url(https://images.unsplash.com/photo-1547414876-def1cc35dcbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 #whiteboard{
-    width: 1000px;
+    width: 700px;
     height: 600px;
     position: absolute;
     background-color: white;
@@ -291,10 +291,10 @@ height: 90px;
 }
 /* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS */
 #motherdiv{
-    height: 90vh;
+    height: 190vh;
     width: 100%;
     background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
     left: 5%;
@@ -308,9 +308,9 @@ height: 90px;
   
   .grid-container {
     display: inline-grid;
-    grid-gap: 450px;
+    grid-gap: 250px;
     grid-template-columns: auto auto auto auto;
-    padding: 10px 150px 10px 150px;
+    padding: 25px 10px 10px 139px;
     position: absolute;
   }
 
@@ -371,6 +371,8 @@ height: 90px;
     background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
     box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
     position: absolute;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .card-back {
