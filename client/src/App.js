@@ -1,18 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import firebase from "firebase";
-// import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
-// Components
-// import LoggedOut from "./pagecontainers/LoggedOutContainer";
-// import LoggedIn from "./pagecontainers/LoggedInContainer";
-import Profile from './pages/ProfilePage'
 import { withAuthentication } from './components/Session'
 import MainPage from './pages/MainPage';
-import Test from './pages/Test'
-
+ 
 
 //Profile Page
 import ProfilePage from "./pages/ProfilePage";
+import SignInPage from "./pages/SignIn";
 
 // Games
 import DragDropPage from "../src/pages/DragAndDropPage";
@@ -33,13 +27,23 @@ import LoggedIn from "./pagecontainers/LoggedInContainer";
 class App extends React.Component {
 
   render() {
+
+    
     return (
 
       <Router>
         <Switch>
 
-          <Route exact path="/" component={LoggedOut} />
-          <Route component={LoggedIn}/>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/signin" component={SignInPage} /> 
+          <Route exact path="/profile" component={ProfilePage} />
+          <Route exact path="/draganddrop" component={DragDropPage} />
+          <Route exact path="/flashcard" component={FlashCardPage} />
+          <Route exact path="/memorygame" component={MemoryGamePage} />
+          <Route exact path="/whiteboard" component={WhiteBoardPage} />
+          <Route exact path="/leaderboard" component={LeaderboardPage} />
+          <Route exact path="/Result" component={Result}/>
+          
 
         </Switch>
       </Router>

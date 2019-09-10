@@ -56,9 +56,10 @@ user-select:none;
 float: left;
 background: #000000;
 width: 95px;
-height: 90vh;
+height: 150vh;
 overflow: hidden;
 position: sticky;
+
 
 }
 
@@ -67,8 +68,9 @@ margin:7px 0;
 }
 
 .main-menu li {
+padding-top: 20%;
 position:relative;
-display:block;
+display:inline-block;
 width:250px;
 }
 
@@ -165,7 +167,7 @@ height: 90px;
     top: 1%;
 }
 #leaderdiv {
-    height: 90vh;
+    height: 150vh;
     background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80);
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,25 +220,24 @@ height: 90px;
 }
 #borderOuter {
     position: absolute;
-    left: 15%;
     width: 50%;
     background-image:url(https://www.solidbackgrounds.com/images/950x350/950x350-charleston-green-solid-color-background.jpg);
     border: silver solid 4px;
 }
 /* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS */
 #fatherdiv{
-    height: 95vh;
+    height: 150vh;
     background-image: url(https://images.unsplash.com/photo-1547414876-def1cc35dcbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 #whiteboard{
-    width: 1000px;
+    width: 700px;
     height: 600px;
     position: absolute;
     background-color: white;
-    right: 30%;
+    right: 25%;
     top: 20%;
     margin-left: 60%;
     border: 4px solid black;
@@ -253,7 +254,7 @@ height: 90px;
 
 #reset{
     position: absolute;
-    right:20%;
+    right:10%;
     top: 50%;
     font-size: 50px;
     background-color: limegreen;
@@ -268,14 +269,14 @@ height: 90px;
 }
 /* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS *//* MEMORY PAGE CSS */
 #motherdiv{
-    height: 90vh;
+    height: 190vh;
     width: 100%;
     background-image: url(https://images.unsplash.com/photo-1525468568166-6f2cd17c7ec9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
     left: 5%;
-
+    
   }
 body {
     margin: 0;
@@ -283,10 +284,12 @@ body {
   
   .grid-container {
     display: inline-grid;
-    grid-gap: 450px;
+    grid-gap: 250px;
     grid-template-columns: auto auto auto auto;
-    padding: 10px 150px 10px 150px;
+    padding: 25px 10px 10px 139px;
     position: absolute;
+    size: 50%;
+
   }
 
 .grid-container {
@@ -301,21 +304,29 @@ body {
 #cardDiv{
     width: 100%;
     height: 100%;
+    
 }
 
 .grid-header-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #c9d1f5;
     padding: 10px;
-}
-
-.grid-item {
+    position:absolute; 
+    left: 40vw;
+  }
+  
+  .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
-
-}
-
-.justify-left {
+    width: 15em;
+    height: 3em;
+    color: white;
+    background-color: #5168e9;
+    border: 0;
+    float: right;
+    
+  }
+  
+  /* .justify-left {
     text-align: left
 }
 
@@ -325,22 +336,23 @@ body {
 
 .justify-center {
     text-align: center;
-}
-
-.timer {
+  } */
+  
+  .timer {
+    right: 600;
     color: #5168e9;
     font-size: 20px;
     font-weight: bold;
-}
-
-.restart-button {
+  }
+  
+  /* .restart-button {
     width: 15em;
     height: 3em;
     color: white;
     background-color: #5168e9;
     border: 0;
   }
-  
+   */
   .game-status-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(24, 21, 16);
@@ -354,11 +366,26 @@ body {
     background-image: url(https://1001freedownloads.s3.amazonaws.com/vector/thumb/109019/index_card.png);
     box-shadow: 5px 5px 5px rgba(24, 23, 23, 0.6);
     position: absolute;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .card-back {
     font-weight: bold;
-}
+  }
+  
+  .react-card-front {
+    position: unset !important;
+  }
+  .card img{
+      padding-top: 20%;
+      padding-left: 25%;
+      width: 75%;
+      border-style: none;
+      height: auto;
+      vertical-align: middle;
+  }
+
 
 .react-card-front {
     position: unset !important;
@@ -489,6 +516,7 @@ animation-timing-function: linear;
    position: relative;
    top:auto; 
    width: 100%;
+   left: 10%;
 }
 .DragDrop #btnDiv{
     top:auto;
@@ -506,7 +534,9 @@ animation-timing-function: linear;
     font-size: 3em;
 }
 #score{
-    margin-top: -50px;
+    position: absolute;
+    right: 12%;
+    top: 20%;
     margin-left: 10px;
     padding:5px;
     text-align: center;
@@ -517,6 +547,7 @@ animation-timing-function: linear;
     background: #678;
     color: #fff;
     font-family: 'EB Garamond', serif;
+    width: 65%
 
 }
 
@@ -536,6 +567,12 @@ animation-timing-function: linear;
     text-align: center;   
     
 }
+#tablecontainer{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 100%;
+}
 
 
 #questionDiv{
@@ -544,7 +581,6 @@ animation-timing-function: linear;
     min-height: 100px;
     height: auto;
     margin: auto auto;
-    margin-top: 50px;
     text-align: center;
     /* border: 2px solid #fdd3ac; */
     border: 2px solid midnightblue;
@@ -584,18 +620,10 @@ animation-timing-function: linear;
 
 #DragDropPage{
     background-image: url(../../../pages/concrete_seamless.png);
-    width: 95%;
-    height: 90vh;
+    width: 100%;
+    height: 165vh;
     position: absolute;
-    display: inline;
-    padding-left: 5%;
-
-    /* min-height: 700px; */
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-    float: right;
+    display: cover;
 }
 
 .dragDropBorder{
@@ -604,6 +632,7 @@ animation-timing-function: linear;
 
 /* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS */
 .row{
+    left: 14%;
     width: 100%;
     /* position: relative; */
 }
@@ -691,7 +720,7 @@ animation-timing-function: linear;
 #Flashpagebox{
     background-image: url(../../../pages/bookworm1.jpg);
     /* background-image: url(./supplies.jpg); */
-    height: 100vh;  
+    height: 165vh;  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -704,7 +733,7 @@ animation-timing-function: linear;
     text-align: center;
     background-color: rgb(206, 204, 199);
     border: 1px solid black;
-    margin: 0% 5% 1% 10%;
+    margin: 0% 5% 1% 20%;
     padding: 1%;
     border-radius: 25px;
     box-shadow: 5px 5px rgb(65, 65, 65);
@@ -725,7 +754,7 @@ animation-timing-function: linear;
 
 #profileBackground{
     background-image: url(../../../pages/cleardesk.jpg);
-    height: 100vh;
+    height: 150vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -780,4 +809,36 @@ animation-timing-function: linear;
     transform: rotateY(180deg);
     background: #ccc;
 
+}
+
+
+/* SIGN IN PAGE */
+#sign-InTitle, #emailLabel, #passwordLabel{
+    color: white;
+    font-family: 'Libre Caslon Text', serif;
+
+}
+
+#sign-Inbackground{
+    background: #000000;
+    height: 120vh;
+}
+#sign-In{
+    border: 1px solid black;
+    margin: 0% 30% 10% 30%;
+    text-align: center;
+    padding: 5%;
+    padding-top: 7%;
+}
+
+#signButton{
+    margin: 1%;
+}
+
+#emailLabel, #passwordLabel{
+    text-align: left;
+}
+#signoutnav{
+    position: absolute;
+    left: 85%;
 }

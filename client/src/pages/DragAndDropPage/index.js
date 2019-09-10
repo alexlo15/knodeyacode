@@ -6,6 +6,8 @@ import Sidebar from "../../components/shared/Sidebar";
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
 import Result from "../../components/dragdropURL/Result";
+import AuthUserContext from '../../components/Session/context'
+import { withAuthorization } from '../../components/Session/index'
 
 import "../../components/shared/Sidebar/style.css";
 // import "./style.css";
@@ -13,6 +15,8 @@ import "../../components/shared/Sidebar/style.css";
 let quesAnsArray = [];
 
 class DragDropPage extends Component {
+
+  static contextType = AuthUserContext;
   state = {
     quesAnsArray: [],
     buttonClicked: false,
@@ -138,8 +142,8 @@ class DragDropPage extends Component {
   saveScore = () => {
     console.log("in save score fun");
     API.saveScore({
-      userName: "AAA",
-      email: "aaa@gmail.com",
+      userName: this.context.email.substr(0, this.context.email.indexOf('@')),
+      email: this.context.email,
       score: this.state.score
     })
       .then(res => console.log("score saved"))
@@ -208,7 +212,10 @@ class DragDropPage extends Component {
 
 
     return (
+      <>
       <div id="DragDropPage">
+      <Sidebar/>
+      
         <div className="DragDrop">
           <h2
             id="score"
@@ -216,7 +223,7 @@ class DragDropPage extends Component {
           >
             Score : <span>{this.state.score}</span>
           </h2>
-
+          <div id="tablecontainer">
           <div className="row">
             <div className="col-12 col-sm-2 cardDiv">
                            <Sidebar />
@@ -269,10 +276,13 @@ class DragDropPage extends Component {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default DragDropPage;
+const condition = authUser => !!authUser
+
+export default withAuthorization(condition)(DragDropPage);
