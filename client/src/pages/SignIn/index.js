@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { withRouter } from 'react-router-dom'
 import { withFirebase } from '../../components/Firebase/index'
 import { compose, renderComponent } from 'recompose'
-import { Container, Row, Col } from 'react-bootstrap';
 import logo from "./images/logo.png";
 import '../../components/shared/Navigation'
+import API from "../../utils/API";
 
 function SignInBase(props) {
     const [state, setState] = useState({ username: '', password: '' })
@@ -19,12 +19,28 @@ function SignInBase(props) {
         props.firebase.createUser(state.username, state.password).then(() => {
             props.history.push('/profile')
         })
+
+        let newName = state.username.substr(0, state.username.indexOf('@'))
+        console.log(newName);
+
+        let newUser = {
+            userName: newName,
+            email: state.username
+        }
+
+        API.saveUsers(newUser)
+            .then(res => {
+                console.log(res.data);
+            }).catch(err => console.log(err));
     }
 
     const signInUser = () => {
         props.firebase.signInUser(state.username, state.password).then(() => {
             props.history.push('/profile')
         })
+
+        let name = state.username.substr(0, state.username.indexOf('@'))
+        console.log(name);
     }
 
     return (
@@ -53,12 +69,12 @@ function SignInBase(props) {
                     <br></br><br></br>
 
                     <label for="exampleFormControlInput1" id="emailLabel">Email address</label>
-                    <input id="usernameInput" name='username' onChange={handleInputChange} type="text" value={state.username} className="form-control mb-2"></input>
+                    <input id="usernameInput" name='username' onChange={handleInputChange} type="text" value={state.username} className="form-control mb-2"placeholder="name@example.com"></input>
                     <br></br><br></br>
 
                     <label for="exampleFormControlInput1" id="passwordLabel">Password</label>
                     <input id="passwordInput" name='password' onChange={handleInputChange} type='password' value={state.password}
-                    className="form-control mb-2"></input>
+                    className="form-control mb-2"placeholder="password"></input>
                     <br></br><br></br>
 
                     <button disabled={state.email === '' || state.password === ''} onClick={signUpUser} id="signButton" className="btn btn-primary mainButton">Sign Up</button>
