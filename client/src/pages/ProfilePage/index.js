@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import AuthUserContext from '../../components/Session/context'
 import { withAuthorization } from '../../components/Session/index'
+import API from "../../utils/API";
 // import './styles.css';
 // import Ticker from "react-ticker";
 // import StockTicker from "../../components/ticker/ticker";
@@ -16,15 +17,9 @@ class Profile extends React.Component {
 
   static contextType = AuthUserContext
 
-  // state = {
-
-  // };
-
-  // signOutUser = () => {
-  //   this.props.firebase.doSignOutUser()
-  //   this.props.history.push('/')
-  // }
-
+  state = {
+    name: ""
+  };
 
   render() {
     console.log(this.context)
@@ -36,12 +31,12 @@ class Profile extends React.Component {
         <div id="profileBackground">
           <div id="message">
             <h2 id="profileTitle">Welcome to Knode your Code!</h2>
-            <h3 id="profileUser">Hello, {this.context.email}!</h3>
-            <p id="profileText">Congratulations on starting your journey with us! Please see the navigation bar on the side to look through what we offer.</p>
+            <h3 id="profileUser">Hello, {this.context.email.substr(0, this.context.email.indexOf('@'))}!</h3>
+            <h6 id="profileText">Congratulations on starting your journey with us! Please see the navigation bar on the side to look through what we offer.</h6>
           </div>
 
           <div id="progress">
-            <h3 id="progressUser">{this.context.email}, This is your progress below:</h3>
+            <h3 id="progressUser">{this.context.email.substr(0, this.context.email.indexOf('@'))}'s progress below:</h3>
             <p id="progressText">FlashCards:
           <ProgressBar animated now={45} striped variant="primary" label={`45%`} />
             </p>
