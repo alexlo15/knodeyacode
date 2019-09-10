@@ -551,12 +551,8 @@ animation-timing-function: linear;
     margin-left: 10px;
     padding:5px;
     text-align: center;
-    border:2px solid #000;
     height: 60px;   
-    box-shadow: 3px 3px 4px #ccc;
-    border-radius: 10px;
-    background: #678;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-family: 'EB Garamond', serif;
     width: 65%
 
@@ -581,7 +577,7 @@ animation-timing-function: linear;
 #tablecontainer{
     position: absolute;
     left: 5%;
-    top: 25%;
+    top: 10%;
     width: 100%;
 }
 
@@ -719,11 +715,10 @@ animation-timing-function: linear;
     height: 3%;
 }
 
-/* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR */
+/* NAVBAR/* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR *//* NAVBAR */
 #navbar {
     background-color: rgb(83, 114, 134)!important;
   }
-
 
 
 
