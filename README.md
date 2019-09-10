@@ -10,21 +10,41 @@ We wanted to design a free resource where other individuals learning how to code
 ## Technologies used and why
 
 **Built with:**
+* [Firebase](https://firebase.google.com/)
 * [react](https://reactjs.org/)
 * [Node](https://nodejs.org/en/)
+* [express](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Font Awesome](https://fontawesome.com/start):
 
+## npm Packages used:
+
+* firebase
+* pretty-ms
+* react
+* react-bootstrap
+* react-card-flip
+* react-firebaseui
+* react-router-dom
+* react-scripts
+* react-sketch
+* react-sticky-box
+* react-ticker
+* express
+* mongoose
+* axios
+* recompose
 
 ## Features
 Our website features: 
 
-1. Flashcards
-2. Drag & Drop Quiz
-3. Memory Match
-4. Whiteboard
-5. Leaderboard
+1. SignIn Page
+2. Flashcards
+3. Drag & Drop Quiz
+4. Memory Match
+5. Whiteboard
+6. Leaderboard
 
 
 ## Screenshots
@@ -47,7 +67,7 @@ MIT ©
 [Hetal Patel](https://github.com/HET1905),
 [Dealan Diongzon](https://github.com/ddiongzon001), 
 [Darius McPhatter](https://github.com/kwame16),
-[Alex Lo](https://github.com/alexlo15),
+[Alex Lo](https://github.com/alexlo15)
 
 
 
