@@ -838,3 +838,7 @@ animation-timing-function: linear;
 #emailLabel, #passwordLabel{
     text-align: left;
 }
+
+#signOut{
+    padding-left: 50%;
+}

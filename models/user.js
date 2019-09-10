@@ -8,20 +8,9 @@ userName: {
 },
 email: {
     type: String,
-    required: true
-},
-
-flashcardCSS: {
-    type: Boolean,
-},
-
-flashcardHTML: {
-    type: Boolean,
-},
-
-flashcardJS: {
-    type: Boolean,
-},
+    required: true,
+    unique: true,
+}
 
 });
 
