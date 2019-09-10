@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../../components/shared/Navigation";
-import '../../components/shared/Navigation/style.css';
+// import '../../components/shared/Navigation/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import AuthUserContext from '../../components/Session/context'
