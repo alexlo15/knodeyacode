@@ -210,69 +210,71 @@ class DragDropPage extends Component {
 
     return (
       <>
-      <div id="DragDropPage">
-      <Sidebar/>
-      
-        <div className="DragDrop">
-          <h2
-            id="score"
-            className={this.state.gameFinished === false ? "show" : "hide"}
-          >
-            Score : <span>{this.state.score}</span>
-          </h2>
-          <div id="tablecontainer">
-          <div className="row">
+        <div id="DragDropPage">
+          <Sidebar>
+            <h2
+              id="score"
+              className={this.state.gameFinished === false ? "show" : "hide"}
+            >
+              Score : <span>{this.state.score}</span>
+            </h2>
+          </Sidebar>
+
+          <div className="DragDrop">
+
+            <div id="tablecontainer">
+              <div className="row">
 
 
-            <div className="col-12 col-sm-10">
-              <div className="dragDropBorder">
-                <div
-                  id="questionGameContainer"
-                  className={
-                    this.state.gameFinished === false ? "show" : "hide"
-                  }
-                >
-                  <div id="questionDiv">{QuestionComp}</div>
-                  <div
-                    id="dragDropArea"
-                    onDragOver={e => this.onDragOver(e)}
-                    onDrop={e => this.onDrop(e, "dragged")}
-                  >
-                    {choices.dragged}
-                  </div>
-                  <div
-                    id="dragComponentsDiv"
-                    onDrop={e => this.onDrop(e, "notDragged")}
-                    onDragOver={e => this.onDragOver(e)}
-                  >
-                    {choices.notDragged}
-                  </div>
-                </div>
-
-                <div className="row" id="btnDiv">
-                  <div className="col-12">
-                    {this.state.gameFinished === false ? (
-                      <button
-                        className="btn btn-primary"
-                        onClick={this.onSubmitClick}
+                <div className="col-12 col-sm-10">
+                  <div className="dragDropBorder">
+                    <div
+                      id="questionGameContainer"
+                      className={
+                        this.state.gameFinished === false ? "show" : "hide"
+                      }
+                    >
+                      <div id="questionDiv">{QuestionComp}</div>
+                      <div
+                        id="dragDropArea"
+                        onDragOver={e => this.onDragOver(e)}
+                        onDrop={e => this.onDrop(e, "dragged")}
                       >
-                        Next
+                        {choices.dragged}
+                      </div>
+                      <div
+                        id="dragComponentsDiv"
+                        onDrop={e => this.onDrop(e, "notDragged")}
+                        onDragOver={e => this.onDragOver(e)}
+                      >
+                        {choices.notDragged}
+                      </div>
+                    </div>
+
+                    <div className="row" id="btnDiv">
+                      <div className="col-12">
+                        {this.state.gameFinished === false ? (
+                          <button
+                            className="btn btn-primary"
+                            onClick={this.onSubmitClick}
+                          >
+                            Next
                       </button>
-                    ) : (
-                        <Result score={this.state.score} />
-                      )
-                      // : <button className="btn btn-primary" onClick={this.onResultClick}>
-                      //   <Link to="/Result" className="resultLink" >Result</Link>
-                      //   </button>
-                    }
+                        ) : (
+                            <Result score={this.state.score} />
+                          )
+                          // : <button className="btn btn-primary" onClick={this.onResultClick}>
+                          //   <Link to="/Result" className="resultLink" >Result</Link>
+                          //   </button>
+                        }
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          </div>
         </div>
-      </div>
       </>
     );
   }
