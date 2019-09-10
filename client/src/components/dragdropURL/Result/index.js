@@ -8,7 +8,6 @@ function Result(props) {
     <div>
       <div className="row">
         <div className="col-12 col-sm-2 cardDiv">
-          <Sidebar />
         </div>
 
         <div className="col-12 col-sm-10">

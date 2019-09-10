@@ -30,35 +30,22 @@ class Timer extends React.Component {
         this.setState({ time: 0 })
     }
 
-    //     msToTime => (duration) {
-    //     var milliseconds = parseInt((duration % 1000) / 100)
-    //         , seconds = parseInt((duration / 1000) % 60)
-    //         , minutes = parseInt((duration / (1000 * 60)) % 60)
-    //         , hours = parseInt((duration / (1000 * 60 * 60)) % 24);
-
-    //     hours = (hours < 10) ? "0" + hours : hours;
-    //     minutes = (minutes < 10) ? "0" + minutes : minutes;
-    //     seconds = (seconds < 10) ? "0" + seconds : seconds;
-
-    //     return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
-    // }
-
     render() {
         let start = (this.state.time === 0) ?
-            <button onClick={this.startTimer}>start</button> :
+            <button type="button" className="btn btn-primary" onClick={this.startTimer}>Start</button> :
             null
         let stop = (this.state.isOn) ?
-            <button onClick={this.stopTimer}>stop</button> :
+            <button type="button" className="btn btn-primary" onClick={this.stopTimer}>Stop</button> :
             null
         let reset = (this.state.time !== 0 && !this.state.isOn) ?
-            <button onClick={this.resetTimer}>reset</button> :
+            <button type="button" className="btn btn-primary" onClick={this.resetTimer}>Reset</button> :
             null
         let resume = (this.state.time !== 0 && !this.state.isOn) ?
-            <button onClick={this.startTimer}>resume</button> :
+            <button type="button" className="btn btn-primary" onClick={this.startTimer}>Resume</button> :
             null
         return (
             <div>
-                <h4>Timer:{ms(this.state.time)} &nbsp;
+                <h4>Timer: {ms(this.state.time)} &nbsp;
 
                 {start}&nbsp;
                 {resume}&nbsp;
