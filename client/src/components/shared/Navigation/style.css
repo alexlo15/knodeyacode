@@ -546,18 +546,6 @@ animation-timing-function: linear;
     font-size: 3em;
 }
 #score{
-<<<<<<< HEAD
-    margin-top: -12px;
-    /* margin-left: 10px; */
-    padding:5px;
-    text-align: center;
-    /* border:2px solid #000; */
-    height: 60px;   
-    /* box-shadow: 3px 3px 4px #ccc; */
-    /* border-radius: 10px; */
-    background: #000;
-    color: #fff;
-=======
     position: absolute;
     right: 12%;
     top: 20%;
@@ -566,7 +554,6 @@ animation-timing-function: linear;
     text-align: center;
     height: 60px;   
     color: rgb(255, 255, 255);
->>>>>>> 202c2c9ab743adfc40eb2c1e77883efb3c2de8e2
     font-family: 'EB Garamond', serif;
     width: 65%
 
