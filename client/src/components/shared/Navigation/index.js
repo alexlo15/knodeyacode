@@ -1,14 +1,17 @@
 import React from "react";
 import logo from "../Navigation/logo.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // styling sheet
 import './style.css';
 
 
-const Sidebar = (props) => (
+class Sidebar extends React.Component {
 
-    // <div className="sidebar">
+    render(){
+    return(
+    <>
+    {/* // <div className="sidebar">
     //         <div id="head">Games and Activties</div>
 
     //     <ul className = "linkList">
@@ -20,16 +23,16 @@ const Sidebar = (props) => (
     //         <li><a id="links" href="/leaderboard">Leaderboard</a></li>
 
     //     </ul>
-    // </ div >
+    // </ div > */}
 
     <div className="NavPlz">
         <nav className="navbar navbar-expand-lg navbar-dark black">
 
-            <Link to ="/" className="navbar-brand logo"><img src={logo} alt={logo} /></Link>
+            <Link to="/" className="navbar-brand logo"><img src={logo} alt={logo} /></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            
+
         </nav>
 
 
@@ -44,7 +47,7 @@ const Sidebar = (props) => (
                         </span>
                     </a> */}
                     <Link to="/profile">
-                    <i class="fa fa-home fa-2x"></i>
+                        <i class="fa fa-home fa-2x"></i>
                         <span class="nav-text">
                             Profile
                         </span>
@@ -59,7 +62,7 @@ const Sidebar = (props) => (
                         </span>
                     </a> */}
                     <Link to="/draganddrop">
-                    <i class="fa fa-laptop fa-2x"></i>
+                        <i class="fa fa-laptop fa-2x"></i>
                         <span class="nav-text">
                             Drag and Drop
                         </span>
@@ -74,7 +77,7 @@ const Sidebar = (props) => (
                         </span>
                     </a> */}
                     <Link to="/flashcard">
-                    <i class="fa fa-folder-open fa-2x"></i>
+                        <i class="fa fa-folder-open fa-2x"></i>
                         <span class="nav-text">
                             Flash Cards
                         </span>
@@ -89,7 +92,7 @@ const Sidebar = (props) => (
                             </span>
                     </a> */}
                     <Link to="/whiteboard">
-                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                        <i class="fa fa-bar-chart-o fa-2x"></i>
                         <span class="nav-text">
                             White Board
                         </span>
@@ -103,7 +106,7 @@ const Sidebar = (props) => (
                         </span>
                     </a> */}
                     <Link to="/memorygame">
-                    <i class="fa fa-info fa-2x"></i>
+                        <i class="fa fa-info fa-2x"></i>
                         <span class="nav-text">
                             Memory Match
                         </span>
@@ -117,7 +120,7 @@ const Sidebar = (props) => (
                         </span>
                     </a> */}
                     <Link to="/leaderboard">
-                    <i class="fa fa-table fa-2x"></i>
+                        <i class="fa fa-table fa-2x"></i>
                         <span class="nav-text">
                             Leaderboard
                         </span>
@@ -140,11 +143,13 @@ const Sidebar = (props) => (
 
     </div>
 
-
+</>
 
 
 
 
 );
+        }
+}
 
 export default Sidebar;

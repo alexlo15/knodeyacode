@@ -11,25 +11,25 @@ import progress from "./images/progress.PNG";
 
 function MainpageBase(props) {
 
-  const [state, setState] = useState({username: '', password: ''})
+  // const [state, setState] = useState({username: '', password: ''})
 
-  const handleInputChange = event => {
-    const {name, value} = event.target
-    setState(prevState => ({ ...prevState, [name]: value}))
-  }
+  // const handleInputChange = event => {
+  //   const {name, value} = event.target
+  //   setState(prevState => ({ ...prevState, [name]: value}))
+  // }
 
-  const signUpUser = () => {
-    console.log(props);
-    props.firebase.createUser(state.username, state.password).then(() => {
-      props.history.push('/profile')
-    })
-  }
+  // const signUpUser = () => {
+  //   console.log(props);
+  //   props.firebase.createUser(state.username, state.password).then(() => {
+  //     props.history.push('/profile')
+  //   })
+  // }
 
-  const signInUser = () => {
-    props.firebase.signInUser(state.username, state.password).then(() => {
-      props.history.push('/profile')
-    })
-  }
+  // const signInUser = () => {
+  //   props.firebase.signInUser(state.username, state.password).then(() => {
+  //     props.history.push('/profile')
+  //   })
+  // }
 
   return (
     <div>
@@ -41,7 +41,7 @@ function MainpageBase(props) {
         </h1>
 
         <p className="mainp">Please log in to play</p>
-        <a id="login" className="btn btn-primary mainButton" href="/profile">
+        <a id="login" className="btn btn-primary mainButton" href="/signin">
           Sign in
         </a>
       </div>
@@ -79,13 +79,12 @@ function MainpageBase(props) {
             Students can hone and achieve their skills while monitoring their progress.
           </div>
         </div>
-        <div>
-        <h1>Hi!</h1>
+        {/* <div>
         <input id="usernameInput" name='username' onChange={handleInputChange} type="text" value={state.username}></input>
         <input id="passwordInput" name='password' onChange={handleInputChange} type='password' value={state.password}></input>
         <button disabled={state.email === '' || state.password === ''} onClick={signUpUser}>Sign Up</button>
         <button disabled={state.email === '' || state.password === ''} onClick={signInUser}>Sign In</button>
-      </div>
+      </div> */}
       </div>
     </div>
   );
