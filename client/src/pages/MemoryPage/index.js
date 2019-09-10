@@ -18,18 +18,18 @@ class MemoryGamePage extends PureComponent {
   };
 
   static duplicateCard = () => {
-    return [<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt ="" height="300px" width="300px"></img>,
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt ="" height="300px" width="300px"></img>,
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt ="" height="300px" width="300px"></img>,
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt ="" height="300px" width="300px"></img>,
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt =""height="300px" width="300px"></img>,
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/AngularJS_logo.svg" alt ="" height="300px" width="300px"></img>,
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt ="" height="300px" width="300px"></img>,
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt ="" height="300px" width="300px"></img>,
+    return [<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/AngularJS_logo.svg" alt="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="" height="300px" width="300px"></img>,
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="" height="300px" width="300px"></img>,
     ].reduce((preValue, current, index, array) => {
       return preValue.concat([current, current])
     }, []);
-  }; 
+  };
 
   handleClick = event => {
     event.preventDefault();
@@ -95,28 +95,30 @@ class MemoryGamePage extends PureComponent {
   render() {
     return (
       <>
-      <Sidebar/>
-      <div id="motherdiv">
-        <Header restartGame={this.restartGame} />
-        {this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
-          <div className="grid-container">
+        <Sidebar>
+          <Header restartGame={this.restartGame} />
 
-            {
+        </Sidebar>
+        <div id="motherdiv">
+          {this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
+            <div className="grid-container">
 
-              this.state.shuffledCard.map((cardNumber, index) =>
-                <Card
-                  key={index}
-                  id={index}
-                  cardNumber={cardNumber}
-                  isFlipped={this.state.isFlipped[index]}
-                  handleClick={this.handleClick}
-                />
-              )
-            }
-          </div>
-        }
+              {
 
-      </div>
+                this.state.shuffledCard.map((cardNumber, index) =>
+                  <Card
+                    key={index}
+                    id={index}
+                    cardNumber={cardNumber}
+                    isFlipped={this.state.isFlipped[index]}
+                    handleClick={this.handleClick}
+                  />
+                )
+              }
+            </div>
+          }
+
+        </div>
       </>
 
     );
