@@ -19,6 +19,9 @@ import LeaderboardPage from "../src/pages/LeaderboardPage";
 import Result from "../src/components/dragdropURL/Result";
 
 
+// Components
+import LoggedOut from "./pagecontainers/LoggedOutContainer";
+import LoggedIn from "./pagecontainers/LoggedInContainer";
 
 
 class App extends React.Component {

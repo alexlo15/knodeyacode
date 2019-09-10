@@ -2,13 +2,13 @@ import React, { PureComponent } from 'react';
 import Header from '../../components/memorygameURL/header/header';
 import Card from '../../components/memorygameURL/card/tile';
 import GameOver from '../../components/memorygameURL/card/gameover';
-import '../../components/shared/Navigation/style.css';
-import Sidebar from "../../components/shared/Navigation"
-
+import '../../components/shared/Sidebar/style.css';
+import Sidebar from '../../components/shared/Sidebar';
+ 
 
 class MemoryGamePage extends PureComponent {
 
-  state = {
+  state = { 
     isFlipped: Array(16).fill(false),
     shuffledCard: MemoryGamePage.duplicateCard().sort(() => Math.random() - 0.5),
     clickCount: 1,
@@ -18,6 +18,11 @@ class MemoryGamePage extends PureComponent {
   };
 
   static duplicateCard = () => {
+<<<<<<< HEAD
+    return ["<h1></h1>","<p></p>","<a href></a>","<div></div>","<span></span>","<>","Computers","7"].reduce((preValue, current, index, array) => {
+      return preValue.concat([current, current])
+    },[]);
+=======
     return [<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="" height="300px" width="300px"></img>,
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="" height="300px" width="300px"></img>,
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="" height="300px" width="300px"></img>,
@@ -29,6 +34,7 @@ class MemoryGamePage extends PureComponent {
     ].reduce((preValue, current, index, array) => {
       return preValue.concat([current, current])
     }, []);
+>>>>>>> 11edbae5ce79607aaf75332181b0d7f5398dc01e
   };
 
   handleClick = event => {
@@ -36,13 +42,13 @@ class MemoryGamePage extends PureComponent {
     const cardId = event.target.id;
     const newFlipps = this.state.isFlipped.slice();
     this.setState({
-      prevSelectedCard: this.state.shuffledCard[cardId],
-      prevCardId: cardId
+        prevSelectedCard: this.state.shuffledCard[cardId],
+        prevCardId: cardId
     });
 
     if (newFlipps[cardId] === false) {
       newFlipps[cardId] = !newFlipps[cardId];
-      this.setState(prevState => ({
+      this.setState(prevState => ({ 
         isFlipped: newFlipps,
         clickCount: this.state.clickCount + 1
       }));
@@ -94,6 +100,31 @@ class MemoryGamePage extends PureComponent {
 
   render() {
     return (
+<<<<<<< HEAD
+     <div id="motherdiv">
+       <Sidebar />
+       <Header restartGame={this.restartGame} /> 
+       { this.isGameOver() ? <GameOver restartGame={this.restartGame} /> :
+       <div className="grid-container">
+                
+          {
+            
+            this.state.shuffledCard.map((cardNumber, index) => 
+              <Card
+                key={index} 
+                id={index} 
+                cardNumber={cardNumber} 
+                isFlipped={this.state.isFlipped[index]} 
+                handleClick={this.handleClick}     
+              />
+            )
+          }
+        </div>
+       }
+
+     </div>
+     
+=======
       <>
         <Sidebar>
           <Header restartGame={this.restartGame} />
@@ -121,10 +152,9 @@ class MemoryGamePage extends PureComponent {
         </div>
       </>
 
+>>>>>>> 11edbae5ce79607aaf75332181b0d7f5398dc01e
     );
   }
 }
-
-
 
 export default MemoryGamePage;

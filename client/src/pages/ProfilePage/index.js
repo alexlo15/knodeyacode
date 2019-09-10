@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../../components/shared/Navigation";
-import '../../components/shared/Navigation/style.css';
+// import '../../components/shared/Navigation/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import AuthUserContext from '../../components/Session/context'
@@ -73,8 +73,9 @@ class Profile extends React.Component {
               <div className="col-12 col-sm-2">
               </div>
             </div>
+          </div>
 
-            <footer id="ticker">
+          <footer id="ticker">
               {/* <StockTicker /> */}
 
 
@@ -85,16 +86,15 @@ class Profile extends React.Component {
 
           </div>
 
-          <div id="profilemain">
-            <div id="profileImage">
-              <div id="triangle">
+        </div>
 
-              </div>
+        <div id="profilemain">
+          <div id="profileImage">
+            <div id="triangle">
 
             </div>
 
           </div>
-          <div id="profileGameTracker">
 
           </div>
         </div> */}

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import Sidebar from "../../components/shared/Sidebar";
 import Img from "../../components/flashcardsURL/Img";
 import ImgContainer from "../../components/flashcardsURL/ImgContainer";
 import FlashCard from "../../components/flashcardsURL/FlashCardArea";
 import API from "../../utils/API";
-import "../../components/shared/Navigation/style.css";
-import Sidebar from "../../components/shared/Navigation"
+import "../../components/shared/Sidebar/style.css";
 
 let topicSelected = [];
 
@@ -30,9 +30,8 @@ class FlashCardPage extends Component {
         category: "notDragged"
       }
     ],
-    questionArray: [],
-    userName: "5d75870a1c73633b04e65267"
-    };
+    questionArray: []
+  };
 
   // This are drag and drop functionality
   // ====================================================
@@ -77,8 +76,8 @@ class FlashCardPage extends Component {
         .catch(err => console.log(err));
     }
 
-  
-    if(topicSelected === "CSS"){
+
+    if (topicSelected === "CSS") {
       console.log("went thru")
       const studying = {
         flashcardCSS: true,
@@ -87,11 +86,11 @@ class FlashCardPage extends Component {
       }
 
       API.updateIfStudiedTopic(this.state.userName, studying)
-      .then(res => {
-        console.log(res.data);
-      }).catch(err => console.log(err));
+        .then(res => {
+          console.log(res.data);
+        }).catch(err => console.log(err));
     }
-  
+
   };
 
   render() {
@@ -120,7 +119,7 @@ class FlashCardPage extends Component {
       <div id="Flashpagebox">
 
 
-      
+
         <Sidebar />
 
         <div className="Flashpage container">
@@ -150,11 +149,10 @@ class FlashCardPage extends Component {
             </div>
 
           </div>
+        </div>
+      </div>
 
-        </div>
-        </div>
-        );
+    );
+  }
 }
-}
- 
-export default FlashCardPage;
+  export default FlashCardPage;

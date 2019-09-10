@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 // import NavBar from "./components/NavBar";
-import Sidebar from "../../components/shared/Navigation"
 
+import Sidebar from "../../components/shared/Sidebar";
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
 import Result from "../../components/dragdropURL/Result";
 import AuthUserContext from '../../components/Session/context'
 import { withAuthorization } from '../../components/Session/index'
 
-import "../../components/shared/Navigation/style.css";
-import "./style.css";
-
+import "../../components/shared/Sidebar/style.css";
+// import "./style.css";
 
 let quesAnsArray = [];
 
@@ -63,7 +62,7 @@ class DragDropPage extends Component {
   };
 
   generateScore = choice => {
-    let rightAnswer = this.state.QuesAnsArray[
+    let rightAnswer = this.state.quesAnsArray[
       this.state.questionCount
     ].choice1.trim();
 
@@ -72,7 +71,7 @@ class DragDropPage extends Component {
         score: this.state.score + 1
       });
     }
-    // console.log('scroe from fun: '+this.state.score);
+    // console.log('score from fun: '+this.state.score);
   };
 
   // ==================================
@@ -214,6 +213,7 @@ class DragDropPage extends Component {
 
     return (
       <>
+<<<<<<< HEAD
         <div id="DragDropPage">
           <Sidebar>
             <h2
@@ -250,6 +250,56 @@ class DragDropPage extends Component {
                         id="dragComponentsDiv"
                         onDrop={e => this.onDrop(e, "notDragged")}
                         onDragOver={e => this.onDragOver(e)}
+=======
+      <div id="DragDropPage">
+      <Sidebar/>
+      
+        <div className="DragDrop">
+          <h2
+            id="score"
+            className={this.state.gameFinished === false ? "show" : "hide"}
+          >
+            Score : <span>{this.state.score}</span>
+          </h2>
+          <div id="tablecontainer">
+          <div className="row">
+            <div className="col-12 col-sm-2 cardDiv">
+                           <Sidebar />
+            </div>
+
+
+            <div className="col-12 col-sm-10">
+              <div className="dragDropBorder">
+                <div
+                  id="questionGameContainer"
+                  className={
+                    this.state.gameFinished === false ? "show" : "hide"
+                  }
+                >
+                  <div id="questionDiv">{QuestionComp}</div>
+                  <div
+                    id="dragDropArea"
+                    onDragOver={e => this.onDragOver(e)}
+                    onDrop={e => this.onDrop(e, "dragged")}
+                  >
+                    {choices.dragged}
+                  </div>
+                  <div
+                    id="dragComponentsDiv"
+                    onDrop={e => this.onDrop(e, "notDragged")}
+                    onDragOver={e => this.onDragOver(e)}
+                  >
+                    {choices.notDragged}
+                  </div>
+                </div>
+
+                <div className="row" id="btnDiv">
+                  <div className="col-12">
+                    {this.state.gameFinished === false ? (
+                      <button
+                        className="btn btn-primary"
+                        onClick={this.onSubmitClick}
+>>>>>>> be1449e0bfc60cbd347943fbfb9640e18e1842df
                       >
                         {choices.notDragged}
                       </div>
@@ -279,7 +329,11 @@ class DragDropPage extends Component {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </>
+=======
+      </div>
+>>>>>>> be1449e0bfc60cbd347943fbfb9640e18e1842df
     );
   }
 }

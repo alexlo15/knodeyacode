@@ -2,20 +2,20 @@ import React from "react";
 import NoteCards from "../Notecard/notecard"
 import "./style.css";
 
-function FlashCard(props){
+function FlashCard(props) {
     console.log(props);
-    return(
-        
+    return (
+
         <main >
-        {/* <h2 id="flashcardtitle">
+            {/* <h2 id="flashcardtitle">
             FlashCard Page
         </h2> */}
-        <div id="questioncontainer">
-        <NoteCards questionArray={props.questionArray}/>
+            <div id="questioncontainer">
+                <NoteCards questionArray={props.questionArray} />
 
-        </div>
+            </div>
 
-        
+
 
         </main>
     );

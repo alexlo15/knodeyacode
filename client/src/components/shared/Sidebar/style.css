@@ -127,28 +127,25 @@ a:hover,a:focus {
 text-decoration:none;
 }
 
-nav ul,nav li {
-outline:0;
-margin:0;
-padding:0;
-}
-.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
-color: rgb(0, 0, 0);
-background-color:#5fa2db;
+#head {
+    padding-top: 4%;
+    padding-right: 2%;
+    padding-bottom: 5%;
 }
 
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+#links {
+    margin-right: 20%;
+    font-size: 18px;
+    color:#000;
+    text-decoration: none;
+    width: 100%;
 }
 
-
-/* EVERYTHING ABOVE THIS IS SIDEBAR CSS */
-/* IMMEDIATE BELOW IS THE NAVBAR */
-.black{
-    background-color: black;
+#links:hover {
+    box-shadow: 5px 5px #474747;
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid rgb(153, 118, 70);
 }
 
 .navbar{
@@ -157,34 +154,16 @@ height: 90px;
 
 }
 
-.logo{
-   
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
+.linkList {
+    list-style: none;
 }
-
-@keyframes rotate{
-
-    100%{
-      transform:rotate(360deg);
-    }
-  }
-
-
-
-
-
-
-  
 /* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS *//* LEADERBOARD CSS */
 #leadertitle{
     position: absolute;
     left: 35%;
-    color: rgb(83, 114, 134);
+    color: silver;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    opacity: .5;
     top: 1%;
 }
 #leaderdiv {
@@ -243,7 +222,7 @@ height: 90px;
     position: absolute;
     width: 50%;
     background-image:url(https://www.solidbackgrounds.com/images/950x350/950x350-charleston-green-solid-color-background.jpg);
-    border: rgb(83, 114, 134) solid 4px;
+    border: silver solid 4px;
 }
 /* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS *//* WHITEBOARD CSS */
 #fatherdiv{
@@ -299,9 +278,7 @@ height: 90px;
     left: 5%;
     
   }
-  
-
-  body {
+body {
     margin: 0;
   }
   
@@ -315,6 +292,15 @@ height: 90px;
 
   }
 
+.grid-container {
+    display: grid;
+    grid-gap: 200px 200px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 15px 10px 15px;
+    positIon: absolute;
+    left: 30%;
+    top: 30%;
+}
 #cardDiv{
     width: 100%;
     height: 100%;
@@ -342,13 +328,13 @@ height: 90px;
   
   /* .justify-left {
     text-align: left
-  }
-  
-  .justify-end {
+}
+
+.justify-end {
     text-align: right;
-  }
-  
-  .justify-center {
+}
+
+.justify-center {
     text-align: center;
   } */
   
@@ -401,6 +387,9 @@ height: 90px;
   }
 
 
+.react-card-front {
+    position: unset !important;
+}
 /* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS *//* MAIN PAGE CSS */
 
 .mainTitle {
@@ -445,7 +434,7 @@ text-align: center;
 .signIn {
 padding: 3% 0 0 0;
 text-align: center;
-height: 550px;
+height: 500px;
 /* background: slategray; */
 background: black;  
 /* color: #00258f; */
