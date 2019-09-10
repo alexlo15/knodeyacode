@@ -6,6 +6,8 @@ import Sidebar from "../../components/shared/Navigation"
 import Choice from "../../components/dragdropURL/Choice";
 import Question from "../../components/dragdropURL/Question";
 import Result from "../../components/dragdropURL/Result";
+import AuthUserContext from '../../components/Session/context'
+import { withAuthorization } from '../../components/Session/index'
 
 import "../../components/shared/Navigation/style.css";
 import "./style.css";
@@ -14,6 +16,8 @@ import "./style.css";
 let quesAnsArray = [];
 
 class DragDropPage extends Component {
+
+  static contextType = AuthUserContext;
   state = {
     QuesAnsArray: [],
     buttonClicked: false,
@@ -139,8 +143,8 @@ class DragDropPage extends Component {
   saveScore = () => {
     console.log("in save score fun");
     API.saveScore({
-      userName: "AAA",
-      email: "aaa@gmail.com",
+      userName: this.context.email.substr(0, this.context.email.indexOf('@')),
+      email: this.context.email,
       score: this.state.score
     })
       .then(res => console.log("score saved"))
@@ -278,4 +282,6 @@ class DragDropPage extends Component {
   }
 }
 
-export default DragDropPage;
+const condition = authUser => !!authUser
+
+export default withAuthorization(condition)(DragDropPage);
