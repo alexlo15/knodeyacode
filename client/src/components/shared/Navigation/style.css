@@ -188,7 +188,7 @@ height: 90px;
     top: 1%;
 }
 #leaderdiv {
-    height: 90vh;
+    height: 120vh;
     background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80);
     background-repeat: no-repeat;
     background-size: cover;
@@ -721,7 +721,7 @@ animation-timing-function: linear;
 #Flashpagebox{
     background-image: url(../../../pages/bookworm1.jpg);
     /* background-image: url(./supplies.jpg); */
-    height: 100vh;  
+    height: 120vh;  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
