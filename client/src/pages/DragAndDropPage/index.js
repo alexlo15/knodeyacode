@@ -210,8 +210,9 @@ class DragDropPage extends Component {
 
     return (
       <>
-      <Sidebar/>
       <div id="DragDropPage">
+      <Sidebar/>
+      
         <div className="DragDrop">
           <h2
             id="score"
@@ -219,7 +220,7 @@ class DragDropPage extends Component {
           >
             Score : <span>{this.state.score}</span>
           </h2>
-
+          <div id="tablecontainer">
           <div className="row">
 
 
@@ -268,6 +269,7 @@ class DragDropPage extends Component {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

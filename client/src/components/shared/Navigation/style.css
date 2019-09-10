@@ -56,7 +56,7 @@ user-select:none;
 float: left;
 background: #000000;
 width: 95px;
-height: 90vh;
+height: 150vh;
 overflow: hidden;
 position: sticky;
 
@@ -188,7 +188,7 @@ height: 90px;
     top: 1%;
 }
 #leaderdiv {
-    height: 90vh;
+    height: 150vh;
     background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80);
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,7 +241,6 @@ height: 90px;
 }
 #borderOuter {
     position: absolute;
-    left: 15%;
     width: 50%;
     background-image:url(https://www.solidbackgrounds.com/images/950x350/950x350-charleston-green-solid-color-background.jpg);
     border: rgb(83, 114, 134) solid 4px;
@@ -259,7 +258,7 @@ height: 90px;
     height: 600px;
     position: absolute;
     background-color: white;
-    right: 30%;
+    right: 25%;
     top: 20%;
     margin-left: 60%;
     border: 4px solid black;
@@ -276,7 +275,7 @@ height: 90px;
 
 #reset{
     position: absolute;
-    right:20%;
+    right:10%;
     top: 50%;
     font-size: 50px;
     background-color: limegreen;
@@ -528,6 +527,7 @@ animation-timing-function: linear;
    position: relative;
    top:auto; 
    width: 100%;
+   left: 10%;
 }
 .DragDrop #btnDiv{
     top:auto;
@@ -545,7 +545,9 @@ animation-timing-function: linear;
     font-size: 3em;
 }
 #score{
-    margin-top: -50px;
+    position: absolute;
+    right: 12%;
+    top: 20%;
     margin-left: 10px;
     padding:5px;
     text-align: center;
@@ -556,6 +558,7 @@ animation-timing-function: linear;
     background: #678;
     color: #fff;
     font-family: 'EB Garamond', serif;
+    width: 65%
 
 }
 
@@ -575,6 +578,12 @@ animation-timing-function: linear;
     text-align: center;   
     
 }
+#tablecontainer{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 100%;
+}
 
 
 #questionDiv{
@@ -583,7 +592,6 @@ animation-timing-function: linear;
     min-height: 100px;
     height: auto;
     margin: auto auto;
-    margin-top: 50px;
     text-align: center;
     /* border: 2px solid #fdd3ac; */
     border: 2px solid midnightblue;
@@ -623,18 +631,10 @@ animation-timing-function: linear;
 
 #DragDropPage{
     background-image: url(../../../pages/concrete_seamless.png);
-    width: 95%;
-    height: 90vh;
+    width: 100%;
+    height: 165vh;
     position: absolute;
-    display: inline;
-    padding-left: 5%;
-
-    /* min-height: 700px; */
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-    float: right;
+    display: cover;
 }
 
 .dragDropBorder{
@@ -643,6 +643,7 @@ animation-timing-function: linear;
 
 /* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS *//* FLASH CARD CSS */
 .row{
+    left: 14%;
     width: 100%;
     /* position: relative; */
 }
@@ -730,7 +731,7 @@ animation-timing-function: linear;
 #Flashpagebox{
     background-image: url(../../../pages/bookworm1.jpg);
     /* background-image: url(./supplies.jpg); */
-    height: 100vh;  
+    height: 165vh;  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -743,7 +744,7 @@ animation-timing-function: linear;
     text-align: center;
     background-color: rgb(206, 204, 199);
     border: 1px solid black;
-    margin: 0% 5% 1% 10%;
+    margin: 0% 5% 1% 20%;
     padding: 1%;
     border-radius: 25px;
     box-shadow: 5px 5px rgb(65, 65, 65);
@@ -764,7 +765,7 @@ animation-timing-function: linear;
 
 #profileBackground{
     background-image: url(../../../pages/cleardesk.jpg);
-    height: 100vh;
+    height: 150vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -848,7 +849,7 @@ animation-timing-function: linear;
 #emailLabel, #passwordLabel{
     text-align: left;
 }
-
-#signOut{
-    padding-left: 50%;
+#signoutnav{
+    position: absolute;
+    left: 85%;
 }
