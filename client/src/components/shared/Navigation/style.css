@@ -312,6 +312,8 @@ height: 90px;
     grid-template-columns: auto auto auto auto;
     padding: 25px 10px 10px 139px;
     position: absolute;
+    size: 50%;
+
   }
 
 #cardDiv{
@@ -323,16 +325,23 @@ height: 90px;
 .grid-header-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #c9d1f5;
     padding: 10px;
+    position:absolute; 
+    left: 40vw;
   }
   
   .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 15em;
+    height: 3em;
+    color: white;
+    background-color: #5168e9;
+    border: 0;
+    float: right;
     
   }
   
-  .justify-left {
+  /* .justify-left {
     text-align: left
   }
   
@@ -342,22 +351,23 @@ height: 90px;
   
   .justify-center {
     text-align: center;
-  }
+  } */
   
   .timer {
+    right: 600;
     color: #5168e9;
     font-size: 20px;
     font-weight: bold;
   }
   
-  .restart-button {
+  /* .restart-button {
     width: 15em;
     height: 3em;
     color: white;
     background-color: #5168e9;
     border: 0;
   }
-  
+   */
   .game-status-text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(24, 21, 16);
