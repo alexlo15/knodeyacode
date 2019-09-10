@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { withAuthentication } from './components/Session'
 import MainPage from './pages/MainPage';
-
+ 
 
 //Profile Page
 import ProfilePage from "./pages/ProfilePage";
@@ -24,6 +24,8 @@ import Result from "../src/components/dragdropURL/Result";
 class App extends React.Component {
 
   render() {
+
+    
     return (
 
       <Router>
