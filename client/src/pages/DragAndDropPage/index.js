@@ -19,7 +19,7 @@ class DragDropPage extends Component {
 
   static contextType = AuthUserContext;
   state = {
-    QuesAnsArray: [],
+    quesAnsArray: [],
     buttonClicked: false,
     questionCount: 0,
     score: 0,
@@ -44,7 +44,7 @@ class DragDropPage extends Component {
 
   onDrop = (ev, cat) => {
     let choice = ev.dataTransfer.getData("choice");
-    let choices = this.state.QuesAnsArray[this.state.questionCount].choices.map(
+    let choices = this.state.quesAnsArray[this.state.questionCount].choices.map(
       item => {
         item.category = "dragged";
         if (item.choice !== choice) {
@@ -105,7 +105,7 @@ class DragDropPage extends Component {
           })
         );
         this.setState({
-          QuesAnsArray: this.randomize(quesAnsArray)
+          quesAnsArray: this.randomize(quesAnsArray)
         });
       })
       .catch(err => console.log(err));
@@ -152,7 +152,7 @@ class DragDropPage extends Component {
   };
   render() {
 
-    console.log(this.state.QuesAnsArray);
+    console.log(this.state.quesAnsArray);
 
     var choices = {
       notDragged: [],
@@ -200,7 +200,7 @@ class DragDropPage extends Component {
       var QuestionComp = (
         <Question
           questions={
-            this.state.QuesAnsArray[this.state.questionCount].questions
+            this.state.quesAnsArray[this.state.questionCount].questions
           }
         />
       );
