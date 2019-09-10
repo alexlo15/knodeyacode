@@ -5,5 +5,7 @@ router.route("/")
     .get(scoreController.findAll);
 router.route("/")
     .post(scoreController.saveScore)
+router.route("/:name")
+    .get(scoreController.findUserScore);
 
 module.exports = router;

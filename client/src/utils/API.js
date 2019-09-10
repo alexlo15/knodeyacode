@@ -23,5 +23,13 @@ export default {
     // },
     saveUsers: function(user){
         return axios.post(`/api/users`, user)
+    },
+
+    findUser: function(name){
+        return axios.get(`/api/users/${name}`);
+    },
+
+    findUserScore: function(name){
+        return axios.get(`/api/scores/${name}`);
     }
 }

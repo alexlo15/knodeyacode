@@ -31,6 +31,14 @@ module.exports = {
             res.status(500).json(err);
         });
 
+    },
+
+    findUser: function(req,res){
+        db.User
+        .findOne({userName: req.params.name})
+        .then(dbUserdata => res.json(dbUserdata))
+        .catch(err => res.status(422).json(err));
+
     }
 
 }

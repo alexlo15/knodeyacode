@@ -5,8 +5,8 @@ router.route("/")
     .get(userController.getUsers)
     .post(userController.saveUser)
 
-// router.route("/:id")
-//     .put(userController.updateIfStudiedTopic);
+router.route("/:name")
+    .get(userController.findUser);
 
 // router.route("/:email")
 //     .put(userController.saveUser);
