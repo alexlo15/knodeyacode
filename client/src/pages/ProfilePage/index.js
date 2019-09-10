@@ -30,10 +30,13 @@ class Profile extends React.Component {
   getScore = () => {
     API.findUserScore(this.context.email.substr(0, this.context.email.indexOf('@')))
     .then(res => {
-      console.log(res.data);
-      console.log(res.data[0].score);
-        this.setState({score: res.data[0].score, grade: (res.data[0].score*10)})
-    })
+      if(res.data){
+        console.log(res.data);
+        console.log(res.data[0].score);
+          this.setState({score: res.data[0].score, grade: (res.data[0].score*10)})
+
+      }
+    }).catch(err => console.log(err));
 
   }
 
