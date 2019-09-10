@@ -4,7 +4,7 @@ import "./card.css";
 //this is a functional and presentational component
 const Card = props => (
   <div className="card-container">
-    <div className="card">
+    <div className="cardy">
       <div className="front">
         <div className="question">
           <h2 className="text-center">

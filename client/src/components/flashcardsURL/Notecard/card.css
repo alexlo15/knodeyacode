@@ -8,7 +8,7 @@
     word-wrap: break-word;
   }
   
-  .card {
+  .card, .cardy{
     height: 400px;
     width: 400px;
     position: absolute;
@@ -17,12 +17,12 @@
     transition: all .5s ease-in-out;
   }
   
-  .card:hover {
+  .card:hover, .cardy:hover {
     transform: rotateY(180deg);
     transition: all .3s ease-in-out;
   }
   
-  .card .front {
+  .card .front, .cardy .front{
     height: 400px;
     width: 400px;
     backface-visibility: hidden;
@@ -38,7 +38,7 @@
     color:red;
   } */
   
-  .card .back {
+  .card .back, .cardy .back{
     height: 400px;
     width: 400px;
     text-align: center;
