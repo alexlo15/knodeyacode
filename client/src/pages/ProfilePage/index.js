@@ -31,7 +31,6 @@ class Profile extends React.Component {
     console.log(this.props)
     return (
       <>
-        <button className="btn btn-primary btn-lg" onClick={this.signOutUser}>Sign Out</button>
         <Sidebar />
         <div id="profileBackground">
           <div id="message">

@@ -29,6 +29,7 @@ class Sidebar extends React.Component {
         <nav className="navbar navbar-expand-lg navbar-dark black">
 
             <Link to="/" className="navbar-brand logo"><img src={logo} alt={logo} /></Link>
+            <button id="signoutnav"className="btn btn-primary btn-lg" onClick={this.signOutUser}>Sign Out</button>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

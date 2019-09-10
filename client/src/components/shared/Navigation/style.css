@@ -518,6 +518,7 @@ animation-timing-function: linear;
    position: relative;
    top:auto; 
    width: 100%;
+   left: 5%;
 }
 .DragDrop #btnDiv{
     top:auto;
@@ -535,7 +536,9 @@ animation-timing-function: linear;
     font-size: 3em;
 }
 #score{
-    margin-top: -50px;
+    position: absolute;
+    right: 17%;
+    top: 20%;
     margin-left: 10px;
     padding:5px;
     text-align: center;
@@ -546,6 +549,7 @@ animation-timing-function: linear;
     background: #678;
     color: #fff;
     font-family: 'EB Garamond', serif;
+    width: 65%
 
 }
 
@@ -565,6 +569,12 @@ animation-timing-function: linear;
     text-align: center;   
     
 }
+#tablecontainer{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 100%;
+}
 
 
 #questionDiv{
@@ -573,7 +583,6 @@ animation-timing-function: linear;
     min-height: 100px;
     height: auto;
     margin: auto auto;
-    margin-top: 50px;
     text-align: center;
     /* border: 2px solid #fdd3ac; */
     border: 2px solid midnightblue;
@@ -613,18 +622,10 @@ animation-timing-function: linear;
 
 #DragDropPage{
     background-image: url(../../../pages/concrete_seamless.png);
-    width: 95%;
-    height: 90vh;
+    width: 100%;
+    height: 120vh;
     position: absolute;
-    display: inline;
-    padding-left: 5%;
-
-    /* min-height: 700px; */
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-    float: right;
+    display: cover;
 }
 
 .dragDropBorder{
@@ -837,4 +838,9 @@ animation-timing-function: linear;
 
 #emailLabel, #passwordLabel{
     text-align: left;
+}
+#signoutnav{
+    position: absolute;
+    left: 90%;
+
 }
