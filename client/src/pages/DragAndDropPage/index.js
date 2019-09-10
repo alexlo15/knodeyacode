@@ -213,44 +213,6 @@ class DragDropPage extends Component {
 
     return (
       <>
-<<<<<<< HEAD
-        <div id="DragDropPage">
-          <Sidebar>
-            <h2
-              id="score"
-              className={this.state.gameFinished === false ? "show" : "hide"}
-            >
-              Score : <span>{this.state.score}</span>
-            </h2>
-          </Sidebar>
-
-          <div className="DragDrop">
-
-            <div id="tablecontainer">
-              <div className="row">
-
-
-                <div className="col-12 col-sm-10">
-                  <div className="dragDropBorder">
-                    <div
-                      id="questionGameContainer"
-                      className={
-                        this.state.gameFinished === false ? "show" : "hide"
-                      }
-                    >
-                      <div id="questionDiv">{QuestionComp}</div>
-                      <div
-                        id="dragDropArea"
-                        onDragOver={e => this.onDragOver(e)}
-                        onDrop={e => this.onDrop(e, "dragged")}
-                      >
-                        {choices.dragged}
-                      </div>
-                      <div
-                        id="dragComponentsDiv"
-                        onDrop={e => this.onDrop(e, "notDragged")}
-                        onDragOver={e => this.onDragOver(e)}
-=======
       <div id="DragDropPage">
       <Sidebar/>
       
@@ -299,12 +261,12 @@ class DragDropPage extends Component {
                       <button
                         className="btn btn-primary"
                         onClick={this.onSubmitClick}
->>>>>>> be1449e0bfc60cbd347943fbfb9640e18e1842df
                       >
                         {choices.notDragged}
+                        </button>
                       </div>
                     </div>
-
+                      
                     <div className="row" id="btnDiv">
                       <div className="col-12">
                         {this.state.gameFinished === false ? (
@@ -329,11 +291,7 @@ class DragDropPage extends Component {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-      </>
-=======
       </div>
->>>>>>> be1449e0bfc60cbd347943fbfb9640e18e1842df
     );
   }
 }
