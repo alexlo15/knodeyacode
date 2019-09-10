@@ -18,7 +18,10 @@ export default {
     getUsers: function() {
         return axios.get("/api/users");
     },
-    updateIfStudiedTopic: function(id, booleanData) {
-        return axios.put(`/api/users/${id}`, booleanData);
+    // updateIfStudiedTopic: function(id, booleanData) {
+    //     return axios.put(`/api/users/${id}`, booleanData);
+    // },
+    saveUsers: function(user){
+        return axios.post(`/api/users`, user)
     }
 }

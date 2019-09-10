@@ -1,12 +1,26 @@
 import React from "react";
 import logo from "../Navigation/logo.png";
 import { Link } from "react-router-dom";
+import AuthUserContext from '../../Session/context'
+import { withAuthorization } from '../../Session/index'
 
 // styling sheet
 import './style.css';
 
 
 class Sidebar extends React.Component {
+
+    static contextType = AuthUserContext
+
+    state = {
+  
+    };
+  
+    signOutUser = () => {
+      this.props.firebase.doSignOutUser()
+      this.props.history.push('/')
+    }
+  
 
     render(){
     return(
@@ -32,7 +46,7 @@ class Sidebar extends React.Component {
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-
+            <button className="btn btn-primary mainButton signOut" onClick={this.signOutUser}>Sign Out</button>
         </nav>
 
 
@@ -152,4 +166,7 @@ class Sidebar extends React.Component {
         }
 }
 
-export default Sidebar;
+
+const condition = authUser => !!authUser
+
+export default withAuthorization(condition)(Sidebar)

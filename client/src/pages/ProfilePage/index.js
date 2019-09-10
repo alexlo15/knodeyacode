@@ -16,14 +16,14 @@ class Profile extends React.Component {
 
   static contextType = AuthUserContext
 
-  state = {
+  // state = {
 
-  };
+  // };
 
-  signOutUser = () => {
-    this.props.firebase.doSignOutUser()
-    this.props.history.push('/')
-  }
+  // signOutUser = () => {
+  //   this.props.firebase.doSignOutUser()
+  //   this.props.history.push('/')
+  // }
 
 
   render() {
@@ -31,7 +31,7 @@ class Profile extends React.Component {
     console.log(this.props)
     return (
       <>
-        <button className="btn btn-primary btn-lg" onClick={this.signOutUser}>Sign Out</button>
+        {/* <button className="btn btn-primary btn-lg" onClick={this.signOutUser}>Sign Out</button> */}
         <Sidebar />
         <div id="profileBackground">
           <div id="message">
