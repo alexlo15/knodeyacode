@@ -18,12 +18,30 @@ class Profile extends React.Component {
   static contextType = AuthUserContext
 
   state = {
-    name: ""
+    name: "",
+    grade: 0,
+    score: 0,
   };
+
+  componentDidMount() {
+    this.getScore();
+  }
+
+  getScore = () => {
+    API.findUserScore(this.context.email.substr(0, this.context.email.indexOf('@')))
+    .then(res => {
+      console.log(res.data);
+      console.log(res.data[0].score);
+        this.setState({score: res.data[0].score, grade: (res.data[0].score*10)})
+    })
+
+  }
+
 
   render() {
     console.log(this.context)
     console.log(this.props)
+    console.log(this.state.score);
     return (
       <>
 
@@ -41,7 +59,7 @@ class Profile extends React.Component {
           <ProgressBar animated now={45} striped variant="primary" label={`45%`} />
             </p>
             <p id="progressText">Your Highest Score on Drag and Drop Quiz:
-          <ProgressBar animated now={95} striped variant="primary" label={`95%`} />
+          <ProgressBar animated now={this.state.grade} striped variant="primary" label={`${this.state.score} out of 10`} />
             </p>
           </div>
         </div>

@@ -27,5 +27,9 @@ export default {
 
     findUser: function(name){
         return axios.get(`/api/users/${name}`);
+    },
+
+    findUserScore: function(name){
+        return axios.get(`/api/scores/${name}`);
     }
 }
