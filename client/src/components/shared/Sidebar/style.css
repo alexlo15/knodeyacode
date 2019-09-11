@@ -435,6 +435,10 @@ text-align: center;
 padding: 3% 0 0 0;
 text-align: center;
 height: 500px;
+<<<<<<< HEAD:client/src/components/shared/Sidebar/style.css
+=======
+min-height: 650px;
+>>>>>>> 2fa236ab99e886539047d9e25de279d7ec801111:client/src/components/shared/Navigation/style.css
 /* background: slategray; */
 background: black;  
 /* color: #00258f; */
